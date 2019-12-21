@@ -91,4 +91,4 @@ https://wiki.videolan.org/MPEG-4/
 https://developer.android.com/guide/topics/media/media-formats
 
 
-
+https://github.com/UniversalMediaServer/UniversalMediaServer/blob/master/src/main/external-resources/renderers/DefaultRenderer.conf
