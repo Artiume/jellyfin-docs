@@ -81,6 +81,7 @@ VLC HEVC Encoder Source
 https://wiki.videolan.org/H.264/MPEG-4_AVC/
 https://git.videolan.org/?p=vlc.git;a=blob;f=modules/codec/x265.c
 https://forum.videohelp.com/threads/370018-H-264-vs-x264-and-H-265-vs-x265
+https://superuser.com/questions/489087/what-are-the-differences-between-h-264-profiles
 
 MP4 Wrapper
 https://wiki.videolan.org/MPEG-4/
