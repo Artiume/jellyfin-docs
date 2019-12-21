@@ -86,13 +86,32 @@ https://superuser.com/questions/489087/what-are-the-differences-between-h-264-pr
 MP4 Wrapper
 https://wiki.videolan.org/MPEG-4/
 
+-----
 
+https://en.wikipedia.org/wiki/List_of_codecs
+
+https://en.wikipedia.org/wiki/Libavcodec
 
 https://developer.android.com/guide/topics/media/media-formats
 
 https://tools.ietf.org/html/draft-pantos-http-live-streaming-23
 
-
 https://developer.android.com/reference/android/media/MediaCodecInfo
 
 https://stackoverflow.com/questions/43898097/how-to-determine-the-specific-h264-encoder-in-use-from-ffmpeg-library
+
+https://stackoverflow.com/questions/10405728/ffmpeg-api-how-to-use-lossless-h264-encoding?rq=1
+
+https://stackoverflow.com/questions/7708373/get-ffmpeg-information-in-friendly-way
+
+https://en.wikipedia.org/wiki/FFmpeg#Use_with_the_FFmpeg_Utility
+
+https://www.dacast.com/blog/mpeg-dash-vs-hls-what-you-should-know/
+
+https://www.matroska.org/technical/specs/codecid/index.html
+
+https://en.wikipedia.org/wiki/VP9
+
+https://en.wikipedia.org/wiki/Comparison_of_video_container_formats
+
+https://en.wikipedia.org/wiki/List_of_open-source_codecs
