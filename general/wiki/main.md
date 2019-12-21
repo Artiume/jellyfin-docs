@@ -95,4 +95,4 @@ https://tools.ietf.org/html/draft-pantos-http-live-streaming-23
 
 https://developer.android.com/reference/android/media/MediaCodecInfo
 
-
+https://stackoverflow.com/questions/43898097/how-to-determine-the-specific-h264-encoder-in-use-from-ffmpeg-library
