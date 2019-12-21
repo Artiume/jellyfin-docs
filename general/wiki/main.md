@@ -93,5 +93,6 @@ https://developer.android.com/guide/topics/media/media-formats
 https://tools.ietf.org/html/draft-pantos-http-live-streaming-23
 
 
+https://developer.android.com/reference/android/media/MediaCodecInfo
 
 
