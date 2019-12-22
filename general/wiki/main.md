@@ -98,3 +98,5 @@ https://stackoverflow.com/questions/3377300/what-are-all-codecs-and-formats-supp
 https://en.m.wikipedia.org/wiki/Comparison_of_video_container_formats
 
 http://ffmpeg.org/ffmpeg-filters.html#overlay-1
+
+https://digitalfortress.tech/tricks/encode-videos-with-ffmpeg/
