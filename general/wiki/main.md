@@ -92,3 +92,5 @@ https://developer.android.com/guide/topics/media/media-formats
 https://github.com/UniversalMediaServer/UniversalMediaServer/blob/master/src/main/external-resources/renderers/DefaultRenderer.conf
 
 grep -rnw '/path/to/somewhere/' -e 'pattern'
+
+https://stackoverflow.com/questions/3377300/what-are-all-codecs-and-formats-supported-by-ffmpeg
