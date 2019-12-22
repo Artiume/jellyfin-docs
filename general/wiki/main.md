@@ -1,5 +1,3 @@
-Pulling research out from commit to main PR.
-
 For Linux, QSV will use the libmfx library (MFX should be the proper term for QSV, MFX uses a modified VAAPI, see notes below). Normal VAAPI will use the libva library.  The Debian link I added shows a list of supported HW for VA-API, we could incorporate this into the guide. 
 
 https://github.com/Intel-FFmpeg-Plugin/Intel_FFmpeg_plugins/wiki 
