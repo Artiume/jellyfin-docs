@@ -85,7 +85,6 @@ MP4 Wrapper
 https://wiki.videolan.org/MPEG-4/
 
 
-
 https://developer.android.com/guide/topics/media/media-formats
 
 
@@ -100,3 +99,7 @@ https://en.m.wikipedia.org/wiki/Comparison_of_video_container_formats
 http://ffmpeg.org/ffmpeg-filters.html#overlay-1
 
 https://digitalfortress.tech/tricks/encode-videos-with-ffmpeg/
+
+https://www.techlila.com/compile-android-rom-from-source-code/
+
+https://en.m.wikibooks.org/wiki/FFMPEG_An_Intermediate_Guide/subtitle_options
