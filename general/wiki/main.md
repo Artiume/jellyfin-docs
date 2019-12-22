@@ -1,6 +1,6 @@
 For Linux, QSV will use the libmfx library (MFX should be the proper term for QSV, MFX uses a modified VAAPI, see notes below). Normal VAAPI will use the libva library.  The Debian link I added shows a list of supported HW for VA-API, we could incorporate this into the guide. 
 
-https://github.com/Intel-FFmpeg-Plugin/Intel_FFmpeg_plugins/wiki 
+https://github.com/Intel-FFmpeg-Plugin/Intel_FFmpeg_plugins/wiki grep -rnw '/path/to/somewhere/' -e 'pattern'
 "QSV transcode acceleration on Linux systems are enabled from FFMPEG 2.8 and forward"
 
 Intel Media Driver
@@ -90,3 +90,5 @@ https://developer.android.com/guide/topics/media/media-formats
 
 
 https://github.com/UniversalMediaServer/UniversalMediaServer/blob/master/src/main/external-resources/renderers/DefaultRenderer.conf
+
+grep -rnw '/path/to/somewhere/' -e 'pattern'
