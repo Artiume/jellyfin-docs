@@ -9,6 +9,10 @@ https://github.com/intel/media-driver
 AMF is supported on Linux but x265 coding is not. 
 https://www.phoronix.com/scan.php?page=news_item&px=FFmpeg-AMD-AMF-Vulkan
 
+Found this
+ffmpeg has AMF enabled for x264/5
+https://www.reddit.com/r/Amd/comments/8eirp4/ffmpeg_40_released_includes_amf_hardware_encoding/
+
 VAAPI driver for Intel G45 & HD Graphics family uses the i965 va driver. 
 https://packages.debian.org/sid/i965-va-driver
 
