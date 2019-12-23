@@ -16,6 +16,9 @@ https://www.reddit.com/r/Amd/comments/8eirp4/ffmpeg_40_released_includes_amf_har
 VAAPI driver for Intel G45 & HD Graphics family uses the i965 va driver. 
 https://packages.debian.org/sid/i965-va-driver
 
+FfMpeg Support List
+https://trac.ffmpeg.org/wiki/HWAccelIntro
+
 On Ubuntu, the guide for setting up QSV is actually just using VAAPI.  
 https://wiki.ubuntu.com/IntelQuickSyncVideo 
 
