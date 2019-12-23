@@ -25,6 +25,12 @@ https://wiki.archlinux.org/index.php/Hardware_video_acceleration
 Information on MSDK and libmfx
 https://software.intel.com/en-us/articles/quick-start-on-integrating-ffmpeg-libraries
 
+AMF official support.
+https://github.com/GPUOpen-LibrariesAndSDKs/AMF/blob/master/README.md
+
+Enabling VAAPI for Intel Processors
+https://gist.github.com/Brainiarc7/eb45d2e22afec7534f4a117d15fe6d89
+
 Here's the Programmers Manual for MFX
 https://01.org/sites/default/files/documentation/intel-gfx-prm-osrc-kbl-vol08-media_vdbox.pdf
 
