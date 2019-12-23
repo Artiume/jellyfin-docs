@@ -16,6 +16,9 @@ https://www.reddit.com/r/Amd/comments/8eirp4/ffmpeg_40_released_includes_amf_har
 AMF Linux Support still not official
 https://github.com/GPUOpen-LibrariesAndSDKs/AMF/issues/4
 
+Zen is CPU only. No hardware acceleration for any form of video decoding/encoding.
+You need APU or dGPU. It will be a while before AV1 hardware acceleration shows up though (realistically 2020+).
+
 VAAPI driver for Intel G45 & HD Graphics family uses the i965 va driver. 
 https://packages.debian.org/sid/i965-va-driver
 
