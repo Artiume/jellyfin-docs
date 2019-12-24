@@ -22,6 +22,8 @@ The entire project consists of a C# core server, a Javascript web client, and a 
 
 For general guidelines on how the project works, including how to set up your development copy, make changes, and guidelines on Pull Requests (PRs), please see the [documentation on contributing code](xref:contrib-development). Jellyfin follows a "fork and PR" methodology; if you're not familiar with this, please see the [relevant section](xref:contrib-development#set-up-your-copy-of-the-repo).
 
+The [Source Tree](xref:contrib-source) can be a great guide to how Jellyfin is designed.
+
 ## Documentation
 
 Documentation is incredibly helpful! All these docs are written using [DocFX](https://dotnet.github.io/docfx/). You can find the raw markdown in the [documentation repository](https://github.com/jellyfin/jellyfin-docs). Pull requests are welcome!
