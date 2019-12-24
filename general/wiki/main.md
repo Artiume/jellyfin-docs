@@ -122,3 +122,5 @@ https://digitalfortress.tech/tricks/encode-videos-with-ffmpeg/
 https://www.techlila.com/compile-android-rom-from-source-code/
 
 https://en.m.wikibooks.org/wiki/FFMPEG_An_Intermediate_Guide/subtitle_options
+
+https://sites.google.com/site/linuxencoding/x264-ffmpeg-mapping
