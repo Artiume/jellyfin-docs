@@ -10,11 +10,16 @@ The Jellyfin project and its contributors offer a number of pre-built binary pac
 
 ## Containers
 
+Note: There is currently an [issue](https://github.com/docker/for-linux/issues/788) for read-only mounts in Docker. If there are submounts within the main mount, the submounts are read-write capable. 
+
+Use host mode for networking in order to use DLNA or an HDHomeRun. 
+
 ### Official Docker Hub
 
 <a href="https://hub.docker.com/r/jellyfin/jellyfin"><img alt="Docker Pull Count" src="https://img.shields.io/docker/pulls/jellyfin/jellyfin.svg"></a>
 
 The Jellyfin Docker image is available on [Docker Hub](https://hub.docker.com/r/jellyfin/jellyfin/) for multiple architectures.
+
 
 1. Get the latest image:  
     `docker pull jellyfin/jellyfin`
@@ -27,22 +32,24 @@ The Jellyfin Docker image is available on [Docker Hub](https://hub.docker.com/r/
     `--volume /path/to/cache:/cache \`  
     `--volume /path/to/media:/media \`  
     `--net=host \`  
+    `--restart=unless-stopped \`  
     `jellyfin/jellyfin`  
   
 Alternatively, using docker-compose:  
 ```
 version: "3"  
 services:  
-    jellyfin:  
-      image: jellyfin/jellyfin  
-      network_mode: "host"  
-      volumes:  
-        - /path/to/config:/config  
-        - /path/to/cache:/cache  
-        - /path/to/media:/media  
+  jellyfin:  
+    image: jellyfin/jellyfin
+    network_mode: "host"  
+    volumes:  
+      - /path/to/config:/config  
+      - /path/to/cache:/cache  
+      - /path/to/media:/media  
 ```
 
-### Docker Hub maintained by LinuxServer.io
+
+### [Docker Hub](https://hub.docker.com/r/linuxserver/jellyfin) image maintained by LinuxServer.io
 
 <a href="https://hub.docker.com/r/linuxserver/jellyfin"><img alt="Docker Pull Count" src="https://img.shields.io/docker/pulls/linuxserver/jellyfin.svg"></a>
 
@@ -210,6 +217,83 @@ Navigate to Playback tab in the Dashboard and set the path to FFmpeg under FFmpe
 ## Linux (generic amd64)
 
 Generic amd64 Linux builds in TAR archive format are available [here](https://jellyfin.org/downloads/#linux).
+
+### Installation Process
+
+Create a directory in /opt for jellyfin and its files, and enter that directory.
+    
+```bash
+sudo mkdir /opt/jellyfin 
+cd /opt/jellyfin
+```
+
+Download the latest generic linux build from the [Jellyfin release page](https://github.com/jellyfin/jellyfin/releases). The generic linux build ends with "linux-amd64.tar.gz". The rest of these instructions assume version 10.4.3 is being installed (i.e. jellyfin_10.4.3_linux-amd64.tar.gz). Download the generic build, then extract the archive:
+
+```bash
+sudo wget https://github.com/jellyfin/jellyfin/releases/download/v10.4.3/jellyfin_10.4.3_linux-amd64.tar.gz
+sudo tar xvzf jellyfin_10.4.3_linux-amd64.tar.gz
+```
+
+Create a symbolic link to the Jellyfin 10.4.3 directory. This allows an upgrade by repeating the above steps and enabling it by simply re-creating the symbolic link to the new version.
+
+```bash
+sudo ln -s jellyfin_10.4.3 jellyfin
+```
+
+Create four sub-directories for Jellyfin data:
+    
+```bash
+sudo mkdir data cache config log
+```
+
+If you are running Debian or a derivative, you can also download and install an ffmpeg release built specifically for Jellyfin. Be sure to download the latest release that matches your OS (4.2.1-3 for Debian Stretch assumed below).
+
+```bash
+sudo wget https://github.com/jellyfin/jellyfin-ffmpeg/releases/download/v4.2.1-3/jellyfin-ffmpeg_4.2.1-3-stretch_amd64.deb
+sudo dpkg --install jellyfin-ffmpeg_4.2.1-3-stretch_amd64.deb
+```
+
+If you run into any dependency errors, run this and it will install them and jellyfin-ffmpeg:
+
+```bash
+sudo apt install -f
+```
+    
+Due to the number of command line options that must be passed, it is easiest to create a small script (here called jellyfin.sh) to run Jellyfin.
+
+Type:
+
+```bash
+sudo nano jellyfin.sh
+```
+
+Then paste the following commands and modify as needed.
+
+```bash
+#!/bin/bash
+JELLYFINDIR="/opt/jellyfin"
+FFMPEGDIR="/usr/share/jellyfin-ffmpeg"
+
+$JELLYFINDIR/jellyfin/jellyfin \
+-d $JELLYFINDIR/data \
+-C $JELLYFINDIR/cache \
+-c $JELLYFINDIR/config \
+-l $JELLYFINDIR/log \
+--ffmpeg $FFMPEGDIR/ffmpeg 
+````
+
+Assuming you desire Jellyfin to run as a non-root user, chmod all files and directories to your normal login user and group. Also make the startup script above executable.
+
+```bash
+sudo chown -R user:group *
+sudo chmod u+x jellyfin.sh
+```
+
+Finally you can run it. You will see lots of log information when run, this is normal. Setup is as usual in the web browser.
+
+```bash
+./jellyfin.sh
+```
 
 ## Portable DLL
 
