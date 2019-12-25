@@ -77,6 +77,8 @@ VP9 Supported video decoders: HEVC, AVC, VP8, VP9, MPEG-2, VC1, JPEG
 Supported video pre-processing filters: Color Conversion, Deinterlace, Denoise, Resize, Rotate, Composition
 ```
 
+https://www.elpamsoft.com/?p=Plex-Hardware-Transcoding
+
 I can't find much on encoding with DXVA2 / D3D11VA on Windows. Even the QSV page is sparse. I think decoding is only supported.
 
 
