@@ -113,6 +113,9 @@ https://github.com/UniversalMediaServer/UniversalMediaServer/blob/master/src/mai
 
 grep -rnw '/path/to/somewhere/' -e 'pattern'
 
+---JF Expo
+https://hackmd.io/s/BkNHM9W0r
+---
 https://stackoverflow.com/questions/3377300/what-are-all-codecs-and-formats-supported-by-ffmpeg
 
 https://en.m.wikipedia.org/wiki/Comparison_of_video_container_formats
