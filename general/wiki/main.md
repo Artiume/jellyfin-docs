@@ -132,3 +132,5 @@ https://trac.ffmpeg.org/wiki/Limiting%20the%20output%20bitrate
 https://github.com/sitkevij/ffmpeg/tree/master/ffmpeg-3.4.1-resin-rpi-raspbian
 
 https://docs.brew.sh/Homebrew-on-Linux
+
+https://trac.ffmpeg.org/wiki/Encode/AV1
