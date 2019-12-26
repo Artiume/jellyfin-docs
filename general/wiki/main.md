@@ -145,3 +145,5 @@ https://www.reddit.com/r/AV1/comments/ef4g5l/codecs_performance_report_6th_editi
 https://hackernoon.com/encoding-av1-700b6ee4210
 
 https://streaminglearningcenter.com/codecs/av1-encoding-and-4k.html
+
+https://streaminglearningcenter.com/blogs/good-news-av1-encoding-times-drop-to-near-reasonable-levels.html
