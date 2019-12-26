@@ -138,3 +138,5 @@ https://trac.ffmpeg.org/wiki/CompilationGuide
 https://trac.ffmpeg.org/wiki/Encode/AV1
 
 https://www.reddit.com/r/AV1/comments/ef4g5l/codecs_performance_report_6th_edition/
+
+https://hackernoon.com/encoding-av1-700b6ee4210
