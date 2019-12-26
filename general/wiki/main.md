@@ -128,3 +128,5 @@ https://en.m.wikibooks.org/wiki/FFMPEG_An_Intermediate_Guide/subtitle_options
 https://sites.google.com/site/linuxencoding/x264-ffmpeg-mapping
 
 https://trac.ffmpeg.org/wiki/Limiting%20the%20output%20bitrate
+
+https://github.com/sitkevij/ffmpeg/tree/master/ffmpeg-3.4.1-resin-rpi-raspbian
