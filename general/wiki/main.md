@@ -86,7 +86,9 @@ I can't find much on encoding with DXVA2 / D3D11VA on Windows. Even the QSV page
 Current Transcoding issues
 
 https://ffmpeg.org/ffmpeg.html
+
 https://github.com/jellyfin/jellyfin/issues/1364
+
 https://trac.ffmpeg.org/ticket/6472
 -max_muxing_queue_size 198
 
@@ -94,12 +96,16 @@ https://trac.ffmpeg.org/ticket/6472
 VLC has amazing support for codecs
 
 https://wiki.videolan.org/Hacker_Guide/
+
 https://wiki.videolan.org/Hacker_Guide/VLC_source_tree/
 
 VLC HEVC Encoder Source
 https://wiki.videolan.org/H.264/MPEG-4_AVC/
+
 https://git.videolan.org/?p=vlc.git;a=blob;f=modules/codec/x265.c
+
 https://forum.videohelp.com/threads/370018-H-264-vs-x264-and-H-265-vs-x265
+
 https://superuser.com/questions/489087/what-are-the-differences-between-h-264-profiles
 
 MP4 Wrapper
@@ -146,6 +152,8 @@ https://trac.ffmpeg.org/wiki/Encode/AV1
 https://www.reddit.com/r/AV1/comments/ef4g5l/codecs_performance_report_6th_edition/
 
 https://hackernoon.com/encoding-av1-700b6ee4210
+
+https://github.com/OpenVisualCloud/SVT-AV1
 
 https://streaminglearningcenter.com/codecs/av1-encoding-and-4k.html
 
