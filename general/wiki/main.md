@@ -133,6 +133,8 @@ https://github.com/sitkevij/ffmpeg/tree/master/ffmpeg-3.4.1-resin-rpi-raspbian
 
 https://docs.brew.sh/Homebrew-on-Linux
 
+https://trac.ffmpeg.org/wiki/CompilationGuide
+
 https://trac.ffmpeg.org/wiki/Encode/AV1
 
 https://www.reddit.com/r/AV1/comments/ef4g5l/codecs_performance_report_6th_edition/
