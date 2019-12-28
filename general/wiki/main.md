@@ -111,6 +111,8 @@ https://superuser.com/questions/489087/what-are-the-differences-between-h-264-pr
 MP4 Wrapper
 https://wiki.videolan.org/MPEG-4/
 
+https://www.bhphotovideo.com/explora/video/tips-and-solutions/8-bit-10-bit-what-does-it-all-mean-for-your-videos
+
 
 https://developer.android.com/guide/topics/media/media-formats
 
