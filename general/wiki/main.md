@@ -76,6 +76,7 @@ Supported video encoders: HEVC, AVC, MPEG-2, JPEG,
 VP9 Supported video decoders: HEVC, AVC, VP8, VP9, MPEG-2, VC1, JPEG 
 Supported video pre-processing filters: Color Conversion, Deinterlace, Denoise, Resize, Rotate, Composition
 ```
+http://www.d0wn.com/installing-jellyfin-on-a-rasberry-pi4/
 
 https://www.elpamsoft.com/?p=Plex-Hardware-Transcoding
 
