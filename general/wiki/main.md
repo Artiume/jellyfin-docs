@@ -82,6 +82,7 @@ https://www.elpamsoft.com/?p=Plex-Hardware-Transcoding
 
 I can't find much on encoding with DXVA2 / D3D11VA on Windows. Even the QSV page is sparse. I think decoding is only supported.
 
+http://jell.yfish.us/
 
 -----
 Current Transcoding issues
