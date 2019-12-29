@@ -52,6 +52,8 @@ https://01.org/linuxmedia
 
 https://stackoverflow.com/questions/43898097/how-to-determine-the-specific-h264-encoder-in-use-from-ffmpeg-library
 
+https://ffmpeg.org/doxygen/2.8/demuxing__decoding_8c_source.html
+
 Here is a note on the Ubuntu page about libmfx (MSDK)
 ```
 Future Approach #2: Media SDK ("MSDK")
