@@ -50,6 +50,8 @@ https://01.org/sites/default/files/documentation/intel-gfx-prm-osrc-kbl-vol08-me
 Shows a nice breakdown for ffmpeg. 01.org is Intel's Open Source Technology Center
 https://01.org/linuxmedia
 
+https://stackoverflow.com/questions/43898097/how-to-determine-the-specific-h264-encoder-in-use-from-ffmpeg-library
+
 Here is a note on the Ubuntu page about libmfx (MSDK)
 ```
 Future Approach #2: Media SDK ("MSDK")
