@@ -56,6 +56,8 @@ https://ffmpeg.org/doxygen/2.8/demuxing__decoding_8c_source.html
 
 https://github.com/FFmpeg/FFmpeg/blob/aff8cf18cb0b1fa4f2e3d163c3da2f25aa6d1906/libavcodec/mpeg12dec.c#L1189
 
+https://trac.ffmpeg.org/wiki/Encode/AAC
+
 Here is a note on the Ubuntu page about libmfx (MSDK)
 ```
 Future Approach #2: Media SDK ("MSDK")
