@@ -60,6 +60,8 @@ https://trac.ffmpeg.org/wiki/Encode/AAC
 
 http://www.raspberrypi.com/
 
+https://medium.com/@ghalfacree/benchmarking-the-raspberry-pi-4-73e5afbcd54b
+
 https://hothardware.com/reviews/hot-clocked-pi-raspberry-pi-4-benchmarked-at-214-ghz
 
 https://www.tomshardware.com/news/raspberry-pi-4-game-emulators,40102.html
