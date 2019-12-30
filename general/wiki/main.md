@@ -58,6 +58,9 @@ https://github.com/FFmpeg/FFmpeg/blob/aff8cf18cb0b1fa4f2e3d163c3da2f25aa6d1906/l
 
 https://trac.ffmpeg.org/wiki/Encode/AAC
 
+http://www.raspberrypi.com/
+
+https://hothardware.com/reviews/hot-clocked-pi-raspberry-pi-4-benchmarked-at-214-ghz
 
 https://www.tomshardware.com/news/raspberry-pi-4-game-emulators,40102.html
 raspi-config
