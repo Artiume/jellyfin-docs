@@ -58,6 +58,8 @@ https://github.com/FFmpeg/FFmpeg/blob/aff8cf18cb0b1fa4f2e3d163c3da2f25aa6d1906/l
 
 https://trac.ffmpeg.org/wiki/Encode/AAC
 
+
+https://www.tomshardware.com/news/raspberry-pi-4-game-emulators,40102.html
 raspi-config
 
 Here is a note on the Ubuntu page about libmfx (MSDK)
