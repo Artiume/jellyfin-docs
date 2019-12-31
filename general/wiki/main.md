@@ -64,6 +64,8 @@ https://medium.com/@ghalfacree/benchmarking-the-raspberry-pi-4-73e5afbcd54b
 
 https://hothardware.com/reviews/hot-clocked-pi-raspberry-pi-4-benchmarked-at-214-ghz
 
+https://stackoverflow.com/questions/42688491/how-do-you-change-the-docker-container-tz-in-spring#42699704
+
 https://www.tomshardware.com/news/raspberry-pi-4-game-emulators,40102.html
 raspi-config
 
