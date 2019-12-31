@@ -1,7 +1,6 @@
 For Linux, QSV will use the libmfx library (MFX should be the proper term for QSV, MFX uses a modified VAAPI, see notes below). Normal VAAPI will use the libva library.  The Debian link I added shows a list of supported HW for VA-API, we could incorporate this into the guide. 
 
-https://github.com/Intel-FFmpeg-Plugin/Intel_FFmpeg_plugins/wiki grep -rnw '/path/to/somewhere/' -e 'pattern'
-"QSV transcode acceleration on Linux systems are enabled from FFMPEG 2.8 and forward"
+grep -rnw '/path/to/somewhere/' -e 'pattern'
 
 Intel Media Driver
 https://github.com/intel/media-driver
@@ -12,18 +11,6 @@ https://www.phoronix.com/scan.php?page=news_item&px=FFmpeg-AMD-AMF-Vulkan
 Found this
 ffmpeg has AMF enabled for x264/5
 https://www.reddit.com/r/Amd/comments/8eirp4/ffmpeg_40_released_includes_amf_hardware_encoding/
-
-AMF Linux Support still not official
-https://github.com/GPUOpen-LibrariesAndSDKs/AMF/issues/4
-
-Zen is CPU only. No hardware acceleration for any form of video decoding/encoding.
-You need APU or dGPU. It will be a while before AV1 hardware acceleration shows up though (realistically 2020+).
-
-VAAPI driver for Intel G45 & HD Graphics family uses the i965 va driver. 
-https://packages.debian.org/sid/i965-va-driver
-
-FfMpeg Support List
-https://trac.ffmpeg.org/wiki/HWAccelIntro
 
 On Ubuntu, the guide for setting up QSV is actually just using VAAPI.  
 https://wiki.ubuntu.com/IntelQuickSyncVideo 
