@@ -104,6 +104,7 @@ https://github.com/jellyfin/jellyfin/issues/1364
 https://trac.ffmpeg.org/ticket/6472
 -max_muxing_queue_size 198
 
+https://stackoverflow.com/questions/46602042/keep-ffmpeg-render-as-constant-speed-3x
 -----
 VLC has amazing support for codecs
 
