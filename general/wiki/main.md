@@ -128,6 +128,8 @@ https://www.bhphotovideo.com/explora/video/tips-and-solutions/8-bit-10-bit-what-
 
 https://developer.android.com/guide/topics/media/media-formats
 
+Mpegts fallback
+https://github.com/google/ExoPlayer/issues/209
 
 https://github.com/UniversalMediaServer/UniversalMediaServer/blob/master/src/main/external-resources/renderers/DefaultRenderer.conf
 
