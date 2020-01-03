@@ -94,6 +94,8 @@ I can't find much on encoding with DXVA2 / D3D11VA on Windows. Even the QSV page
 
 http://jell.yfish.us/
 
+https://forum.kodi.tv/showthread.php?tid=231955
+
 -----
 Current Transcoding issues
 
