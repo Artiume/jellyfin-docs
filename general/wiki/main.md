@@ -107,6 +107,10 @@ https://trac.ffmpeg.org/ticket/6472
 -max_muxing_queue_size 198
 
 https://stackoverflow.com/questions/46602042/keep-ffmpeg-render-as-constant-speed-3x
+
+ffmpeg.exe -i input.mkv -vf zscale=t=linear:npl=100,format=gbrpf32le,
+zscale=p=bt709,tonemap=tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,
+format=yuv420p -c:v libx265 -crf 18 -preset slower output.mkv
 -----
 VLC has amazing support for codecs
 
