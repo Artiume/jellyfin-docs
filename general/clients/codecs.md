@@ -13,7 +13,7 @@ title: Client Compatibility
 
 <sup>1</sup>HEVC support is possible by offloading to the OS. 
 
-<sup>2</sup>Android playback is currently broken. Client reports that h265 is supported and attempts to Directstream it.
+<sup>2</sup>Android playback is currently broken. Client reports that HEVC is supported and attempts to Directstream it.
 
 # Audio Codec Compatibility
 
