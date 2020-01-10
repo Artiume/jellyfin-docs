@@ -8,16 +8,16 @@ title: Client Compatibility
 
 ||WebOS|Android|AndroidTV|Kodi|Roku
 |---|---|---|---|---|---
-|H264|Yes|Yes|Yes|Yes|Yes
+|H264|✅|✅|✅|✅|✅
 
 # Audio Codec Compatibility
 
 ||WebOS|Android|AndroidTV|Kodi|Roku
 |---|---|---|---|---|---
-|MP3|Yes|Yes|Yes|Yes|Yes
+|MP3|✅|✅|✅|✅|✅
 
 # Container Compatibility
 
 ||WebOS|Android|AndroidTV|Kodi|Roku
 |---|---|---|---|---|---
-|mp4|Yes|Yes|Yes|Yes|Yes
+|mp4|✅|✅|✅|✅|✅
