@@ -8,8 +8,10 @@ title: Client Compatibility
 
 ||WebOS|Android|AndroidTV|Kodi|Roku
 |:---:|:---:|:---:|:---:|:---:|:---:
-|H264|✅|✅|✅|✅|✅
-H265|❌|❌|❌|✅|❌
+|H264/AVC|✅|✅|✅|✅|✅
+H265/HEVC|❌|🔶|❌|✅|❌
+
+Android playback is currently broken. Client reports that h265 is supported and attempts to Directstream it.
 
 # Audio Codec Compatibility
 
