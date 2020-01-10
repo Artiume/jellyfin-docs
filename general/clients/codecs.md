@@ -11,7 +11,7 @@ title: Client Compatibility
 |[H.264/AVC](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|✅|✅|✅|✅
 |[H.265/HEVC](https://caniuse.com/#feat=hevc "HEVC Browser Support Reference")|❌<sup>1</sup>|🔶<sup>2</sup>|❌|✅|❌
 
-<sup>1</sup>HEVC support is possible by offloading to the OS. 
+<sup>1</sup>HEVC support is potentially possible by offloading to the OS. *untested*
 
 <sup>2</sup>Android playback is currently broken. Client reports that HEVC is supported and attempts to Directstream it.
 
