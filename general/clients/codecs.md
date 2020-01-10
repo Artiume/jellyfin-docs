@@ -9,9 +9,11 @@ title: Client Compatibility
 ||WebOS|Android|AndroidTV|Kodi|Roku
 |:---:|:---:|:---:|:---:|:---:|:---:
 |[H.264/AVC](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|✅|✅|✅|✅
-|[H.265/HEVC](https://caniuse.com/#feat=hevc "HEVC Browser Support Reference")|❌|🔶<sup>1</sup>|❌|✅|❌
+|[H.265/HEVC](https://caniuse.com/#feat=hevc "HEVC Browser Support Reference")|❌<sup>1</sup>|🔶<sup>2</sup>|❌|✅|❌
 
-<sup>1</sup>Android playback is currently broken. Client reports that h265 is supported and attempts to Directstream it.
+<sup>1</sup>HEVC support is possible by offloading to the OS. 
+
+<sup>2</sup>Android playback is currently broken. Client reports that h265 is supported and attempts to Directstream it.
 
 # Audio Codec Compatibility
 
