@@ -35,3 +35,5 @@ https://launchpad.net/~saiarcot895/+archive/ubuntu/chromium-beta
 https://forum.odroid.com/viewtopic.php?t=21215
 
 https://answers.launchpad.net/~saiarcot895/+archive/ubuntu/chromium-beta
+
+https://stackoverflow.com/questions/22710099/ffmpeg-create-blank-screen-with-text-video#22719247
