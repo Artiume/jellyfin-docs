@@ -185,3 +185,8 @@ https://streaminglearningcenter.com/blogs/good-news-av1-encoding-times-drop-to-n
 https://github.com/OpenVisualCloud/SVT-AV1/blob/master/ffmpeg_plugin/0001-Add-ability-for-ffmpeg-to-run-svt-av1.patch
 
 https://medium.com/@ewoutterhoeven/av1-is-ready-for-prime-time-svt-av1-beats-x265-and-libvpx-in-quality-bitrate-and-speed-31c1960703db
+
+___
+
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
