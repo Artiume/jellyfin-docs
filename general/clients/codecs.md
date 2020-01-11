@@ -123,6 +123,8 @@ https://en.wikipedia.org/wiki/Digital_container_format
 
 http://mp4ra.org/#/
 
+https://en.wikipedia.org/wiki/List_of_open-source_codecs
+
 ### Streaming
 
 https://help.encoding.com/knowledge-base/article/correct-mime-types-for-serving-video-files/
