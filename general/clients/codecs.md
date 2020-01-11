@@ -25,9 +25,9 @@ If the audio codec is unsupported or incompatible (such as due to a 5.1 stream p
 |:---:|:---:|:---:|:---:|:---:|:---:
 |MP3|✅|✅|✅|✅|✅
 
-# Container Compatibility
+# Subtitle Compatibility
 
-Subtiles can be a subtle issue for transcoding. Containers have a limited number of subtitles that are supported. If subtitles need to be transcoded, it will happen one of two ways. They can be converted into another supported format (text-based subtitles) or burned into the video (image based and ASS based) due to the subtitles transcoding not being supported. This is the most intenstive method of transcoding due to two transcodings happening at once; applying the subtitle layer on top of the video layer. 
+Subtiles can be a subtle issue for transcoding. Containers have a limited number of subtitles that are supported. If subtitles need to be transcoded, it will happen one of two ways. They can be converted into another supported format (text-based subtitles) or burned into the video (image/lossless based and ASS based) due to the subtitles transcoding not being supported. This is the most intenstive method of transcoding due to two transcodings happening at once; applying the subtitle layer on top of the video layer. 
 
 # Container Compatibility
 
