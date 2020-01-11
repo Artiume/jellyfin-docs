@@ -3,7 +3,7 @@ uid: codecs
 title: Client Compatibility
 ---
 
- # [Codec Tables](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats "Wikipedia's full codec table")
+ # [Codec Tables](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats "Wikipedia's codec tables")
 ## Video Compatibility
 
 If the video codec is unsupported, this will result in transcoding. This is the most intensive CPU component of transcoding. Decoding is less intensive than encoding.
