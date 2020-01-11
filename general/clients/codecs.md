@@ -122,6 +122,8 @@ https://en.wikipedia.org/wiki/Moving_Picture_Experts_Group#Standards
 
 https://trac.ffmpeg.org/wiki/Encode/AAC
 
+https://trac.ffmpeg.org/wiki/Encode/VP9
+
 https://www.velleman.eu/downloads/3/h264_vs_mpeg4_en.pdf
 
 https://stackoverflow.com/questions/22710099/ffmpeg-create-blank-screen-with-text-video#22719247
@@ -136,8 +138,6 @@ https://en.wikipedia.org/wiki/Digital_container_format
 
 http://mp4ra.org/#/
 
-https://www.matroska.org/technical/specs/subtitles/ssa.html
-
 https://en.wikipedia.org/wiki/List_of_open-source_codecs
 
 https://en.wikipedia.org/wiki/Comparison_of_audio_coding_formats
@@ -145,6 +145,22 @@ https://en.wikipedia.org/wiki/Comparison_of_audio_coding_formats
 https://github.com/MPEGGroup/isobmff
 
 https://trac.ffmpeg.org/wiki/Encode/H.264#FAQ
+
+https://www.webmproject.org/docs/container/
+
+https://superuser.com/questions/710115/is-there-anyway-to-play-mp4-avi-mkv-inside-firefox-browser
+
+https://caniuse.com/#feat=webm
+
+https://commons.wikimedia.org/wiki/Help:Converting_video#Common_editing
+
+### Subtitles
+
+https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API
+
+https://www.matroska.org/technical/specs/subtitles/ssa.html
+
+https://handbrake.fr/docs/en/1.0.0/advanced/subtitles.html
 
 ### Streaming
 
