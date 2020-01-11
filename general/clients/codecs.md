@@ -41,7 +41,7 @@ If the container is unsupported, this will result in remuxing. The video and aud
 ||WebOS|Android|AndroidTV|Kodi|Roku
 |:---:|:---:|:---:|:---:|:---:|:---:
 |[mp4](https://en.wikipedia.org/wiki/MPEG-4_Part_14)|✅|✅|✅|✅|✅
-|MKV<sup>1, 2</sup>|🔶|🔶|🔶|🔶|🔶
+|[MKV](https://en.wikipedia.org/wiki/Matroska)<sup>1, 2</sup>|🔶|🔶|🔶|🔶|🔶
 |[ts](https://en.wikipedia.org/wiki/MPEG_transport_stream)|✅|✅|✅|✅|✅
 
 
