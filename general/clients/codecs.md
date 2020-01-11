@@ -164,3 +164,5 @@ https://www.reddit.com/r/IPTV/comments/avdqbq/hls_m3u8_vs_mpegts_ts_which_do_you
 https://www.wowza.com/blog/what-is-cmaf
 
 https://github.com/video-dev/hlsjs-rfcs/blob/a6e7cc44294b83a7dba8c4f45df6d80c4bd13955/proposals/0001-lhls.md
+
+https://github.com/MediaBrowser/Emby/pull/2276/files#diff-b4fa0a8cab056b31b2d43dd54c9669af
