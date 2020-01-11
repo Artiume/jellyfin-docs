@@ -26,7 +26,9 @@ title: Client Compatibility
 ||WebOS|Android|AndroidTV|Kodi|Roku
 |:---:|:---:|:---:|:---:|:---:|:---:
 |mp4|✅|✅|✅|✅|✅
+|MKV<sup>1</sup>|🔶|🔶|🔶|🔶|🔶
 
+<sup>1</sup>MKV containers can hold nearly any codec. *verify actual support*
 
 Notes
 
