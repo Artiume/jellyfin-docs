@@ -108,6 +108,8 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
 
 https://web.archive.org/web/20160615194616/http://www.mp4ra.org/codecs.html
 
+https://web.archive.org/web/20190427210855/https://simpleiptv.net/?page_id=473
+
 https://mux.com/blog/the-community-gave-us-low-latency-live-streaming-then-apple-took-it-away/
 
 https://trac.ffmpeg.org/wiki/Encode/AAC
