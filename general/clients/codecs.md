@@ -122,6 +122,8 @@ https://trac.ffmpeg.org/wiki/colorspace
 
 https://launchpad.net/~saiarcot895/+archive/ubuntu/chromium-beta
 
+https://stackoverflow.com/questions/50971187/can-i-build-chromium-with-ffmpeg-to-support-all-video-formats
+
 https://forum.odroid.com/viewtopic.php?t=21215
 
 https://answers.launchpad.net/~saiarcot895/+archive/ubuntu/chromium-beta
