@@ -51,14 +51,15 @@ If the container is unsupported, this will result in remuxing. The video and aud
 
 ||WebOS|Android|AndroidTV|Kodi|Roku
 |:---:|:---:|:---:|:---:|:---:|:---:
-|[mp4](https://en.wikipedia.org/wiki/MPEG-4_Part_14)|✅|✅|✅|✅|✅
-|[MKV](https://en.wikipedia.org/wiki/Matroska)<sup>1, 2</sup>|❌|🔶|🔶|🔶|🔶
+|[mp4](https://en.wikipedia.org/wiki/MPEG-4_Part_14)<sup>1</sup>|✅|✅|✅|✅|✅
+|[MKV](https://en.wikipedia.org/wiki/Matroska)<sup>2, 3</sup>|❌|🔶|🔶|🔶|🔶
 |[ts](https://en.wikipedia.org/wiki/MPEG_transport_stream)|✅|✅|✅|✅|✅
 
+<sup>1</sup>mp4 containers are one of the few containers that will not remux.
 
-<sup>1</sup>MKV containers can hold nearly any codec. *support not verified, initial testing is showing that all containers convert to ts using hls streaming protocol* Mp4 successfully streamed using http protocol instead of hls protocol and did not remux.
+<sup>2</sup>MKV containers can hold nearly any codec.  Mp4 successfully streamed using http protocol instead of hls protocol and did not remux.
 
-<sup>2</sup>webm containers that have file extension mkv are marked as mkv on the media info page, and properly labeled as webm during playback. 
+<sup>3</sup>webm containers that have file extension mkv are marked as mkv on the media info page, and properly labeled as webm during playback. 
 
 
     *Allow video playback that requires conversion without re-encoding* was disabled. Played avi (MPEG4, XVID, Advanced Simple Profile, Level5) with ac3 ([0] [0][0] / 0x2000), 48000 Hz, stereo, fltp, 224 kb/s
