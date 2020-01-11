@@ -57,7 +57,7 @@ If the container is unsupported, this will result in remuxing. The video and aud
 
 <sup>1</sup>mp4 containers are one of the few containers that will not remux.
 
-<sup>2</sup>MKV containers can hold nearly any codec.  Mp4 successfully streamed using http protocol instead of hls protocol and did not remux.
+<sup>2</sup>MKV containers can hold nearly any codec, but are not compatible with streaming and remuxes.
 
 <sup>3</sup>webm containers that have file extension mkv are marked as mkv on the media info page, and properly labeled as webm during playback. 
 
