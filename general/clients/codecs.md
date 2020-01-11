@@ -6,6 +6,8 @@ title: Client Compatibility
 
 # Video Codec Compatibility
 
+If the video codec is unsupported, this will result in transcoding. This is the most intensive CPU component of transcoding. Decoding is less intensive than encoding.
+
 ||WebOS|Android|AndroidTV|Kodi|Roku
 |:---:|:---:|:---:|:---:|:---:|:---:
 |[H.264/AVC](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|✅|✅|✅|✅
@@ -17,11 +19,15 @@ title: Client Compatibility
 
 # Audio Codec Compatibility
 
+If the audio codec is unsupported or incompatible (such as due to a 5.1 stream played on a stereo device), the audio codec must be transcoded. This is not nearly as intensive as video coding.
+
 ||WebOS|Android|AndroidTV|Kodi|Roku
 |:---:|:---:|:---:|:---:|:---:|:---:
 |MP3|✅|✅|✅|✅|✅
 
 # Container Compatibility
+
+If the container is unsupported, this will result in remuxing. The video and audio codec will remain intact, but wrapped in a container that is supported. This is the least intensive process. *need to verify CPU loading compared to audio*
 
 ||WebOS|Android|AndroidTV|Kodi|Roku
 |:---:|:---:|:---:|:---:|:---:|:---:
