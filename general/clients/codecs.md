@@ -61,18 +61,6 @@ If the container is unsupported, this will result in remuxing. The video and aud
 
 <sup>3</sup>webm containers that have file extension mkv are marked as mkv on the media info page, and properly labeled as webm during playback. 
 
-
-    *Allow video playback that requires conversion without re-encoding* was disabled. Played avi (MPEG4, XVID, Advanced Simple Profile, Level5) with ac3 ([0] [0][0] / 0x2000), 48000 Hz, stereo, fltp, 224 kb/s
-    Played another video with transcoding disabled, h264, aac 2 ch, mkv (webm). It converted to hls with ts as well.
-
-[hls @ 0x55925f432c40] Opening '/ram_transcode/bd75624fda66ef5ed43d1e6a19de11a6240.ts' for writing
-frame=  641 fps=0.0 q=-1.0 Lsize=N/A time=00:24:03.00 bitrate=N/A speed=9.43e+04x    
-
-hls + ac3 > aac conversion
-
-frame=  575 fps=0.0 q=-1.0 size=N/A time=00:00:53.10 bitrate=N/A speed= 106x    
-
-
 # Codec Tests:
 
 ## WebOS
@@ -106,6 +94,20 @@ AC3 stereo
     Stream #0:1: Audio: ac3 ([0] [0][0] / 0x2000), 48000 Hz, stereo, fltp, 224 kb/s
     
     
+    
+    
+---
+
+    *Allow video playback that requires conversion without re-encoding* was disabled. Played avi (MPEG4, XVID, Advanced Simple Profile, Level5) with ac3 ([0] [0][0] / 0x2000), 48000 Hz, stereo, fltp, 224 kb/s
+    Played another video with transcoding disabled, h264, aac 2 ch, mkv (webm). It converted to hls with ts as well.
+
+[hls @ 0x55925f432c40] Opening '/ram_transcode/bd75624fda66ef5ed43d1e6a19de11a6240.ts' for writing
+frame=  641 fps=0.0 q=-1.0 Lsize=N/A time=00:24:03.00 bitrate=N/A speed=9.43e+04x    
+
+hls + ac3 > aac conversion
+
+frame=  575 fps=0.0 q=-1.0 size=N/A time=00:00:53.10 bitrate=N/A speed= 106x   
+
 ## Notes
 
 ### Codecs
