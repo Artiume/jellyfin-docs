@@ -100,6 +100,8 @@ AC3 stereo
 ### Codecs
 [Chomra Subsampling](https://trac.ffmpeg.org/wiki/Chroma%20Subsampling)
 
+https://www.projectorcentral.com/chroma-subsampling-explained.htm
+
 Bit depth 8 bit, 
 Pixel format yuv420p
 
