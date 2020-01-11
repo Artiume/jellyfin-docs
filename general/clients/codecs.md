@@ -38,7 +38,7 @@ Subtiles can be a subtle issue for transcoding. Containers have a limited number
 
 ## [Container Compatibility](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers)
 
-If the container is unsupported, this will result in remuxing. The video and audio codec will remain intact, but wrapped in a container that is supported. This is the least intensive process, remuxing speed can be up to 10000x real time, remuxing + audio (ac3 2ch to aac 2ch) happened at 100x real time on the same sample.
+If the container is unsupported, this will result in remuxing. The video and audio codec will remain intact, but wrapped in a container that is supported. This is the least intensive process. Most video containers will be remuxed to use the hls streaming protocol and ts containers. Disabling remuxing shouldn't be a concern even for a Rpi3.
 
 ||WebOS|Android|AndroidTV|Kodi|Roku
 |:---:|:---:|:---:|:---:|:---:|:---:
