@@ -34,7 +34,7 @@ Subtiles can be a subtle issue for transcoding. Containers have a limited number
 
 ## Container Compatibility
 
-If the container is unsupported, this will result in remuxing. The video and audio codec will remain intact, but wrapped in a container that is supported. This is the least intensive process, remuxing speed can be up to 10000x real time, remuxing + audio happened at 100x real time on the same sample.
+If the container is unsupported, this will result in remuxing. The video and audio codec will remain intact, but wrapped in a container that is supported. This is the least intensive process, remuxing speed can be up to 10000x real time, remuxing + audio (ac3 2ch to aac 2ch) happened at 100x real time on the same sample.
 
 
 
@@ -101,6 +101,8 @@ https://launchpad.net/~saiarcot895/+archive/ubuntu/chromium-beta
 https://forum.odroid.com/viewtopic.php?t=21215
 
 https://answers.launchpad.net/~saiarcot895/+archive/ubuntu/chromium-beta
+
+https://help.encoding.com/knowledge-base/article/correct-mime-types-for-serving-video-files/
 
 https://web.archive.org/web/20160615194616/http://www.mp4ra.org/codecs.html
 
