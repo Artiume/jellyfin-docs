@@ -125,6 +125,10 @@ http://mp4ra.org/#/
 
 https://en.wikipedia.org/wiki/List_of_open-source_codecs
 
+https://en.wikipedia.org/wiki/Comparison_of_audio_coding_formats
+
+https://github.com/MPEGGroup/isobmff
+
 ### Streaming
 
 https://help.encoding.com/knowledge-base/article/correct-mime-types-for-serving-video-files/
