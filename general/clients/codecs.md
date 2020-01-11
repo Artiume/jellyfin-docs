@@ -4,9 +4,10 @@ title: Codec Compatibility
 ---
 
  # [Codec Tables](https://en.wikipedia.org/wiki/List_of_codecs "Wikipedia's list of all codecs")
+ 
+ The goal is to DirectPlay all media. This means the container, video, audio and subtitles are all compatible with the client. DirectStream will occur if the audio, container or subtitles happen to not be supported. Subtitles can be tricky because they can cause DirectStreaming (subtitles are remuxed) or video transcoding (burning in subtitles) to occur. If the video codec is unsupported, this will result in video transcoding. This is the most intensive CPU component of transcoding. Decoding is less intensive than encoding.
+ 
 ## [Video Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats "Wikipedia's video codec tables")
-
-If the video codec is unsupported, this will result in transcoding. This is the most intensive CPU component of transcoding. Decoding is less intensive than encoding.
 
 ||WebOS|Android|AndroidTV|Kodi|[Roku](https://developer.roku.com/docs/specs/streaming.md)|
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -39,6 +40,8 @@ If the audio codec is unsupported or incompatible (such as playing a 5.1 channel
 ## [Subtitle Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats#Subtitle/caption_formats_support "Wikipedia's subtitle codec tables")
 
 Subtiles can be a subtle issue for transcoding. Containers have a limited number of subtitles that are supported. If subtitles need to be transcoded, it will happen one of two ways. They can be converted into another supported format (text-based subtitles) or burned into the video (image/lossless based and ASS based) due to the subtitles transcoding not being supported. This is the most intenstive method of transcoding due to two transcodings happening at once; applying the subtitle layer on top of the video layer. 
+
+Note: ASS Subtitles are only supported by mkv files. Mkv files can't natively be streamed therefore ASS subtitles will always inherently be burned into the video. This is not a limitation of JF. 
 
 ## [Container Compatibility](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers)
 
@@ -140,6 +143,8 @@ https://avidemux.org/smif/index.php?topic=17197.0
 
 https://en.wikipedia.org/wiki/Digital_container_format
 
+https://wiki.videolan.org/Container_format/
+
 http://mp4ra.org/#/
 
 https://en.wikipedia.org/wiki/List_of_open-source_codecs
@@ -168,11 +173,17 @@ https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers#Browser_co
 
 https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/cross_browser_video_player
 
+https://developer.roku.com/docs/specs/streaming.md
+
 ### Subtitles
+
+https://en.wikibooks.org/wiki/FFMPEG_An_Intermediate_Guide/subtitle_options
 
 https://wiki.multimedia.cx/index.php/Category:Subtitle_Formats
 
 https://trac.ffmpeg.org/wiki/ExtractSubtitles
+
+https://en.wikibooks.org/wiki/FFMPEG_An_Intermediate_Guide/subtitle_options
 
 http://web.archive.org/web/20160117160743/http://screenfont.ca/learn/
 
@@ -183,6 +194,10 @@ https://www.matroska.org/technical/specs/subtitles/ssa.html
 https://handbrake.fr/docs/en/1.0.0/advanced/subtitles.html
 
 https://wiki.multimedia.cx/index.php/Run_Length_Encoding
+
+https://trac.ffmpeg.org/wiki/HowToBurnSubtitlesIntoVideo
+
+http://www.ffmpeg-archive.org/How-do-I-encode-DVB-Subtitles-td4651021.html
 
 https://www.reddit.com/r/ffmpeg/comments/8kwimu/how_do_i_extractconvert_assssa_subtitles_into_srt/dzbyrfl/
 
@@ -195,6 +210,12 @@ https://superuser.com/questions/1358691/how-do-i-simply-edit-the-subtitles-of-a-
 https://forums.plex.tv/t/quick-and-easy-way-to-get-embedded-ass-subtitles-from-mkv-files/38914
 
 https://forums.plex.tv/t/automatic-subtitle-and-audio-transfer-sync-scripts/441383
+
+https://superuser.com/questions/117929/open-source-command-line-subtitle-converter
+
+https://github.com/donmelton/video_transcoding/issues/243
+
+https://handbrake.fr/docs/en/1.0.0/advanced/subtitles.html
 
 https://trac.ffmpeg.org/ticket/8407
 
@@ -213,6 +234,8 @@ https://help.encoding.com/knowledge-base/article/correct-mime-types-for-serving-
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
 
 https://www.iana.org/assignments/media-types/media-types.xhtml#video
+
+https://www.videolan.org/streaming-features.html
 
 https://web.archive.org/web/20190427210855/https://simpleiptv.net/?page_id=473
 
@@ -235,3 +258,25 @@ https://www.wowza.com/blog/what-is-cmaf
 https://github.com/video-dev/hlsjs-rfcs/blob/a6e7cc44294b83a7dba8c4f45df6d80c4bd13955/proposals/0001-lhls.md
 
 https://github.com/MediaBrowser/Emby/pull/2276
+
+### Misc
+
+`
+Job running: EAE_ROOT='/tmp/pms-2a0316ba-f4cf-4759-af8c-d676a199e92d/EasyAudioEncoder' FFMPEG_EXTERNAL_LIBS='/config/Library/Application\ Support/Plex\ Media\ Server/Codecs/8bf330d-2818-linux-x86_64/' XDG_CACHE_HOME='/config/Library/Application Support/Plex Media Server/Cache' XDG_DATA_HOME='/usr/lib/plexmediaserver/Resources' X_PLEX_TOKEN='xxxxxxxxxxxxxxxxxxxx' '/usr/lib/plexmediaserver/Plex Transcoder' '-codec:0' 'h264' '-noaccurate_seek' '-analyzeduration' '20000000' '-probesize' '20000000' '-i' '/yourcomputer/data/unionfs/media/anime/Another/Season 1/Another - S01E01 - Rough Sketch HDTV-720p.mkv' '-map' '0:0' '-metadata:s:0' 'language=jpn' '-codec:0' 'copy' '-map' '0:1' '-metadata:s:1' 'language=eng' '-codec:1' 'copy' '-f' 'dash' '-seg_duration' '5' '-init_seg_name' 'init-stream$RepresentationID$.m4s' '-media_seg_name' 'chunk-stream$RepresentationID$-$Number%05d$.m4s' '-window_size' '5' '-delete_removed' 'false' '-skip_to_segment' '1' '-time_delta' '0.0625' '-manifest_name' 'http://127.0.0.1:32400/video/:/transcode/session/whrtmao0hvjo0120h21kz6cb/d5b670a4-a535-490f-881e-dcbba86b8f82/manifest' '-avoid_negative_ts' 'disabled' '-map_metadata' '-1' '-map_chapters' '-1' 'dash' '-start_at_zero' '-copyts' '-vsync' 'cfr' '-y' '-nostats' '-loglevel' 'quiet' '-loglevel_plex' 'error' '-progressurl' 'http://127.0.0.1:32400/video/:/transcode/session/whrtmao0hvjo0120h21kz6cb/d5b670a4-a535-490f-881e-dcbba86b8f82/progress'
+`
+
+`
+/usr/local/bin/ffmpeg -fflags +genpts -f matroska,webm -i file:"/media/anime/Another/Season 1/Another - S01E01 - Rough Sketch HDTV-720p.mkv" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:1 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -copyts -vsync -1 -codec:a:0 copy -f hls -max_delay 5000000 -avoid_negative_ts disabled -start_at_zero -hls_time 6 -individual_header_trailer 0 -hls_segment_type mpegts -start_number 0 -hls_segment_filename "/ram_transcode/cba664b5090123ed25d706c5aae18e45%d.ts" -hls_playlist_type vod -hls_list_size 0 -y "/ram_transcode/cba664b5090123ed25d706c5aae18e45.m3u8"
+`
+---
+`
+/usr/local/bin/ffmpeg '-codec:0' 'h264' '-noaccurate_seek' '-analyzeduration' '20000000' '-probesize' '20000000' '-i' '/yourcomputer/data/unionfs/media/anime/Another/Season 1/Another - S01E01 - Rough Sketch HDTV-720p.mkv' '-map' '0:0' '-metadata:s:0' 'language=jpn' '-codec:0' 'copy' '-map' '0:1' '-metadata:s:1' 'language=eng' '-codec:1' 'copy' '-f' 'dash' '-seg_duration' '5' '-init_seg_name' 'init-stream$RepresentationID$.m4s' '-media_seg_name' 'chunk-stream$RepresentationID$-$Number%05d$.m4s' '-window_size' '5' 'false'  '1' '-time_delta' '0.0625' '-manifest_name' 'http://127.0.0.1:32400/video/:/transcode/session/whrtmao0hvjo0120h21kz6cb/d5b670a4-a535-490f-881e-dcbba86b8f82/manifest' '-avoid_negative_ts' 'disabled' '-map_metadata' '-1' '-map_chapters' '-1' 'dash' '-start_at_zero' '-copyts' '-vsync' 'cfr' '-y' '-progressurl' 'http://127.0.0.1:32400/video/:/transcode/session/whrtmao0hvjo0120h21kz6cb/d5b670a4-a535-490f-881e-dcbba86b8f82/progress'
+`
+Removed: '-nostats' '-loglevel' 'quiet' '-loglevel_plex' '-delete_removed' '-skip_to_segment'
+`
+/usr/local/bin/ffmpeg -fflags +genpts -f matroska,webm -i file:"/media/anime/Another/Season 1/Another - S01E01 - Rough Sketch HDTV-720p.mkv" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:1 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -copyts -vsync -1 -codec:a:0 copy -f hls -max_delay 5000000 -avoid_negative_ts disabled -start_at_zero -hls_time 6 -individual_header_trailer 0 -hls_segment_type mpegts -start_number 0 -hls_segment_filename "/ram_transcode/cba664b5090123ed25d706c5aae18e45%d.ts" -hls_playlist_type vod -hls_list_size 0 -y "/ram_transcode/cba664b5090123ed25d706c5aae18e45.m3u8"
+`
+---
+`
+/usr/local/bin/ffmpeg -re -i file:"/media/samples/jellyfish-3-mbps-hd-h264.mkv" -map 0 -map 0 -c:a libmp3lame -c:v libx264 -b:v:0 800k -b:v:1 300k -s:v:1 320x170 -profile:v:1 baseline -profile:v:0 main -bf 1 -keyint_min 120 -g 120 -sc_threshold 0 -b_strategy 0 -ar:a:1 22050 -use_timeline 1 -use_template 1 -window_size 5 -adaptation_sets "id=0,streams=v id=1,streams=a" -f dash /ram_transcode/cba664b5090123ed25d706c5aae18e45dfdfddf.mpd
+`
