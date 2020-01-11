@@ -148,6 +148,8 @@ https://trac.ffmpeg.org/wiki/Encode/H.264#FAQ
 
 ### Streaming
 
+https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser/9851769#9851769
+
 https://help.encoding.com/knowledge-base/article/correct-mime-types-for-serving-video-files/
 
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
