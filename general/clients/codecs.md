@@ -116,6 +116,8 @@ https://trac.ffmpeg.org/wiki/Encode/AAC
 
 https://www.lifewire.com/m3u8-file-2621956
 
+https://blog.jonlu.ca/posts/illegal-streams
+
 https://www.reddit.com/r/IPTV/comments/avdqbq/hls_m3u8_vs_mpegts_ts_which_do_you_find_better/
 
 https://stackoverflow.com/questions/22710099/ffmpeg-create-blank-screen-with-text-video#22719247
