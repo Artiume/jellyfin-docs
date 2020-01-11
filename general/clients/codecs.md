@@ -13,7 +13,7 @@ title: Codec Compatibility
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |[H.262/Xvid](https://en.wikipedia.org/wiki/MPEG-4_Part_2)|✅|✅|✅|✅|✅|
 |[H.262/DivX](https://en.wikipedia.org/wiki/DivX)|✅|✅|✅|✅|✅|
-|[H.264/AVC](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅<sup>3</sup>|✅|✅|✅|✅|
+|[H.264/AVC](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|🔶<sup>3</sup>|✅|✅|✅|✅|
 |[H.265/HEVC](https://caniuse.com/#feat=hevc "HEVC Browser Support Reference")|❌<sup>1</sup>|🔶<sup>2</sup>|❌|✅|❌|
 
 <sup>1</sup>HEVC support is potentially possible by offloading to the OS. *untested*
