@@ -48,16 +48,34 @@ If the container is unsupported, this will result in remuxing. The video and aud
 ## WebOS
 ### Video
 h264 CB, 8bit
-Stream #0:0(eng): Video: h264 (Constrained Baseline), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 23.98 fps, 23.98 tbr, 1k tbn, 47.95 tbc (default)
+
+    Stream #0:0(eng): Video: h264 (Constrained Baseline), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 23.98 fps, 23.98 tbr, 1k tbn, 47.95 tbc (default)
+
 
 h264 high, 8bit
+
+    Stream #0:0: Video: h264 (High), yuv420p(progressive), 640x480, SAR 1:1 DAR 4:3, 23.98 fps, 23.98 tbr, 1k tbn, 47.95 tbc (default)
+
+
+MPEG4, XVID, Advanced Simple Profile, Level5
+
+    Stream #0:0: Video: mpeg4 (Advanced Simple Profile) (XVID / 0x44495658), yuv420p, 608x336 [SAR 1:1 DAR 38:21], 1121 kb/s, 25 fps, 25 tbr, 25 tbn, 25 tbc
 
 
 ### Audio
 AC3 5.1 ch > aac 2.0 ch 
-Stream #0:1(eng): Audio: ac3, 48000 Hz, 5.1(side), fltp, 640 kb/s (default) > Stream #0:1: Audio: aac (LC), 48000 Hz, stereo, fltp, 384 kb/s (default)
+    
+    Stream #0:1(eng): Audio: ac3, 48000 Hz, 5.1(side), fltp, 640 kb/s (default) > Stream #0:1: Audio: aac (LC), 48000 Hz, stereo, fltp, 384 kb/s (default)
 
+aac 2.0 ch
+    
+    Stream #0:1(jpn): Audio: aac (LC), 48000 Hz, stereo, fltp (default)
 
+AC3 stereo
+
+    Stream #0:1: Audio: ac3 ([0] [0][0] / 0x2000), 48000 Hz, stereo, fltp, 224 kb/s
+    
+    
 ## Notes
 [Chomra Subsampling](https://trac.ffmpeg.org/wiki/Chroma%20Subsampling)
 
