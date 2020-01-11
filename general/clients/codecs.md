@@ -179,6 +179,8 @@ https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/cros
 
 https://developer.roku.com/docs/specs/streaming.md
 
+https://trac.ffmpeg.org/ticket/7037
+
 ### Subtitles
 
 https://en.wikibooks.org/wiki/FFMPEG_An_Intermediate_Guide/subtitle_options
