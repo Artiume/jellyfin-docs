@@ -48,7 +48,7 @@ If the container is unsupported, this will result in remuxing. The video and aud
 
 <sup>1</sup>MKV containers can hold nearly any codec. *verify actual support*
 
-<sup>2</sup>webm containers that have file extension mkv are marked as mkv on the media info page, and properly labeled as wemb during playback. 
+<sup>2</sup>webm containers that have file extension mkv are marked as mkv on the media info page, and properly labeled as webm during playback. 
 
 
     *Allow video playback that requires conversion without re-encoding* was disabled. Played avi (MPEG4, XVID, Advanced Simple Profile, Level5) with ac3 ([0] [0][0] / 0x2000), 48000 Hz, stereo, fltp, 224 kb/s
