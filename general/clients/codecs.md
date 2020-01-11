@@ -137,6 +137,8 @@ https://en.wikipedia.org/wiki/Comparison_of_audio_coding_formats
 
 https://github.com/MPEGGroup/isobmff
 
+https://trac.ffmpeg.org/wiki/Encode/H.264#FAQ
+
 ### Streaming
 
 https://help.encoding.com/knowledge-base/article/correct-mime-types-for-serving-video-files/
