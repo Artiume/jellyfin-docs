@@ -132,6 +132,8 @@ https://en.wikipedia.org/wiki/Digital_container_format
 
 http://mp4ra.org/#/
 
+https://www.matroska.org/technical/specs/subtitles/ssa.html
+
 https://en.wikipedia.org/wiki/List_of_open-source_codecs
 
 https://en.wikipedia.org/wiki/Comparison_of_audio_coding_formats
