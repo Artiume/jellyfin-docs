@@ -36,20 +36,24 @@ If the container is unsupported, this will result in remuxing. The video and aud
 ||WebOS|Android|AndroidTV|Kodi|Roku
 |:---:|:---:|:---:|:---:|:---:|:---:
 |mp4|✅|✅|✅|✅|✅
-|MKV<sup>1</sup>|🔶|🔶|🔶|🔶|🔶
+|MKV<sup>1, 2</sup>|🔶|🔶|🔶|🔶|🔶
 
 <sup>1</sup>MKV containers can hold nearly any codec. *verify actual support*
+<sup>2</sup>webm containers that have file extension mkv are marked as mkv on the media info page, and properly labeled as wemb during playback. 
 
-# Codec Tables:
+# Codec Tests:
 
 
 ## WebOS
 ### Video
-h264 CB, 8bit, video good.
+h264 CB, 8bit
 Stream #0:0(eng): Video: h264 (Constrained Baseline), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 23.98 fps, 23.98 tbr, 1k tbn, 47.95 tbc (default)
 
+h264 high, 8bit
+
+
 ### Audio
-AC3 5.1 down converted to 2.0 aac
+AC3 5.1 ch > aac 2.0 ch 
 Stream #0:1(eng): Audio: ac3, 48000 Hz, 5.1(side), fltp, 640 kb/s (default) > Stream #0:1: Audio: aac (LC), 48000 Hz, stereo, fltp, 384 kb/s (default)
 
 
