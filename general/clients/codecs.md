@@ -115,6 +115,8 @@ https://www.projectorcentral.com/chroma-subsampling-explained.htm
 Bit depth 8 bit, 
 Pixel format yuv420p
 
+https://trac.ffmpeg.org/wiki/colorspace
+
 https://launchpad.net/~saiarcot895/+archive/ubuntu/chromium-beta
 
 https://forum.odroid.com/viewtopic.php?t=21215
