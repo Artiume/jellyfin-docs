@@ -3,8 +3,8 @@ uid: codecs
 title: Client Compatibility
 ---
 
-
-# Video Codec Compatibility
+ # Codec Tables
+## Video Compatibility
 
 If the video codec is unsupported, this will result in transcoding. This is the most intensive CPU component of transcoding. Decoding is less intensive than encoding.
 
@@ -17,7 +17,7 @@ If the video codec is unsupported, this will result in transcoding. This is the 
 
 <sup>2</sup>Android playback is currently broken. Client reports that HEVC is supported and attempts to Directstream it.
 
-# Audio Codec Compatibility
+## Audio Codec Compatibility
 
 If the audio codec is unsupported or incompatible (such as due to a 5.1 stream played on a stereo device), the audio codec must be transcoded. This is not nearly as intensive as video coding.
 
@@ -25,11 +25,11 @@ If the audio codec is unsupported or incompatible (such as due to a 5.1 stream p
 |:---:|:---:|:---:|:---:|:---:|:---:
 |MP3|✅|✅|✅|✅|✅
 
-# Subtitle Compatibility
+## Subtitle Compatibility
 
 Subtiles can be a subtle issue for transcoding. Containers have a limited number of subtitles that are supported. If subtitles need to be transcoded, it will happen one of two ways. They can be converted into another supported format (text-based subtitles) or burned into the video (image/lossless based and ASS based) due to the subtitles transcoding not being supported. This is the most intenstive method of transcoding due to two transcodings happening at once; applying the subtitle layer on top of the video layer. 
 
-# Container Compatibility
+## Container Compatibility
 
 If the container is unsupported, this will result in remuxing. The video and audio codec will remain intact, but wrapped in a container that is supported. This is the least intensive process. *need to verify CPU loading compared to audio*
 
@@ -40,9 +40,23 @@ If the container is unsupported, this will result in remuxing. The video and aud
 
 <sup>1</sup>MKV containers can hold nearly any codec. *verify actual support*
 
-Notes
+# Codec Tables:
+
+
+## WebOS
+### Video
+h264 CB, 8bit, video good.
+Stream #0:0(eng): Video: h264 (Constrained Baseline), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 23.98 fps, 23.98 tbr, 1k tbn, 47.95 tbc (default)
+
+### Audio
+AC3 5.1 down converted to 2.0 aac
+Stream #0:1(eng): Audio: ac3, 48000 Hz, 5.1(side), fltp, 640 kb/s (default) > Stream #0:1: Audio: aac (LC), 48000 Hz, stereo, fltp, 384 kb/s (default)
+
+
+## Notes
 [Chomra Subsampling](https://trac.ffmpeg.org/wiki/Chroma%20Subsampling)
-Bit depth 8 bit
+
+Bit depth 8 bit, 
 Pixel format yuv420p
 
 https://launchpad.net/~saiarcot895/+archive/ubuntu/chromium-beta
