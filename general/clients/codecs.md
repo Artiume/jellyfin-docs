@@ -13,12 +13,14 @@ title: Codec Compatibility
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |[H.262/Xvid](https://en.wikipedia.org/wiki/MPEG-4_Part_2)|✅|✅|✅|✅|✅|
 |[H.262/DivX](https://en.wikipedia.org/wiki/DivX)|✅|✅|✅|✅|✅|
-|[H.264/AVC](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|✅|✅|✅|✅|
+|[H.264/AVC](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅<sup>3</sup>|✅|✅|✅|✅|
 |[H.265/HEVC](https://caniuse.com/#feat=hevc "HEVC Browser Support Reference")|❌<sup>1</sup>|🔶<sup>2</sup>|❌|✅|❌|
 
 <sup>1</sup>HEVC support is potentially possible by offloading to the OS. *untested*
 
 <sup>2</sup>Android playback is currently broken. Client reports that HEVC is supported and attempts to Directstream it.
+
+<sup>3</sup>H.264 10Bit is unsupported.
 
 ## [Audio Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats#Audio_coding_formats_support "Wikipedia's audio codec tables")
 
