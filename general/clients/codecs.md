@@ -3,8 +3,8 @@ uid: codecs
 title: Client Compatibility
 ---
 
- # [Codec Tables](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats "Wikipedia's codec tables")
-## Video Compatibility
+ # [Codec Tables](https://en.wikipedia.org/wiki/List_of_codecs "Wikipedia's list of all codecs")
+## [Video Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats "Wikipedia's video codec tables")
 
 If the video codec is unsupported, this will result in transcoding. This is the most intensive CPU component of transcoding. Decoding is less intensive than encoding.
 
@@ -17,7 +17,7 @@ If the video codec is unsupported, this will result in transcoding. This is the 
 
 <sup>2</sup>Android playback is currently broken. Client reports that HEVC is supported and attempts to Directstream it.
 
-## Audio Codec Compatibility
+## [Audio Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats#Audio_coding_formats_support "Wikipedia's audio codec tables")
 
 If the audio codec is unsupported or incompatible (such as playing a 5.1 channel stream on a stereo device), the audio codec must be transcoded. This is not nearly as intensive as video coding.
 
@@ -29,11 +29,11 @@ If the audio codec is unsupported or incompatible (such as playing a 5.1 channel
 
 <sup>1</sup>MP3 Mono is incorrectly reported as unsupported.
 
-## Subtitle Compatibility
+## [Subtitle Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats#Subtitle/caption_formats_support "Wikipedia's subtitle codec tables")
 
 Subtiles can be a subtle issue for transcoding. Containers have a limited number of subtitles that are supported. If subtitles need to be transcoded, it will happen one of two ways. They can be converted into another supported format (text-based subtitles) or burned into the video (image/lossless based and ASS based) due to the subtitles transcoding not being supported. This is the most intenstive method of transcoding due to two transcodings happening at once; applying the subtitle layer on top of the video layer. 
 
-## Container Compatibility
+## [Container Compatibility](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers)
 
 If the container is unsupported, this will result in remuxing. The video and audio codec will remain intact, but wrapped in a container that is supported. This is the least intensive process, remuxing speed can be up to 10000x real time, remuxing + audio (ac3 2ch to aac 2ch) happened at 100x real time on the same sample.
 
@@ -50,7 +50,9 @@ If the container is unsupported, this will result in remuxing. The video and aud
 
 <sup>2</sup>webm containers that have file extension mkv are marked as mkv on the media info page, and properly labeled as wemb during playback. 
 
-*Allow video playback that requires conversion without re-encoding* was disabled. Played avi (MPEG4, XVID, Advanced Simple Profile, Level5) with ac3 ([0] [0][0] / 0x2000), 48000 Hz, stereo, fltp, 224 kb/s
+
+    *Allow video playback that requires conversion without re-encoding* was disabled. Played avi (MPEG4, XVID, Advanced Simple Profile, Level5) with ac3 ([0] [0][0] / 0x2000), 48000 Hz, stereo, fltp, 224 kb/s
+    Played another video with transcoding disabled, h264, aac 2 ch, mkv (webm). It converted to hls with ts as well.
 
 [hls @ 0x55925f432c40] Opening '/ram_transcode/bd75624fda66ef5ed43d1e6a19de11a6240.ts' for writing
 frame=  641 fps=0.0 q=-1.0 Lsize=N/A time=00:24:03.00 bitrate=N/A speed=9.43e+04x    
@@ -58,6 +60,7 @@ frame=  641 fps=0.0 q=-1.0 Lsize=N/A time=00:24:03.00 bitrate=N/A speed=9.43e+04
 hls + ac3 > aac conversion
 
 frame=  575 fps=0.0 q=-1.0 size=N/A time=00:00:53.10 bitrate=N/A speed= 106x    
+
 
 # Codec Tests:
 
