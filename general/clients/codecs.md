@@ -8,7 +8,7 @@ title: Codec Compatibility
 
 If the video codec is unsupported, this will result in transcoding. This is the most intensive CPU component of transcoding. Decoding is less intensive than encoding.
 
-||WebOS|Android|AndroidTV|Kodi|Roku|
+||WebOS|Android|AndroidTV|Kodi|[Roku](https://developer.roku.com/docs/specs/streaming.md)|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |[H.262/Xvid](https://en.wikipedia.org/wiki/MPEG-4_Part_2)|✅|✅|✅|✅|✅|
 |[H.262/DivX](https://en.wikipedia.org/wiki/DivX)|✅|✅|✅|✅|✅|
@@ -124,6 +124,10 @@ https://trac.ffmpeg.org/wiki/Encode/AAC
 
 https://trac.ffmpeg.org/wiki/Encode/VP9
 
+https://sites.google.com/a/webmproject.org/wiki/ffmpeg/vp9-encoding-guide
+
+https://superuser.com/questions/1211786/why-is-encoding-vp8-9-so-slow-compared-to-h-264
+
 https://www.velleman.eu/downloads/3/h264_vs_mpeg4_en.pdf
 
 https://stackoverflow.com/questions/22710099/ffmpeg-create-blank-screen-with-text-video#22719247
@@ -152,9 +156,25 @@ https://superuser.com/questions/710115/is-there-anyway-to-play-mp4-avi-mkv-insid
 
 https://caniuse.com/#feat=webm
 
+https://sites.google.com/a/webmproject.org/wiki/ffmpeg/vp9-encoding-guide
+
 https://commons.wikimedia.org/wiki/Help:Converting_video#Common_editing
 
+http://wiki.webmproject.org/adaptive-streaming/instructions-to-playback-adaptive-webm-using-dash
+
+https://smallbusiness.chron.com/vlc-embedding-options-47203.html
+
+https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers#Browser_compatibility
+
+https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/cross_browser_video_player
+
 ### Subtitles
+
+https://wiki.multimedia.cx/index.php/Category:Subtitle_Formats
+
+https://trac.ffmpeg.org/wiki/ExtractSubtitles
+
+http://web.archive.org/web/20160117160743/http://screenfont.ca/learn/
 
 https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API
 
@@ -162,7 +182,29 @@ https://www.matroska.org/technical/specs/subtitles/ssa.html
 
 https://handbrake.fr/docs/en/1.0.0/advanced/subtitles.html
 
+https://wiki.multimedia.cx/index.php/Run_Length_Encoding
+
+https://www.reddit.com/r/ffmpeg/comments/8kwimu/how_do_i_extractconvert_assssa_subtitles_into_srt/dzbyrfl/
+
+https://forum.videohelp.com/threads/270095-Convert-ass-to-srt-help
+
+https://video.stackexchange.com/questions/12421/is-it-possible-to-embed-vtt-subtitles-chapters-in-webm-video
+
+https://superuser.com/questions/1358691/how-do-i-simply-edit-the-subtitles-of-a-mkv-file-while-preserving-the-video-aud
+
+https://forums.plex.tv/t/quick-and-easy-way-to-get-embedded-ass-subtitles-from-mkv-files/38914
+
+https://forums.plex.tv/t/automatic-subtitle-and-audio-transfer-sync-scripts/441383
+
+https://trac.ffmpeg.org/ticket/8407
+
+https://trac.ffmpeg.org/ticket/7919
+
+https://trac.ffmpeg.org/ticket/7239
+
 ### Streaming
+
+https://github.com/kaltura/nginx-vod-module/issues/550
 
 https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser/9851769#9851769
 
