@@ -91,6 +91,8 @@ AC3 stereo
     
     
 ## Notes
+
+### Codecs
 [Chomra Subsampling](https://trac.ffmpeg.org/wiki/Chroma%20Subsampling)
 
 Bit depth 8 bit, 
@@ -102,23 +104,11 @@ https://forum.odroid.com/viewtopic.php?t=21215
 
 https://answers.launchpad.net/~saiarcot895/+archive/ubuntu/chromium-beta
 
-https://help.encoding.com/knowledge-base/article/correct-mime-types-for-serving-video-files/
-
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
-
 https://web.archive.org/web/20160615194616/http://www.mp4ra.org/codecs.html
 
-https://web.archive.org/web/20190427210855/https://simpleiptv.net/?page_id=473
-
-https://mux.com/blog/the-community-gave-us-low-latency-live-streaming-then-apple-took-it-away/
+https://en.wikipedia.org/wiki/Moving_Picture_Experts_Group#Standards
 
 https://trac.ffmpeg.org/wiki/Encode/AAC
-
-https://www.lifewire.com/m3u8-file-2621956
-
-https://blog.jonlu.ca/posts/illegal-streams
-
-https://www.reddit.com/r/IPTV/comments/avdqbq/hls_m3u8_vs_mpegts_ts_which_do_you_find_better/
 
 https://stackoverflow.com/questions/22710099/ffmpeg-create-blank-screen-with-text-video#22719247
 
@@ -128,4 +118,26 @@ https://superuser.com/questions/1281836/what-does-matroska-have-which-webm-doesn
 
 https://avidemux.org/smif/index.php?topic=17197.0
 
+### Streaming
+
+https://help.encoding.com/knowledge-base/article/correct-mime-types-for-serving-video-files/
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
+
 https://www.iana.org/assignments/media-types/media-types.xhtml#video
+
+https://web.archive.org/web/20190427210855/https://simpleiptv.net/?page_id=473
+
+https://mux.com/blog/the-community-gave-us-low-latency-live-streaming-then-apple-took-it-away/
+
+https://www.lifewire.com/m3u8-file-2621956
+
+https://stackoverflow.com/questions/56700705/how-to-enable-lhls-in-ffmpeg-4-1
+
+https://blogs.akamai.com/2018/10/best-practices-for-ultra-low-latency-streaming-using-chunked-encoded-and-chunk-transferred-cmaf.html
+
+https://blog.jonlu.ca/posts/illegal-streams
+
+https://en.wikipedia.org/wiki/MPEG_transport_stream
+
+https://www.reddit.com/r/IPTV/comments/avdqbq/hls_m3u8_vs_mpegts_ts_which_do_you_find_better/
