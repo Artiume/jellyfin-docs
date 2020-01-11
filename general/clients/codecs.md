@@ -112,6 +112,8 @@ https://mux.com/blog/the-community-gave-us-low-latency-live-streaming-then-apple
 
 https://trac.ffmpeg.org/wiki/Encode/AAC
 
+https://www.lifewire.com/m3u8-file-2621956
+
 https://stackoverflow.com/questions/22710099/ffmpeg-create-blank-screen-with-text-video#22719247
 
 https://www.reddit.com/r/Monitors/comments/94r0r6/question_8bit_frc_yuv420_vs_8bit_rgb/
