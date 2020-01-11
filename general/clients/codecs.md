@@ -33,6 +33,7 @@ If the audio codec is unsupported or incompatible (such as playing a 5.1 channel
 
 
 <sup>1</sup>MP3 Mono is incorrectly reported as unsupported.
+
 <sup>2</sup>Only EAC3 2.0 has been tested.
 
 ## [Subtitle Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats#Subtitle/caption_formats_support "Wikipedia's subtitle codec tables")
