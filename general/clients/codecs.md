@@ -24,7 +24,7 @@ If the audio codec is unsupported or incompatible (such as due to a 5.1 stream p
 ||WebOS|Android|AndroidTV|Kodi|Roku
 |:---:|:---:|:---:|:---:|:---:|:---:
 |MP3|✅|✅|✅|✅|✅
-|AC3<sup>1</sup>|✅|✅|✅|✅|✅
+|AC3<sup>1</sup>|❌|✅|✅|✅|✅
 
 <sup>1</sup>
 
