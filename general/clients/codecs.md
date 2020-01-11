@@ -24,6 +24,9 @@ If the audio codec is unsupported or incompatible (such as due to a 5.1 stream p
 ||WebOS|Android|AndroidTV|Kodi|Roku
 |:---:|:---:|:---:|:---:|:---:|:---:
 |MP3|✅|✅|✅|✅|✅
+|AC3<sup>1</sup>|✅|✅|✅|✅|✅
+
+<sup>1</sup>
 
 ## Subtitle Compatibility
 
@@ -31,19 +34,30 @@ Subtiles can be a subtle issue for transcoding. Containers have a limited number
 
 ## Container Compatibility
 
-If the container is unsupported, this will result in remuxing. The video and audio codec will remain intact, but wrapped in a container that is supported. This is the least intensive process. *need to verify CPU loading compared to audio*
+If the container is unsupported, this will result in remuxing. The video and audio codec will remain intact, but wrapped in a container that is supported. This is the least intensive process, remuxing speed can be up to 10000x real time, remuxing + audio happened at 100x real time on the same sample.
+
+
 
 ||WebOS|Android|AndroidTV|Kodi|Roku
 |:---:|:---:|:---:|:---:|:---:|:---:
 |mp4|✅|✅|✅|✅|✅
 |MKV<sup>1, 2</sup>|🔶|🔶|🔶|🔶|🔶
+|[hls/m3u8](https://en.wikipedia.org/wiki/HTTP_Live_Streaming)|✅|✅|✅|✅|✅
 
 <sup>1</sup>MKV containers can hold nearly any codec. *verify actual support*
 
 <sup>2</sup>webm containers that have file extension mkv are marked as mkv on the media info page, and properly labeled as wemb during playback. 
 
-# Codec Tests:
+*Allow video playback that requires conversion without re-encoding* was disabled. Played avi (MPEG4, XVID, Advanced Simple Profile, Level5) with ac3 ([0] [0][0] / 0x2000), 48000 Hz, stereo, fltp, 224 kb/s
 
+[hls @ 0x55925f432c40] Opening '/ram_transcode/bd75624fda66ef5ed43d1e6a19de11a6240.ts' for writing
+frame=  641 fps=0.0 q=-1.0 Lsize=N/A time=00:24:03.00 bitrate=N/A speed=9.43e+04x    
+
+hls + ac3 > aac conversion
+
+frame=  575 fps=0.0 q=-1.0 size=N/A time=00:00:53.10 bitrate=N/A speed= 106x    
+
+# Codec Tests:
 
 ## WebOS
 ### Video
@@ -88,8 +102,16 @@ https://forum.odroid.com/viewtopic.php?t=21215
 
 https://answers.launchpad.net/~saiarcot895/+archive/ubuntu/chromium-beta
 
+https://web.archive.org/web/20160615194616/http://www.mp4ra.org/codecs.html
+
+https://mux.com/blog/the-community-gave-us-low-latency-live-streaming-then-apple-took-it-away/
+
+https://trac.ffmpeg.org/wiki/Encode/AAC
+
 https://stackoverflow.com/questions/22710099/ffmpeg-create-blank-screen-with-text-video#22719247
 
 https://www.reddit.com/r/Monitors/comments/94r0r6/question_8bit_frc_yuv420_vs_8bit_rgb/
 
 https://superuser.com/questions/1281836/what-does-matroska-have-which-webm-doesnt-that-made-the-differentiation-necess
+
+https://avidemux.org/smif/index.php?topic=17197.0
