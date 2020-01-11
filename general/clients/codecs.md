@@ -42,7 +42,8 @@ If the container is unsupported, this will result in remuxing. The video and aud
 |:---:|:---:|:---:|:---:|:---:|:---:
 |mp4|✅|✅|✅|✅|✅
 |MKV<sup>1, 2</sup>|🔶|🔶|🔶|🔶|🔶
-|[hls/m3u8](https://en.wikipedia.org/wiki/HTTP_Live_Streaming)|✅|✅|✅|✅|✅
+|[ts](https://en.wikipedia.org/wiki/MPEG_transport_stream)|✅|✅|✅|✅|✅
+
 
 <sup>1</sup>MKV containers can hold nearly any codec. *verify actual support*
 
@@ -118,6 +119,8 @@ https://superuser.com/questions/1281836/what-does-matroska-have-which-webm-doesn
 
 https://avidemux.org/smif/index.php?topic=17197.0
 
+https://en.wikipedia.org/wiki/Digital_container_format
+
 ### Streaming
 
 https://help.encoding.com/knowledge-base/article/correct-mime-types-for-serving-video-files/
@@ -141,3 +144,7 @@ https://blog.jonlu.ca/posts/illegal-streams
 https://en.wikipedia.org/wiki/MPEG_transport_stream
 
 https://www.reddit.com/r/IPTV/comments/avdqbq/hls_m3u8_vs_mpegts_ts_which_do_you_find_better/
+
+https://www.wowza.com/blog/what-is-cmaf
+
+https://github.com/video-dev/hlsjs-rfcs/blob/a6e7cc44294b83a7dba8c4f45df6d80c4bd13955/proposals/0001-lhls.md
