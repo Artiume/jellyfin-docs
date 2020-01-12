@@ -9,12 +9,12 @@ title: Codec Compatibility
  
 ## [Video Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats "Wikipedia's video codec tables")
 
-||Firefox|Chrome|Safari|Android|AndroidTV|Kodi|[Roku](https://developer.roku.com/docs/specs/streaming.md)|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|[MPEG4 ASP](https://en.wikipedia.org/wiki/MPEG-4_Part_2)<sup>4</sup>|❌|❌|❌|❌|❌|✅|✅|
-|[H.262/DivX](https://en.wikipedia.org/wiki/DivX)|✅|✅|✅|✅|✅|✅|✅|
-|[H.264/AVC](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|🔶<sup>3</sup>|✅|✅|✅|✅|✅|✅|
-|[H.265/HEVC](https://caniuse.com/#feat=hevc "HEVC Browser Support Reference")|❌<sup>1</sup>|❌<sup>1</sup>|✅<sup>1</sup>|🔶<sup>2</sup>|❌|✅|❌|
+||Browser|Android|AndroidTV|Kodi|[Roku](https://developer.roku.com/docs/specs/streaming.md)|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|[MPEG4 ASP](https://en.wikipedia.org/wiki/MPEG-4_Part_2)<sup>4</sup>|❌|❌|❌|✅|✅|
+|[H.262/DivX](https://en.wikipedia.org/wiki/DivX)|✅|✅|✅|✅|✅|
+|[H.264/AVC](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|🔶<sup>3</sup>|✅|✅|✅|✅|
+|[H.265/HEVC](https://caniuse.com/#feat=hevc "HEVC Browser Support Reference")|❌<sup>1</sup>|🔶<sup>2</sup>|❌|✅|❌|
 
 <sup>1</sup>HEVC support is potentially possible by offloading to the OS. *untested*
 
@@ -28,7 +28,7 @@ title: Codec Compatibility
 
 If the audio codec is unsupported or incompatible (such as playing a 5.1 channel stream on a stereo device), the audio codec must be transcoded. This is not nearly as intensive as video coding.
 
-||Web|Android|AndroidTV|Kodi|Roku|
+||Browser|Android|AndroidTV|Kodi|Roku|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 FLAC|✅|✅|✅|✅|✅|
 |MP3|🔶<sup>1</sup>|✅|✅|✅|✅|
