@@ -28,13 +28,14 @@ title: Codec Compatibility
 
 If the audio codec is unsupported or incompatible (such as playing a 5.1 channel stream on a stereo device), the audio codec must be transcoded. This is not nearly as intensive as video coding.
 
-||Web|Android|AndroidTV|Kodi|Roku
-|:---:|:---:|:---:|:---:|:---:|:---:
-|MP3|🔶<sup>1</sup>|✅|✅|✅|✅
-|AAC|✅|✅|✅|✅|✅
-|AC3|✅|❌|✅|✅|✅
-|EAC3<sup>2</sup>|✅|✅|✅|✅|✅
-|VORBIS|❌|✅|✅|✅|✅
+||Web|Android|AndroidTV|Kodi|Roku|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+FLAC|✅|✅|✅|✅|✅|
+|MP3|🔶<sup>1</sup>|✅|✅|✅|✅|
+|AAC|✅|✅|✅|✅|✅|
+|AC3|✅|❌|✅|✅|✅|
+|EAC3<sup>2</sup>|✅|✅|✅|✅|✅|
+|VORBIS|❌|✅|✅|✅|✅|
 
 
 <sup>1</sup>MP3 Mono is incorrectly reported as unsupported and will transcode. 
