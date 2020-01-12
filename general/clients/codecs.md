@@ -53,14 +53,14 @@ Subtiles can be a subtle issue for transcoding. Containers have a limited number
 ||Format|TS|MP4|MKV|AVI|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |SubRip Text (SRT)|Formatted Text|❌|🔶|✅|🔶|
-|ASS/SSA|Formatted Text|❌|❌|✅|🔶|
+|ASS/SSA<sup>1</sup>|Formatted Text|❌|❌|✅|🔶|
 |VobSub|Picture|❌|✅|✅|🔶|
 |DVB-SUB|Picture|✅|❌|✅|❌|
 |MP4TT/TXTT|XML|❌|✅|❌|❌|
-|PGSSUB|Picture|❌|❌|❌|❌|
+|PGSSUB|Picture|❌|❌|✅|❌|
 
 
-Note: ASS Subtitles are only supported by mkv files. Mkv files can't natively be streamed therefore ASS subtitles will always inherently be burned into the video. This is not a limitation of JF. 
+<sup>1</sup>ASS Subtitles are only supported by mkv files. Mkv files can't natively be streamed therefore ASS subtitles will always inherently be burned into the video. This is not a limitation of JF. 
 
 ## [Container Compatibility](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers)
 
