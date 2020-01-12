@@ -270,6 +270,8 @@ https://github.com/video-dev/hlsjs-rfcs/blob/a6e7cc44294b83a7dba8c4f45df6d80c4bd
 
 https://github.com/MediaBrowser/Emby/pull/2276
 
+https://github.com/nextcloud/files_videoplayer/issues/9
+
 ### Misc
 
 `
