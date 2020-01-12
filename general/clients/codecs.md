@@ -9,9 +9,9 @@ title: Codec Compatibility
  
 ## [Video Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats "Wikipedia's video codec tables")
 
-||WebOS|Android|AndroidTV|Kodi|[Roku](https://developer.roku.com/docs/specs/streaming.md)|
+||Web|Android|AndroidTV|Kodi|[Roku](https://developer.roku.com/docs/specs/streaming.md)|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|[MPEG4/ASP (Xvid)](https://en.wikipedia.org/wiki/MPEG-4_Part_2)|✅|❌|✅|✅|✅|
+|[MPEG4 ASP](https://en.wikipedia.org/wiki/MPEG-4_Part_2)<sup>4</sup>|❌|❌|❌|✅|✅|
 |[H.262/DivX](https://en.wikipedia.org/wiki/DivX)|✅|✅|✅|✅|✅|
 |[H.264/AVC](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|🔶<sup>3</sup>|✅|✅|✅|✅|
 |[H.265/HEVC](https://caniuse.com/#feat=hevc "HEVC Browser Support Reference")|❌<sup>1</sup>|🔶<sup>2</sup>|❌|✅|❌|
@@ -22,11 +22,13 @@ title: Codec Compatibility
 
 <sup>3</sup>H.264 10Bit is unsupported.
 
+<sup>4</sup>This is the codec format for Xvid encodes.
+
 ## [Audio Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats#Audio_coding_formats_support "Wikipedia's audio codec tables")
 
 If the audio codec is unsupported or incompatible (such as playing a 5.1 channel stream on a stereo device), the audio codec must be transcoded. This is not nearly as intensive as video coding.
 
-||WebOS|Android|AndroidTV|Kodi|Roku
+||Web|Android|AndroidTV|Kodi|Roku
 |:---:|:---:|:---:|:---:|:---:|:---:
 |MP3|🔶<sup>1</sup>|✅|✅|✅|✅
 |AAC|✅|✅|✅|✅|✅
