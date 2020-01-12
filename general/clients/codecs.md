@@ -120,6 +120,8 @@ frame=  575 fps=0.0 q=-1.0 size=N/A time=00:00:53.10 bitrate=N/A speed= 106x
 ## Notes
 
 ### Codecs
+https://github.com/soluble-io/soluble-mediatools
+
 [Chomra Subsampling](https://trac.ffmpeg.org/wiki/Chroma%20Subsampling)
 
 https://www.projectorcentral.com/chroma-subsampling-explained.htm
