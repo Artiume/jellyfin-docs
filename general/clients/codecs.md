@@ -32,15 +32,17 @@ If the audio codec is unsupported or incompatible (such as playing a 5.1 channel
 |:---:|:---:|:---:|:---:|:---:|:---:|
 FLAC|✅|✅|✅|✅|✅|
 |MP3|🔶<sup>1</sup>|✅|✅|✅|✅|
-|AAC|✅|✅|✅|✅|✅|
+|AAC|🔶<sup>2</sup>|✅|✅|✅|✅|
 |AC3|✅|❌|✅|✅|✅|
-|EAC3<sup>2</sup>|✅|✅|✅|✅|✅|
+|EAC3<sup>3/sup>|✅|✅|✅|✅|✅|
 |VORBIS|❌|✅|✅|✅|✅|
 
 
-<sup>1</sup>MP3 Mono is incorrectly reported as unsupported and will transcode. 
+<sup>1</sup>MP3 Mono is incorrectly reported as unsupported and will transcode to AAC.
 
-<sup>2</sup>Only EAC3 2.0 has been tested.
+<sup>2</sup> AAC is incorrectly reported as unsupported and will transcode to MP3.
+
+<sup>3</sup>Only EAC3 2.0 has been tested.
 
 ## [Subtitle Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats#Subtitle/caption_formats_support "Wikipedia's subtitle codec tables")
 
