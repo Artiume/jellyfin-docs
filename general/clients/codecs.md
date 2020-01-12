@@ -52,10 +52,10 @@ Subtiles can be a subtle issue for transcoding. Containers have a limited number
 
 ||Format|TS|MP4|MKV|AVI|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|SubRip Text (SRT)|Formatted Text|❌|🔶|✅|🔶|
+|SubRip Text (.srt)|Formatted Text|❌|🔶|✅|🔶|
 |ASS/SSA<sup>1</sup>|Formatted Text|❌|❌|✅|🔶|
 |VobSub|Picture|❌|✅|✅|🔶|
-|DVB-SUB|Picture|✅|❌|✅|❌|
+|DVB-SUB [(.sub/.idx)](https://forum.videohelp.com/threads/261451-Difference-between-SUB-and-IDX-file)|Picture|✅|❌|✅|❌|
 |MP4TT/TXTT|XML|❌|✅|❌|❌|
 |PGSSUB|Picture|❌|❌|✅|❌|
 
@@ -257,6 +257,8 @@ https://trac.ffmpeg.org/ticket/7919
 https://trac.ffmpeg.org/ticket/7239
 
 ### Streaming
+
+https://stackoverflow.com/questions/35177797/what-exactly-is-fragmented-mp4fmp4-how-is-it-different-from-normal-mp4
 
 https://github.com/kaltura/nginx-vod-module/issues/550
 
