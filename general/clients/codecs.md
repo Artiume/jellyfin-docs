@@ -35,7 +35,7 @@ If the audio codec is unsupported or incompatible (such as playing a 5.1 channel
 |VORBIS|❌|✅|✅|✅|✅
 
 
-<sup>1</sup>MP3 Mono is incorrectly reported as unsupported.
+<sup>1</sup>MP3 Mono is incorrectly reported as unsupported and will transcode. 
 
 <sup>2</sup>Only EAC3 2.0 has been tested.
 
@@ -63,10 +63,11 @@ If the container is unsupported, this will result in remuxing. The video and aud
 |[mp4](https://en.wikipedia.org/wiki/MPEG-4_Part_14)<sup>1</sup>|✅|✅|✅|✅|✅
 |[MKV](https://en.wikipedia.org/wiki/Matroska)<sup>2, 3</sup>|❌|✅|🔶|✅|🔶
 |[ts](https://en.wikipedia.org/wiki/MPEG_transport_stream)|✅|✅|✅|✅|✅
+|[webM](https://en.wikipedia.org/wiki/MPEG-4_Part_14)<sup>1</sup>|||||
 
 <sup>1</sup>mp4 containers are one of the few containers that will not remux.
 
-<sup>2</sup>MKV containers can hold nearly any codec, but are not compatible with streaming in browsers and will remux.
+<sup>2</sup>mkv containers can hold nearly any codec, but are not compatible with streaming in browsers and will remux.
 
 <sup>3</sup>mkv containers are improperly labeled as webm during playback. 
 
