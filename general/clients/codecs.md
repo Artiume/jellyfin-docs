@@ -45,11 +45,11 @@ Subtiles can be a subtle issue for transcoding. Containers have a limited number
 
 ||Format|TS|MP4|MKV|AVI|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|SubRip Text (SRT)|Formatted Text|||||
-|VobSub|Picture|||||
-|MP4TT/TXTT|XML|||||
-|ASS/SSA|Formatted Text|❌|❌|✅|❌|
-|DVB-SUB|Picture|||||
+|SubRip Text (SRT)|Formatted Text|❌|🔶|✅|🔶|
+|ASS/SSA|Formatted Text|❌|❌|✅|🔶|
+|VobSub|Picture|❌|✅|✅|🔶|
+|MP4TT/TXTT|XML|❌|✅|❌|❌|
+|DVB-SUB|Picture|✅|❌|✅|❌|
 
 Note: ASS Subtitles are only supported by mkv files. Mkv files can't natively be streamed therefore ASS subtitles will always inherently be burned into the video. This is not a limitation of JF. 
 
