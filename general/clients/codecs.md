@@ -36,7 +36,7 @@ FLAC|✅|✅|✅|✅|✅|
 |AC3|✅|❌|✅|✅|✅|
 |EAC3<sup>3/sup>|✅|✅|✅|✅|✅|
 |VORBIS|❌|✅|✅|✅|✅|
-|DTS<sup>4</sup>|❌|✅|✅|✅|✅|
+|DTS<sup>4</sup>|❌|❌|❌|✅|✅|
 
 <sup>1</sup>MP3 Mono is incorrectly reported as unsupported and will transcode to AAC.
 
