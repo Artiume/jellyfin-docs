@@ -43,6 +43,14 @@ If the audio codec is unsupported or incompatible (such as playing a 5.1 channel
 
 Subtiles can be a subtle issue for transcoding. Containers have a limited number of subtitles that are supported. If subtitles need to be transcoded, it will happen one of two ways. They can be converted into another supported format (text-based subtitles) or burned into the video (image/lossless based and ASS based) due to the subtitles transcoding not being supported. This is the most intenstive method of transcoding due to two transcodings happening at once; applying the subtitle layer on top of the video layer. 
 
+||Format|TS|MP4|MKV|AVI|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|SubRip Text (SRT)|Formatted Text|||||
+|VobSub|Picture|||||
+|MP4TT/TXTT|XML|||||
+|ASS/SSA|Formatted Text|❌|❌|✅|❌|
+|DVB-SUB|Picture|||||
+
 Note: ASS Subtitles are only supported by mkv files. Mkv files can't natively be streamed therefore ASS subtitles will always inherently be burned into the video. This is not a limitation of JF. 
 
 ## [Container Compatibility](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers)
@@ -191,6 +199,8 @@ https://trac.ffmpeg.org/ticket/7037
 https://en.wikibooks.org/wiki/FFMPEG_An_Intermediate_Guide/subtitle_options
 
 https://wiki.multimedia.cx/index.php/Category:Subtitle_Formats
+
+https://github.com/mjuhasz/BDSup2Sub
 
 https://trac.ffmpeg.org/wiki/ExtractSubtitles
 
