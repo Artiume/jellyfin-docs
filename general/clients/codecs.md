@@ -219,6 +219,8 @@ https://trac.ffmpeg.org/ticket/7037
 
 https://en.wikibooks.org/wiki/FFMPEG_An_Intermediate_Guide/subtitle_options
 
+https://en.wikipedia.org/wiki/WebVTT
+
 https://wiki.multimedia.cx/index.php/Category:Subtitle_Formats
 
 https://github.com/mjuhasz/BDSup2Sub
