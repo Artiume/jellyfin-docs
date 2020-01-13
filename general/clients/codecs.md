@@ -12,20 +12,16 @@ title: Codec Compatibility
 ||Chrome|Firefox|Safari|Android|AndroidTV|Kodi|[Roku](https://developer.roku.com/docs/specs/streaming.md)|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[MPEG-2 Part 2/SP](https://en.wikipedia.org/wiki/DivX)|❌|❌|❌|❌|❌|✅|✅|
-|[MPEG-2 Part 2/ASP](https://en.wikipedia.org/wiki/MPEG-4_Part_2#Advanced_Simple_Profile_(ASP))<sup>4</sup>|❌|❌|❌|❌|❌|✅|✅|
-|[H.264 8Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|🔶<sup>3</sup>|✅|✅|✅|✅|✅|✅|
-|[H.264 10Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|🔶<sup>3</sup>|✅|❌|✅|✅|✅|✅|
+|[MPEG-2 Part 2/ASP](https://en.wikipedia.org/wiki/MPEG-4_Part_2#Advanced_Simple_Profile_(ASP))|❌|❌|❌|❌|❌|✅|✅|
+|[H.264 8Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|✅|✅|✅|✅|✅|✅|
+|[H.264 10Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|❌|❌|✅|✅|✅|✅|
 |[H.265](https://caniuse.com/#feat=hevc "HEVC Browser Support Reference")|❌<sup>1</sup>|🔶<sup>2</sup>|❌|❌|❌|✅|❌|
 
 <sup>1</sup>HEVC support is potentially possible by offloading to the OS. *untested*
 
 <sup>2</sup>Android playback is currently broken. Client reports that HEVC is supported and attempts to Directstream it.
 
-<sup>3</sup>H.264 10Bit is unsupported.
-
-<sup>4</sup>This is the codec format for Xvid encodes.
-
-Cheetsheet:
+[Cheetsheet:](https://www.afterdawn.com/glossary/term.cfm/mpeg_4_part_10)
 
 |[MPEG-2 Part 2](https://en.wikipedia.org/wiki/H.262/MPEG-2_Part_2)|[MPEG-4 Part-2](https://en.wikipedia.org/wiki/MPEG-4_Part_2)|MPEG-4 Part-10|MPEG-4 Part-14|MPEG-H Part 2|
 |:---:|:---:|:---:|:---:|:---:|
