@@ -21,13 +21,17 @@ title: Codec Compatibility
 
 <sup>2</sup>Android playback is currently broken. Client reports that HEVC is supported and attempts to Directstream it.
 
-[Format Cheetsheet:](https://www.afterdawn.com/glossary/term.cfm/mpeg_4_part_10)
+[Format Cheetsheet:](https://en.wikipedia.org/wiki/MPEG-4#MPEG-4_Parts)
 
-|[MPEG-2 Part 2](https://en.wikipedia.org/wiki/H.262/MPEG-2_Part_2)|[MPEG-4 Part-2](https://en.wikipedia.org/wiki/MPEG-4_Part_2)|MPEG-4 Part-10|MPEG-4 Part-14|MPEG-H Part 2|
+|[MPEG-2 Part 2](https://en.wikipedia.org/wiki/H.262/MPEG-2_Part_2)|[MPEG-4 Part-2](https://en.wikipedia.org/wiki/MPEG-4_Part_2)<sup>1</sup>|[MPEG-4 Part-10](https://en.wikipedia.org/wiki/Advanced_Video_Coding)|MPEG-4 Part-14|MPEG-H Part 2|
 |:---:|:---:|:---:|:---:|:---:|
 |MPEG-2 Video|MPEG4 SP/ASP|H.264|MP4 Container|H.265|
 ||DivX|MPEG-4 AVC||HEVC|
 ||DX50||||
+
+<sup>1</sup>[MPEG-4 Part-2 vs Part-10](https://www.afterdawn.com/glossary/term.cfm/mpeg_4_part_10)
+
+
 
 ## [Audio Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats#Audio_coding_formats_support "Wikipedia's audio codec tables")
 
