@@ -23,11 +23,11 @@ title: Codec Compatibility
 
 [Format Cheetsheet:](https://en.wikipedia.org/wiki/MPEG-4#MPEG-4_Parts)
 
-|[MPEG-2 Part 2](https://en.wikipedia.org/wiki/H.262/MPEG-2_Part_2)|[MPEG-4 Part-2](https://en.wikipedia.org/wiki/MPEG-4_Part_2)<sup>1</sup>|[MPEG-4 Part-10](https://en.wikipedia.org/wiki/Advanced_Video_Coding)|MPEG-4 Part-14|MPEG-H Part 2|
-|:---:|:---:|:---:|:---:|:---:|
-|MPEG-2 Video|MPEG4 SP/ASP|H.264|MP4 Container<sup>2</sup>|H.265|
-||DivX|MPEG-4 AVC||HEVC|
-||DX50||||
+|[MPEG-2](https://en.wikipedia.org/wiki/MPEG-2)|[MPEG-2<br>Part 2](https://en.wikipedia.org/wiki/H.262/MPEG-2_Part_2)|[MPEG-4<br>Part-2](https://en.wikipedia.org/wiki/MPEG-4_Part_2)<sup>1</sup>|[MPEG-4<br>Part-10](https://en.wikipedia.org/wiki/Advanced_Video_Coding)|MPEG-4<br>Part-14|MPEG-H<br>Part 2|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|H.262|MPEG-2 Video|MPEG4 SP/ASP|H.264|MP4 Container<sup>2</sup>|H.265|
+|DVD-Video||DivX|MPEG-4 AVC||HEVC|
+|||DX50||||
 
 <sup>1</sup>[MPEG-4 Part-2 vs Part-10](https://www.afterdawn.com/glossary/term.cfm/mpeg_4_part_10)
 
