@@ -11,8 +11,8 @@ title: Codec Compatibility
 
 ||Chrome|Firefox|Safari|Android|AndroidTV|Kodi|[Roku](https://developer.roku.com/docs/specs/streaming.md)|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|[MPEG-2 Part 2/SP](https://en.wikipedia.org/wiki/DivX)|❌|❌|❌|❌|❌|✅|✅|
-|[MPEG-2 Part 2/ASP](https://en.wikipedia.org/wiki/MPEG-4_Part_2#Advanced_Simple_Profile_(ASP))|❌|❌|❌|❌|❌|✅|✅|
+|[MPEG-4 Part 2/SP](https://en.wikipedia.org/wiki/DivX)|❌|❌|❌|❌|❌|✅|✅|
+|[MPEG-4 Part 2/ASP](https://en.wikipedia.org/wiki/MPEG-4_Part_2#Advanced_Simple_Profile_(ASP))|❌|❌|❌|❌|❌|✅|✅|
 |[H.264 8Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|✅|✅|✅|✅|✅|✅|
 |[H.264 10Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|❌|❌|✅|✅|✅|✅|
 |[H.265](https://caniuse.com/#feat=hevc "HEVC Browser Support Reference")|❌<sup>1</sup>|🔶<sup>2</sup>|❌|❌|❌|✅|❌|
