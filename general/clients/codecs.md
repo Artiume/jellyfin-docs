@@ -66,7 +66,7 @@ Subtiles can be a subtle issue for transcoding. Containers have a limited number
 |VobSub|Picture|❌|✅|✅|🔶|
 |DVB-SUB [(.sub/.idx)](https://forum.videohelp.com/threads/261451-Difference-between-SUB-and-IDX-file)|Picture|✅|❌|✅|❌|
 |MP4TT/TXTT|XML|❌|✅|❌|❌|
-|PGSSUB|Picture|❌|❌|✅|❌|
+|PGSSUB<sup>1</sup>|Picture|❌|❌|❌|❌|
 
 
 <sup>1</sup>ASS Subtitles are only supported by MKV files. MKV files aren't supported by Firefox.They will always inherently be burned into the video. This is not a limitation of Jellyfin.
@@ -214,6 +214,8 @@ https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/cros
 https://developer.roku.com/docs/specs/streaming.md
 
 https://trac.ffmpeg.org/ticket/7037
+
+https://www.lifewire.com/bdmv-file-2619830
 
 ### Subtitles
 
