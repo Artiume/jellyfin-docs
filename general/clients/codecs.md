@@ -66,10 +66,12 @@ Subtiles can be a subtle issue for transcoding. Containers have a limited number
 |VobSub|Picture|❌|✅|✅|🔶|
 |DVB-SUB [(.sub/.idx)](https://forum.videohelp.com/threads/261451-Difference-between-SUB-and-IDX-file)|Picture|✅|❌|✅|❌|
 |MP4TT/TXTT|XML|❌|✅|❌|❌|
-|PGSSUB<sup>1</sup>|Picture|❌|❌|❌|❌|
+|PGSSUB<sup>2</sup>|Picture|❌|❌|❌|❌|
 
 
 <sup>1</sup>ASS Subtitles are only supported by MKV files. MKV files aren't supported by Firefox.They will always inherently be burned into the video. This is not a limitation of Jellyfin.
+
+<sup>2</sup>PGS Subs are image based subs for [Blu-Ray Discs](https://www.lifewire.com/bdmv-file-2619830). 
 
 ## [Container Compatibility](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers)
 
