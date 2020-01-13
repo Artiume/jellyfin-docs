@@ -23,11 +23,11 @@ title: Codec Compatibility
 
 [Format Cheetsheet:](https://www.afterdawn.com/glossary/term.cfm/mpeg_4_part_10)
 
-|[MPEG-2 Part 2](https://en.wikipedia.org/wiki/H.262/MPEG-2_Part_2)|[MPEG-4 Part-2](https://en.wikipedia.org/wiki/MPEG-4_Part_2)|[MPEG-4 Part 3](https://en.wikipedia.org/wiki/MPEG-4_Part_3#Subparts)|MPEG-4 Part-10|MPEG-4 Part-14|MPEG-H Part 2|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|MPEG-2 Video|MPEG4 SP/ASP||H.264|MP4 Container|H.265|
-||DivX||MPEG-4 AVC|AAC audio|HEVC|
-||DX50|||||
+|[MPEG-2 Part 2](https://en.wikipedia.org/wiki/H.262/MPEG-2_Part_2)|[MPEG-4 Part-2](https://en.wikipedia.org/wiki/MPEG-4_Part_2)|MPEG-4 Part-10|MPEG-4 Part-14|MPEG-H Part 2|
+|:---:|:---:|:---:|:---:|:---:|
+|MPEG-2 Video|MPEG4 SP/ASP|H.264|MP4 Container|H.265|
+||DivX|MPEG-4 AVC||HEVC|
+||DX50||||
 
 ## [Audio Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats#Audio_coding_formats_support "Wikipedia's audio codec tables")
 
