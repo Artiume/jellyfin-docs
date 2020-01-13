@@ -11,8 +11,8 @@ title: Codec Compatibility
 
 ||Chrome|Firefox|Safari|Android|AndroidTV|Kodi|[Roku](https://developer.roku.com/docs/specs/streaming.md)|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|[MPEG4/DivX (DX50)](https://en.wikipedia.org/wiki/DivX)|❌|❌|❌|❌|❌|✅|✅|
-|[MPEG4 ASP](https://en.wikipedia.org/wiki/MPEG-4_Part_2#Advanced_Simple_Profile_(ASP))<sup>4</sup>|❌|❌|❌|❌|❌|✅|✅|
+|[MPEG-2 Part 2/SP](https://en.wikipedia.org/wiki/DivX)|❌|❌|❌|❌|❌|✅|✅|
+|[MPEG-2 Part 2/ASP](https://en.wikipedia.org/wiki/MPEG-4_Part_2#Advanced_Simple_Profile_(ASP))<sup>4</sup>|❌|❌|❌|❌|❌|✅|✅|
 |[H.264/AVC 8Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|🔶<sup>3</sup>|✅|✅|✅|✅|✅|✅|
 |[H.264/AVC 10Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|🔶<sup>3</sup>|✅|❌|✅|✅|✅|✅|
 |[H.265/HEVC](https://caniuse.com/#feat=hevc "HEVC Browser Support Reference")|❌<sup>1</sup>|🔶<sup>2</sup>|❌|❌|❌|✅|❌|
@@ -24,6 +24,14 @@ title: Codec Compatibility
 <sup>3</sup>H.264 10Bit is unsupported.
 
 <sup>4</sup>This is the codec format for Xvid encodes.
+
+Cheetsheet:
+
+|[MPEG-2 Part 2](https://en.wikipedia.org/wiki/H.262/MPEG-2_Part_2)|[MPEG-4 Part-2](https://en.wikipedia.org/wiki/MPEG-4_Part_2)|MPEG-4 Part-10|MPEG-4 Part-14|MPEG-H Part 2|
+|:---:|:---:|:---:|:---:|:---:|
+|MPEG-2 Video|MPEG4 SP|H.264|MP4 Container|H.265|
+||DivX|MPEG-4 AVC||HEVC|
+||DX50||||
 
 ## [Audio Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats#Audio_coding_formats_support "Wikipedia's audio codec tables")
 
