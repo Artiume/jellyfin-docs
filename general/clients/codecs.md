@@ -146,6 +146,8 @@ https://github.com/soluble-io/soluble-mediatools
 
 https://www.projectorcentral.com/chroma-subsampling-explained.htm
 
+https://stackoverflow.com/questions/58994428/is-there-any-way-to-specify-streams-by-pid-with-ffmpeg-if-the-value-of-pid-is-d
+
 Bit depth 8 bit, 
 Pixel format yuv420p
 
