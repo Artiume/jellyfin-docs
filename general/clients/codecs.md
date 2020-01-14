@@ -11,13 +11,13 @@ The goal is to Direct Play all media. This means the container, video, audio and
 
 [Breakdown of video codecs.](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Video_codecs)
 
-||Chrome|Firefox|Safari|Android|iOS|AndroidTV|Kodi|[Roku](https://developer.roku.com/docs/specs/streaming.md)|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|[MPEG-4 Part 2/SP](https://en.wikipedia.org/wiki/DivX)|❌|❌|❌|❌||❌|✅||
-|[MPEG-4 Part 2/ASP](https://en.wikipedia.org/wiki/MPEG-4_Part_2#Advanced_Simple_Profile_(ASP))|❌|❌|❌|❌||❌|✅||
-|[H.264 8Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|✅|✅|✅||✅|✅||
-|[H.264 10Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|❌|❌|✅||✅|✅||
-|[H.265](https://caniuse.com/#feat=hevc "HEVC Browser Support Reference")|❌|❌|❌<sup>1</sup>|🔶<sup>2</sup>||❌|✅||
+||Chrome|Firefox|Safari|Android|iOS|AndroidTV|Kodi|[Roku](https://developer.roku.com/docs/specs/streaming.md)|[MPV Shim](https://jellyfin.org/docs/general/clients/index.html#jellyfin-mpv-shim)|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|[MPEG-4 Part 2/SP](https://en.wikipedia.org/wiki/DivX)|❌|❌|❌|❌||❌|✅||✅|
+|[MPEG-4 Part 2/ASP](https://en.wikipedia.org/wiki/MPEG-4_Part_2#Advanced_Simple_Profile_(ASP))|❌|❌|❌|❌||❌|✅||✅|
+|[H.264 8Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|✅|✅|✅||✅|✅||✅|
+|[H.264 10Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|❌|❌|✅||✅|✅||✅|
+|[H.265](https://caniuse.com/#feat=hevc "HEVC Browser Support Reference")|❌|❌|❌<sup>1</sup>|🔶<sup>2</sup>||❌|✅||✅|
 
 <sup>1</sup>HEVC support is potentially available by offloading to the operating system, but this has not been tested.
 
@@ -39,15 +39,15 @@ The goal is to Direct Play all media. This means the container, video, audio and
 
 If the audio codec is unsupported or incompatible (such as playing a 5.1 channel stream on a stereo device), the audio codec must be transcoded. This is not nearly as intensive as video coding.
 
-||Chrome|Firefox|Safari|Android|AndroidTV|iOS|Kodi|Roku|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-FLAC|✅|❌|✅|✅|||✅||
-|MP3|🔶<sup>1</sup>|🔶|✅|✅|||✅||
-|AAC|🔶<sup>2</sup>|🔶|✅|✅|||✅||
-|AC3|✅|❌|✅|✅|||✅||
-|EAC3<sup>3</sup>|✅|✅|✅|✅|||✅||
-|VORBIS|❌|✅|✅|✅|||✅||
-|DTS<sup>4</sup>|❌|❌|❌|✅|||✅||
+||Chrome|Firefox|Safari|Android|AndroidTV|iOS|Roku|Kodi|MPV Shim|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|FLAC|✅|❌|✅|✅||||✅|✅|
+|MP3|🔶<sup>1</sup>|🔶|✅|✅||||✅|✅|
+|AAC|🔶<sup>2</sup>|🔶|✅|✅||||✅|✅|
+|AC3|✅|❌|✅|✅||||✅|✅|
+|EAC3<sup>3</sup>|✅|✅|✅|✅||||✅|✅|
+|VORBIS|❌|✅|✅|✅||||✅|✅|
+|DTS<sup>4</sup>|❌|❌|❌|✅||||✅|✅|
 
 <sup>1</sup>MP3 Mono is incorrectly reported as unsupported and will transcode to AAC.
 
