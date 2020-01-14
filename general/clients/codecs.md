@@ -46,14 +46,16 @@ If the audio codec is unsupported or incompatible (such as playing a 5.1 channel
 |AAC|✅|✅|✅|✅||||✅|✅|
 |AC3|✅|❌|✅|✅||||✅|✅|
 |EAC3<sup>2</sup>|✅|✅|✅|✅||||✅|✅|
-|VORBIS|❌|✅|✅|✅||||✅|✅|
-|DTS<sup>3</sup>|❌|❌|❌|✅||||✅|✅|
+|VORBIS<sup>3</sup>|✅|✅|✅|✅||||✅|✅|
+|DTS<sup>4</sup>|❌|❌|❌|✅||||✅|✅|
 
 <sup>1</sup>MP3 Mono is incorrectly reported as unsupported and will transcode to AAC.
 
 <sup>2</sup>Only EAC3 2.0 has been tested.
 
-<sup>3</sup>Only DTS Mono has been tested.
+<sup>3</sup>OGG containers are not supported and will cause VORBIS to convert.
+
+<sup>4</sup>Only DTS Mono has been tested.
 
 ## [Subtitle Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats#Subtitle/caption_formats_support "Wikipedia's subtitle codec tables")
 
@@ -81,7 +83,7 @@ If the container is unsupported, this will result in remuxing. The video and aud
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[MP4](https://en.wikipedia.org/wiki/MPEG-4_Part_14)<sup>1</sup>|✅|✅|✅|✅|✅|✅|✅|
 |[MKV](https://en.wikipedia.org/wiki/Matroska)<sup>2, 3</sup>|✅|❌||✅|✅|✅||
-|[WebM](https://en.wikipedia.org/wiki/WebM)<sup>3</sup>|✅|||||✅||
+|[WebM](https://en.wikipedia.org/wiki/WebM)<sup>3</sup>|✅|✅||||✅||
 |[TS](https://en.wikipedia.org/wiki/MPEG_transport_stream)<sup>4</sup>|✅|✅|✅|✅|✅|✅|✅|
 
 <sup>1</sup>MP4 containers are one of the few containers that will not remux.
