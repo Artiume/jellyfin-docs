@@ -18,6 +18,7 @@ The goal is to Direct Play all media. This means the container, video, audio and
 |[H.264 8Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|✅|✅|✅||✅||✅|✅|
 |[H.264 10Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|❌|❌|✅||✅||✅|✅|
 |[H.265](https://caniuse.com/#feat=hevc "HEVC Browser Support Reference")|❌|❌|❌<sup>1</sup>|🔶<sup>2</sup>||❌||✅|✅|
+|[VP9](https://caniuse.com/#search=vp9 "V9 Browser Support Reference")|✅|✅|❌|||||||
 
 <sup>1</sup>HEVC support is potentially available by offloading to the operating system, but this has not been tested.
 
@@ -85,6 +86,7 @@ If the container is unsupported, this will result in remuxing. The video and aud
 |[MKV](https://en.wikipedia.org/wiki/Matroska)<sup>2, 3</sup>|✅|❌||✅|✅|✅||
 |[WebM](https://en.wikipedia.org/wiki/WebM)<sup>3</sup>|✅|✅||||✅||
 |[TS](https://en.wikipedia.org/wiki/MPEG_transport_stream)<sup>4</sup>|✅|✅|✅|✅|✅|✅|✅|
+|[OGG](https://en.wikipedia.org/wiki/Ogg)|❌|❌|❌|❌|❌|❌|❌|
 
 <sup>1</sup>MP4 containers are one of the few containers that will not remux.
 
@@ -95,7 +97,7 @@ If the container is unsupported, this will result in remuxing. The video and aud
 <sup>4</sup>TS is one of the primary containers for streaming for Jellyfin. 
 
 # Codec Tests:
-vp9/vorbis/vtt/webm
+
 ## Web
 ### Video
 h264 CB, 8bit
