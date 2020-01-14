@@ -11,13 +11,13 @@ The goal is to Direct Play all media. This means the container, video, audio and
 
 [Breakdown of video codecs.](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Video_codecs)
 
-||Chrome|Firefox|Safari|Android|iOS|AndroidTV|Kodi|[Roku](https://developer.roku.com/docs/specs/streaming.md)|[MPV Shim](https://jellyfin.org/docs/general/clients/index.html#jellyfin-mpv-shim)|
+||Chrome|Firefox|Safari|Android|iOS|AndroidTV|[Roku](https://developer.roku.com/docs/specs/streaming.md)|Kodi|[MPV Shim](https://jellyfin.org/docs/general/clients/index.html#jellyfin-mpv-shim)|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|[MPEG-4 Part 2/SP](https://en.wikipedia.org/wiki/DivX)|❌|❌|❌|❌||❌|✅||✅|
-|[MPEG-4 Part 2/ASP](https://en.wikipedia.org/wiki/MPEG-4_Part_2#Advanced_Simple_Profile_(ASP))|❌|❌|❌|❌||❌|✅||✅|
-|[H.264 8Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|✅|✅|✅||✅|✅||✅|
-|[H.264 10Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|❌|❌|✅||✅|✅||✅|
-|[H.265](https://caniuse.com/#feat=hevc "HEVC Browser Support Reference")|❌|❌|❌<sup>1</sup>|🔶<sup>2</sup>||❌|✅||✅|
+|[MPEG-4 Part 2/SP](https://en.wikipedia.org/wiki/DivX)|❌|❌|❌|❌||❌||✅|✅|
+|[MPEG-4 Part 2/ASP](https://en.wikipedia.org/wiki/MPEG-4_Part_2#Advanced_Simple_Profile_(ASP))|❌|❌|❌|❌||❌||✅|✅|
+|[H.264 8Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|✅|✅|✅||✅||✅|✅|
+|[H.264 10Bit](https://caniuse.com/#feat=mpeg4 "H264 Browser Support Reference")|✅|❌|❌|✅||✅||✅|✅|
+|[H.265](https://caniuse.com/#feat=hevc "HEVC Browser Support Reference")|❌|❌|❌<sup>1</sup>|🔶<sup>2</sup>||❌||✅|✅|
 
 <sup>1</sup>HEVC support is potentially available by offloading to the operating system, but this has not been tested.
 
