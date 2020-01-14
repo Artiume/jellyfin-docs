@@ -26,11 +26,11 @@ The goal is to Direct Play all media. This means the container, video, audio and
 
 [Format Cheetsheet:](https://en.wikipedia.org/wiki/MPEG-4#MPEG-4_Parts)
 
-|[MPEG-2](https://en.wikipedia.org/wiki/MPEG-2)|[MPEG-2<br>Part 2](https://en.wikipedia.org/wiki/H.262/MPEG-2_Part_2)|[MPEG-4<br>Part-2](https://en.wikipedia.org/wiki/MPEG-4_Part_2)<sup>1</sup>|[MPEG-4<br>Part-10](https://en.wikipedia.org/wiki/Advanced_Video_Coding)|[MPEG-4<br>Part-14](https://en.wikipedia.org/wiki/MPEG-4_Part_14)|[MPEG-H<br>Part 2](https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding)|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|H.262|MPEG-2 Video|MPEG4 SP/ASP|H.264|MP4 Container<sup>2</sup>|H.265|
-|DVD-Video||DivX|MPEG-4 AVC||HEVC|
-|||DX50||||
+|[MPEG-2<br>Part 2](https://en.wikipedia.org/wiki/H.262/MPEG-2_Part_2)|[MPEG-4<br>Part-2](https://en.wikipedia.org/wiki/MPEG-4_Part_2)<sup>1</sup>|[MPEG-4<br>Part-10](https://en.wikipedia.org/wiki/Advanced_Video_Coding)|[MPEG-4<br>Part-14](https://en.wikipedia.org/wiki/MPEG-4_Part_14)|[MPEG-H<br>Part 2](https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding)|
+|:---:|:---:|:---:|:---:|:---:|
+|H.262|MPEG4 SP/ASP|H.264|MP4 Container<sup>2</sup>|H.265|
+|MPEG-2 Video|DivX|MPEG-4 AVC||HEVC|
+|DVD-Video|DX50||||
 
 <sup>1</sup>[MPEG-4 Part-2 vs Part-10](https://www.afterdawn.com/glossary/term.cfm/mpeg_4_part_10)
 
@@ -49,6 +49,13 @@ If the audio codec is unsupported or incompatible (such as playing a 5.1 channel
 |EAC3<sup>2</sup>|✅|✅|✅|✅||||✅|✅|
 |VORBIS<sup>3</sup>|✅|✅|✅|✅||||✅|✅|
 |DTS<sup>4</sup>|❌|❌|❌|✅||||✅|✅|
+
+[Format Cheetsheet:](https://en.wikipedia.org/wiki/Moving_Picture_Experts_Group#External_links)
+
+|[MPEG-1](https://en.wikipedia.org/wiki/MPEG-1)|[MPEG-2](https://en.wikipedia.org/wiki/MPEG-2)|
+|:---:|:---:|
+|[MP2 (layer 2)](https://en.wikipedia.org/wiki/MPEG-1_Audio_Layer_II)|[AAC (Part 7)](https://en.wikipedia.org/wiki/Advanced_Audio_Coding)|
+|[MP3 (layer 3)](https://en.wikipedia.org/wiki/MP3)||
 
 <sup>1</sup>MP3 Mono is incorrectly reported as unsupported and will transcode to AAC.
 
