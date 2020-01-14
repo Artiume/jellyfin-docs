@@ -62,14 +62,14 @@ Subtiles can be a subtle issue for transcoding. Containers have a limited number
 ||Format|TS|MP4|MKV|AVI|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |[SubRip Text (SRT)](https://en.wikipedia.org/wiki/SubRip)|Text|❌|🔶|✅|🔶|
-|[WebVTT (VTT)](https://en.wikipedia.org/wiki/WebVTT)|Text|❌<sup>1</sup>|🔶|✅|🔶|
+|[WebVTT (VTT)](https://en.wikipedia.org/wiki/WebVTT)|Text|❌<sup>1</sup>|❌<sup>1</sup>|✅|🔶|
 |ASS/SSA<sup>1</sup>|Formatted Text|❌|❌|✅|🔶|
 |VobSub|Picture|❌|✅|✅|🔶|
 |DVB-SUB [(.sub/.idx)](https://forum.videohelp.com/threads/261451-Difference-between-SUB-and-IDX-file)|Picture|✅|❌|✅|❌|
 |MP4TT/TXTT|XML|❌|✅|❌|❌|
 |PGSSUB|Picture|❌|❌|✅|❌|
 
-<sup>1</sup>VTT are supported with TS in an [HLS Stream](https://helpx.adobe.com/adobe-media-server/dev/webvtt-subtitles-captions.html).
+<sup>1</sup>VTT are supported in an [HLS Stream](https://helpx.adobe.com/adobe-media-server/dev/webvtt-subtitles-captions.html).
 
 <sup>2</sup>ASS Subtitles are only supported by MKV files. MKV files aren't supported by Firefox. They will always inherently be burned into the video. This is not a limitation of Jellyfin.
 
@@ -93,7 +93,7 @@ If the container is unsupported, this will result in remuxing. The video and aud
 <sup>4</sup>TS is one of the primary containers for streaming for Jellyfin. 
 
 # Codec Tests:
-
+vp9/vorbis/vtt/webm
 ## Web
 ### Video
 h264 CB, 8bit
