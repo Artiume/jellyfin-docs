@@ -112,6 +112,10 @@ ffmpeg.exe -i input.mkv -vf zscale=t=linear:npl=100,format=gbrpf32le,
 zscale=p=bt709,tonemap=tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,
 format=yuv420p -c:v libx265 -crf 18 -preset slower output.mkv
 -----
+
+JF streamer
+https://github.com/jellyfin/jellyfin/blob/d217f1614e1fb93d1549ff4b7fad7bfbdcba6204/MediaBrowser.Api/Playback/BaseStreamingService.cs#L132
+
 VLC has amazing support for codecs
 
 https://wiki.videolan.org/Hacker_Guide/
