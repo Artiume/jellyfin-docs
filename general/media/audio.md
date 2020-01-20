@@ -21,3 +21,5 @@ https://xiph.org/flac/documentation_bugs.html
 
 https://hydrogenaud.io/index.php/topic,97310.0.html
 
+https://plexguide.com/threads/rclone-with-gdrive-on-libreelec.3014/
+
