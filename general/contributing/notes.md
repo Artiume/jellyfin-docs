@@ -11,3 +11,5 @@ https://web.archive.org/web/20190310195616/http://people.seas.harvard.edu/~apw/s
 https://www.dennyzhang.com/docker_monitor
 
 https://snyk.io/blog/10-docker-image-security-best-practices/
+
+https://help.github.com/en/github/managing-security-vulnerabilities/about-security-alerts-for-vulnerable-dependencies
