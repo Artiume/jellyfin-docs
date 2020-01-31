@@ -326,6 +326,10 @@ https://github.com/MediaBrowser/Emby/pull/2276
 
 https://github.com/nextcloud/files_videoplayer/issues/9
 
+### NFO
+
+https://kodi.wiki/view/NFO_files/Movies
+
 ### Misc
 
 `
