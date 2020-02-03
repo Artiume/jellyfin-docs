@@ -15,3 +15,6 @@ For more information visit the following links:
 
 * [Website](https://rclone.org/)
 * [GitHub](https://github.com/rclone/rclone)
+
+
+https://gist.github.com/MatthewVance/02298d59064f03c44c5df4fc68538a44
