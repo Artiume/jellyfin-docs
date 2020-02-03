@@ -70,3 +70,6 @@ There are three main caveats to this setting:
 2. Client applications generally, for now, do not handle the Base URL redirects implicitly. Therefore, for instance in the Android app, the `Host` setting *must* include the BaseURL as well (e.g. `http://myserver:8096/baseurl`), or the connection will fail.
 
 3. Any reverse proxy configurations must be updated to handle a new Base URL. Generally, passing `/` back to the Jellyfin instance will work fine in all cases and the paths will be normalized, and this is the standard configuration in our examples. Keep this in mind however when doing more advanced routing.
+
+
+https://medium.com/@chrishantha/linux-performance-observability-tools-19ae2328f87f
