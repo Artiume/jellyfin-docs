@@ -49,6 +49,8 @@ https://www.reddit.com/r/jellyfin/comments/dh89fu/nvidia_hardware_transcoding/
 
 http://www.raspberrypi.com/
 
+https://www.cnx-software.com/2019/06/26/raspberry-pi-4-4k-video-playback-libreelec/
+
 https://github.com/popcornmix/omxplayer
 
 https://medium.com/@ghalfacree/benchmarking-the-raspberry-pi-4-73e5afbcd54b
