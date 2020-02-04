@@ -45,6 +45,8 @@ https://github.com/FFmpeg/FFmpeg/blob/aff8cf18cb0b1fa4f2e3d163c3da2f25aa6d1906/l
 
 https://trac.ffmpeg.org/wiki/Encode/AAC
 
+https://www.reddit.com/r/jellyfin/comments/dh89fu/nvidia_hardware_transcoding/
+
 http://www.raspberrypi.com/
 
 https://github.com/popcornmix/omxplayer
