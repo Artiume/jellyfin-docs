@@ -103,6 +103,17 @@ If the container is unsupported, this will result in remuxing. The video and aud
 
 <sup>4</sup>TS is one of the primary containers for streaming for Jellyfin. 
 
+---
+
+https://malleshamdasari.wordpress.com/2013/07/31/difference-between-i-frame-and-idr-frame/
+
+https://video.stackexchange.com/questions/25415/ffmpeg-ffprobe-marks-non-idr-keyframes-as-keyframes
+
+https://forum.videohelp.com/threads/382942-FFMPEG-X265-Help-for-correct-commands-and-syntax
+
+https://forum.videohelp.com/threads/373283-How-to-get-ffmpeg-to-split-on-keyframe
+
+
 # Codec Tests:
 
 ## Web
