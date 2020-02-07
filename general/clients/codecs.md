@@ -113,6 +113,9 @@ https://forum.videohelp.com/threads/382942-FFMPEG-X265-Help-for-correct-commands
 
 https://forum.videohelp.com/threads/373283-How-to-get-ffmpeg-to-split-on-keyframe
 
+https://en.m.wikipedia.org/wiki/Video_compression_picture_types
+
+https://blog.streamroot.io/encode-multi-bitrate-videos-mpeg-dash-mse-based-media-players/
 
 # Codec Tests:
 
