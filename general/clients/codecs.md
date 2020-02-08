@@ -137,6 +137,24 @@ https://gpac.wp.imt.fr/dashcast/
 
 https://superuser.com/questions/1349502/what-is-the-format-of-the-mpeg-dash-m4s-generally-segment
 
+https://github.com/FFmpeg/FFmpeg/tree/release/4.2
+
+https://superuser.com/questions/1131757/ffmpeg-flac-to-aac-encoding
+
+https://stackoverflow.com/questions/45899585/pipe-input-in-to-ffmpeg
+
+https://ffmpeg.org/ffmpeg-protocols.html#pipe
+
+https://ffmpeg.zeranoe.com/forum/viewtopic.php?t=1414
+
+https://trac.ffmpeg.org/wiki/StreamingGuide
+
+http://mewiki.project357.com/wiki/X264_Encoding_Suggestions
+
+http://ffmpeg.org/ffmpeg.html#segment_002c-stream_005fsegment_002c-ssegment
+
+http://underpop.online.fr/f/ffmpeg/help/segment_002c-stream_005fsegment_002c-ssegment.htm.gz
+
 # Codec Tests:
 
 ## Web
