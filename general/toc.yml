@@ -52,3 +52,9 @@
     items:
     - uid: server-plugins-open-subtitles
     - uid: server-plugins-tvheadend
+
+- name: Networking
+  items:
+  - name: Reverse Proxy
+    - uid: network-reverse-proxy-main
+  - uid: network-dlna
