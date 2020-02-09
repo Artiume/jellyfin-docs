@@ -100,6 +100,8 @@ http://jell.yfish.us/
 
 https://forum.kodi.tv/showthread.php?tid=231955
 
+https://trac.ffmpeg.org/attachment/wiki/Concatenate/pipe-friendly-formats.png
+
 -----
 Current Transcoding issues
 
