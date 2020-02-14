@@ -52,3 +52,10 @@ http://underpop.online.fr/f/ffmpeg/help/segment_002c-stream_005fsegment_002c-sse
 
 
 https://web.archive.org/web/20140616225942/http://www.techsweden.org/forum/topic/19927-dlna-over-vpn-with-igmp-proxy/
+
+https://www.reddit.com/r/pihole/comments/f3sryb/pinephone_ubports_pihole
+
+https://community.ui.com/questions/DLNA-between-two-sites-connected-via-VPN/cfe1997e-7a73-473e-a5e7-4293f830aa66
+
+
+https://stackoverflow.com/questions/50508833/sending-udp-broadcast-from-a-docker-container
