@@ -49,3 +49,6 @@ http://mewiki.project357.com/wiki/X264_Encoding_Suggestions
 http://ffmpeg.org/ffmpeg.html#segment_002c-stream_005fsegment_002c-ssegment
 
 http://underpop.online.fr/f/ffmpeg/help/segment_002c-stream_005fsegment_002c-ssegment.htm.gz
+
+
+https://web.archive.org/web/20140616225942/http://www.techsweden.org/forum/topic/19927-dlna-over-vpn-with-igmp-proxy/
