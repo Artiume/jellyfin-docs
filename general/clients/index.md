@@ -8,9 +8,9 @@ title: Clients
 Clients connect your devices to your Jellyfin server and let you view your content on any supported device. You can find a list of clients below with their current development status.
 
 > [!NOTE]
-> Many clients were direct forks of the latest available codebases from Emby, and some are not functional yet. If you interested in helping out, please see our [contribution guide](xref:contrib-index).
+> Many clients have no active maintainers at the moment. If you interested in helping out, please see our [contribution guide](xref:contrib-index) and feel free to contact us for more information!
 
-Do you have a client that interfaces with Jellyfin and want to see it listed here? Please [submit a PR](https://github.com/jellyfin/jellyfin-docs)!
+Do you have a client that interfaces with Jellyfin and want to see it listed here? Please [submit a pull request](https://github.com/jellyfin/jellyfin-docs)!
 
 ## Android
 
@@ -101,6 +101,17 @@ Xamarin cross-platform client for Jellyfin.
 
 * [GitHub](https://github.com/chaosinnovator/jellyfin-xamarin)
 
+### Jellyfin MPV Shim
+
+Cast videos from other Jellyfin applications to the MPV media player on Windows and Linux. The client has support for direct play of advanced codecs such as 10 bit HEVC with subtitles, along with subtitle management tools.
+
+**Status:** ⭐ Active, 3rd-Party
+
+**Links:**
+
+* [Github](https://github.com/iwalton3/jellyfin-mpv-shim)
+* [Windows Release](https://github.com/iwalton3/jellyfin-mpv-shim/releases)
+
 ## Jellyfin Theater (Desktop)
 
 ### Electron
@@ -180,6 +191,7 @@ The official Jellyfin Kodi plugin.
 **Links:**
 
 * [GitHub](https://github.com/jellyfin/jellyfin-kodi)
+* [Installing](xref:clients-installing-kodi)
 
 ## LG WebOS
 
@@ -197,13 +209,14 @@ The official Jellyfin WebOS app.
 
 ### Mopidy-Jellyfin
 
-A third party plugin for Mopidy that uses Jellyfin as a backend.
+An official plugin for Mopidy that uses Jellyfin as a backend.
 
-**Status:** ⭐ Active, 3rd-Party
+**Status:** ⭐ Active
 
 **Links:**
 
 * [GitHub](https://github.com/mcarlton00/mopidy-jellyfin)
+* [Installing](xref:clients-installing-mopidy)
 
 ## Roku
 

@@ -19,13 +19,9 @@ The easiest way to check for issues is by checking the logs, which can be access
 
 ## Debug Logging
 
-To enable debug (much more verbose) logging for Jellyfin, it is currently required to manually edit config files - no UI options exist yet. Go to Jellyfin-directory/config, in the `logging.json` file, change the minimum level to debug as seen below.
+To enable debug (much more verbose) logging, it is currently required to manually edit config files - no UI options exist yet. Go to Jellyfin-directory/config, in the `logging.json` file, change the minimum level to debug as seen below.
 
-`"MinimumLevel": "Information",`
-
-to
-
-`"MinimumLevel": "Debug",`
+`"MinimumLevel": "Debug"`
 
 Jellyfin 10.4.1 and above will automatically reload the new configuration. The debug messages show up in the log with the `DBG` tag.
 
@@ -36,6 +32,8 @@ DLNA is based on uPnP. DLNA will send a broadcast signal from Jellyfin. This bro
 If DLNA fails to bind properly, `[ERR] Failed to bind to port 1900: "Address already in use". DLNA will be unavailable` should appear in the logs.
 
 Setting `Alive message interval (seconds)` to 30 seconds also appears to help discovery for some clients.
+
+If a base URL is set, try removing the base Url and restarting the Jellyfin service. 
 
 ## Static Ports
 
@@ -51,11 +49,18 @@ This setting can also be modified from the **Networking** page to use a differen
 
 Since client auto-discover would break if this option were configurable, you cannot change this in the settings at this time.
 
+**Client Discovery:** 7359 UDP
+
+Allows clients to discover the Jellyfin Server on the local network.  A broadcast message to this port with `Who is JellyfinServer?` will get a json response that includes the server Address, ID and Name.
+
 ## Dynamic Ports
 
 Live TV devices will often use a random UDP port for HD Homerun devices. The server will select an unused port on startup to connect to these tuner devices.
 
 ## Base URL
+
+> [!WARNING]
+> Base URL is known to break HD HomeRun, DLNA, Sonarr, Radarr, Chromecast, and MrMC.
 
 The Base URL setting in the **Networking** page is an advanced setting used to specify the URL prefix that your Jellyfin instance can be accessed at. In effect, it adds this URL fragment to the start of any URL path. For instance, if you have a Jellyfin server at `http://myserver` and access its main page `http://myserver/web/index.html`, setting a Base URL of `/jellyfin` will alter this main page to `http://myserver/jellyfin/web/index.html`. This can be useful if administrators want to access multiple Jellyfin instances under a single domain name, or if the Jellyfin instance lives only at a subpath to another domain with other services listening on `/`.
 

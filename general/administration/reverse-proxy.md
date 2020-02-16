@@ -9,16 +9,18 @@ It's possible to run Jellyfin behind another server acting as a reverse proxy.  
 
 Some popular options for reverse proxy systems are [Apache](https://httpd.apache.org/), [Haproxy](https://www.haproxy.com/), [Nginx](https://www.nginx.com/), [Caddy](https://caddyserver.com/) and [Traefik](https://traefik.io/).
 
-**Important:** In order for a reverse proxy to have the maximum benefit, you should have a publically routable IP address and a domain with DNS set up correctly.  These examples assume you want to run Jellyfin under a sub-domain (ie: jellyfin.example.com), but are easily adapted for the root domain if desired. Running Jellyfin in a subpath (example.com/jellyfin/) is supported by the Android and Web clients.
+> [!WARNING]
+> In order for a reverse proxy to have the maximum benefit, you should have a publically routable IP address and a domain with DNS set up correctly.  These examples assume you want to run Jellyfin under a sub-domain (ie: jellyfin.example.com), but are easily adapted for the root domain if desired. Running Jellyfin in a Path (example.com/jellyfin/) is supported by the Android and web clients. Sonarr and Radarr currently do not support Paths and their APIs will fail to communicate with Jellyfin.
 
 When following this guide, be sure to replace the following variables with your information:
 
-  * `DOMAIN_NAME` - Your public domain name to access Jellyfin on (e.g. jellyfin.example.com)
-  * `example.com` - The domain name Jellyfin services will run under (e.g. example.com)
-  * `SERVER_IP_ADDRESS` - The IP address of your Jellyfin server (if the reverse proxy is on the same server use 127.0.0.1)
+* `DOMAIN_NAME` - Your public domain name to access Jellyfin on (e.g. jellyfin.example.com)
+* `example.com` - The domain name Jellyfin services will run under (e.g. example.com)
+* `SERVER_IP_ADDRESS` - The IP address of your Jellyfin server (if the reverse proxy is on the same server use 127.0.0.1)
 
 In addition, the examples are configured for use with LetsEncrypt certificates.  If you have a certificate from another source, change the ssl configuration from `/etc/letsencrypt/DOMAIN_NAME/` to the location of your certificate and key.
-Ports 80 and 443 (pointing to the proxy server) need to be opened on your Firewall/Router.
+
+Ports 80 and 443 (pointing to the proxy server) need to be opened on your router and firewall.
 
 ## Apache
 
@@ -53,6 +55,13 @@ Ports 80 and 443 (pointing to the proxy server) need to be opened on your Firewa
 #    SSLCertificateKeyFile /etc/letsencrypt/live/DOMAIN_NAME/privkey.pem
 #    Protocols h2 http/1.1
 #
+#    Enable only strong encryption ciphers and prefer versions with Forward Secrecy
+#    SSLCipherSuite HIGH:RC4-SHA:AES128-SHA:!aNULL:!MD5
+#    SSLHonorCipherOrder on
+#
+#    Disable insecure SSL and TLS versions
+#    SSLProtocol all -SSLv2 -SSLv3 -TLSv1 -TLSv1.1
+#
 #    ErrorLog /var/log/apache2/DOMAIN_NAME-error.log
 #    CustomLog /var/log/apache2/DOMAIN_NAME-access.log combined
 #</VirtualHost>
@@ -60,7 +69,8 @@ Ports 80 and 443 (pointing to the proxy server) need to be opened on your Firewa
 ```
 
 If you encouter errors, you may have to enable `mod_proxy`, `mod_ssl` or `proxy_wstunnel` support manually.
-```
+
+```bash
 $ sudo a2enmod proxy proxy_http ssl proxy_wstunnel
 ```
 
@@ -97,7 +107,7 @@ backend jellyfin
 
 ## Nginx
 
-Create the following file ``/etc/nginx/conf.d/jellyfin.conf``
+Create the file `/etc/nginx/conf.d/jellyfin.conf`.
 
 ```
 server {
@@ -134,7 +144,7 @@ server {
 #
 #    location / {
 #        # Proxy main Jellyfin traffic
-#        proxy_pass http://SERVER_IP_ADDRESS:8096;
+#        proxy_pass http://SERVER_IP_ADDRESS:8096/;
 #        proxy_set_header Host $host;
 #        proxy_set_header X-Real-IP $remote_addr;
 #        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -147,7 +157,7 @@ server {
 #    }
 #    location /socket {
 #        # Proxy Jellyfin Websockets traffic
-#        proxy_pass http://SERVER_IP_ADDRESS:8096;
+#        proxy_pass http://SERVER_IP_ADDRESS:8096/socket;
 #        proxy_http_version 1.1;
 #        proxy_set_header Upgrade $http_upgrade;
 #        proxy_set_header Connection "upgrade";
@@ -163,8 +173,9 @@ server {
 
 ## Nginx with subpath
 
-When connecting to server from a client application, enter ``http(s)://DOMAIN_NAME/jellyfin`` in the address field, and **clear the port field**.
-Not all clients may handle this properly, but this is currently working for the web and Android clients.
+When connecting to server from a client application, enter ``http(s)://DOMAIN_NAME/jellyfin`` in the address field.
+
+Set the base URL field in the Jellyfin server.  This can be done by navigating to the Admin Dashboard -> Networking -> Base URL in the Jellyfin Web UI.  Fill in this box with `/jellyfin` and click Save.  The server will need to be restarted before this change takes effect.
 
 ```
 # Jellyfin hosted on http(s)://DOMAIN_NAME/jellyfin
@@ -192,8 +203,11 @@ server {
 
     location /jellyfin/ {
         # Proxy main Jellyfin traffic
+
         # The / at the end is significant.
-        proxy_pass http://SERVER_IP_ADDRESS:8096/;
+        # https://www.acunetix.com/blog/articles/a-fresh-look-on-reverse-proxy-related-attacks/
+
+        proxy_pass http://SERVER_IP_ADDRESS:8096/jellyfin/;
 
         proxy_pass_request_headers on;
 
@@ -214,10 +228,10 @@ server {
 ```
 
 ## Caddy
+
 Add this to your `Caddyfile`:
 
 ```
-# Jellyfin
 DOMAIN_NAME/jellyfin/ {
     proxy / localhost:8096 {
         transparent
@@ -225,6 +239,7 @@ DOMAIN_NAME/jellyfin/ {
     }
 }
 ```
+
 Using DOMAIN_NAME only, or sub.DOMAIN_NAME would also work, as would using multiple at once.
 
 Caddy will automatically attempt to obtain a free HTTPS certificate if possible, and handle renewal, making the below section unecessary.
@@ -241,13 +256,21 @@ DOMAIN_NAME {
 
 ## Traefik (with docker-compose)
 
-Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy. Traefik integrates with your existing infrastructure components (Docker, Swarm mode, Kubernetes, Marathon, Consul, Etcd, Rancher, Amazon ECS, ...) and configures itself automatically and dynamically. Pointing Traefik at your orchestrator should be the only configuration step you need. (https://traefik.io/). 
+Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy. Traefik integrates with your existing infrastructure components (Docker, Swarm mode, Kubernetes, Marathon, Consul, Etcd, Rancher, Amazon ECS, ...) and configures itself automatically and dynamically. Pointing Traefik at your orchestrator should be the only configuration step you need. (https://traefik.io/). This configuration is A+. Test your setup here at [SSLlabs](https://www.ssllabs.com/ssltest/).
 
 Create these 3 files in the SAME directory (or change their paths in the volume section) : docker-compose.yml, traefik.toml and acme.json.
 
-This configuration is A+ (SSLlabs)
+> [!NOTE]
+> Ensure you enable Basic Auth protection for Traefik or disable its Dashboard. Otherwise your Dashboard will be accessible from the internet. 
 
-docker-compose.yml :
+```
+sudo apt install apache2-utils
+echo $(htpasswd -nb username mystrongpassword) | sed -e s/\\$/\\$\\$/g
+```
+
+This command automatically escapes all $ inside the password for the yml. If using an environmental file, it does not need the $ escaped since it will not be interpreted by the shell
+
+docker-compose.yml:
 
 ```
 version: '3.5'
@@ -285,6 +308,7 @@ services:
       traefik.frontend.headers.customResponseHeaders: X-Robots-Tag:noindex,nofollow,nosnippet,noarchive,notranslate,noimageindex
       traefik.frontend.headers.frameDeny: "true"
       traefik.frontend.headers.customFrameOptionsValue: 'allow-from https://example.com'
+      traefik.frontend.auth.basic.users: "user:passwordwithe$$capedha$$he$$"
     restart: unless-stopped
 
   jellyfin:
@@ -304,7 +328,7 @@ networks:
 
 This toml file can't support environment variables, ensure you don't attempt to use variables.
 
-traefik.toml : 
+traefik.toml:
  
 ```
 logLevel = "WARN"
@@ -351,6 +375,7 @@ domain = "example.com"
 network = "traefik"
 exposedbydefault = false
 
+[file]
 [backends]
   [backends.backend-jellyfin]
     [backends.backend-jellyfin.servers]
@@ -376,20 +401,25 @@ exposedbydefault = false
       browserXSSFilter = true
       customResponseHeaders = "X-Robots-Tag:noindex,nofollow,nosnippet,noarchive,notranslate,noimageindex"
       customFrameOptionsValue = "allow-from https://example.com"
-
 ```
 
-Finally, create an empty acme.json : `touch acme.json` `chmod 600 acme.json` 
+Finally, create an empty acme.json.
+
+```bash
+touch acme.json
+chmod 600 acme.json
+```
 
 IMPORTANT ! Change example.com to your domain / subdomain name, and change the mail of the acme (user@example.com in traefik.toml). Let's Encrypt does not require a valid email address however example.com will be flagged as not being a proper email address.
 
 Launch your Traefik/Jellyfin services : `docker-compose up -d`
 
-Congratulations, your stack with Traefik and Jellyfin is UP !
+Congratulations, your stack with Traefik and Jellyfin is running!
 
-Note: Due to a [bug](https://github.com/containous/traefik/issues/5559) in Traefik, you cannot dynamically route to containers when network_mode=host, so we have created a static route to the docker host (172.17.0.1:8096) in `traefik.toml`. Using host networking (or macvlan) is required to use DLNA or an HdHomeRun as it supports multicast networking.
+> [!NOTE]
+> Due to a [bug](https://github.com/containous/traefik/issues/5559) in Traefik, you cannot dynamically route to containers when network_mode=host, so we have created a static route to the docker host (172.17.0.1:8096) in `traefik.toml`. Using host networking (or macvlan) is required to use DLNA or an HdHomeRun as it supports multicast networking.
 
-Go to jellyfin.example.com (in this case), and your jellyfin is UP with HTTPS (AES 256).
+Go to jellyfin.example.com (in this case), and your jellyfin is running with HTTPS (AES 256).
 
 ## LetsEncrypt with Certbot
 
@@ -468,4 +498,3 @@ Add a job to cron so the certificate will be renewed automatically:
 # Final steps
 
 It's strongly recommend that you check your SSL strength and server security at [SSLLabs](https://www.ssllabs.com/ssltest/analyze.html) if you are exposing these service to the internet.
-
