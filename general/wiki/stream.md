@@ -1,3 +1,5 @@
+http://underpop.online.fr/f/ffmpeg/help/segment_002c-stream_005fsegment_002c-ssegment.htm.gz
+
 https://subashbasnet.com.np/hls-understanding-adaptive-bit-rate-streaming/
 
 https://malleshamdasari.wordpress.com/2013/07/31/difference-between-i-frame-and-idr-frame/
