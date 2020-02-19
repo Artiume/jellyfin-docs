@@ -2,9 +2,17 @@ http://underpop.online.fr/f/ffmpeg/help/segment_002c-stream_005fsegment_002c-sse
 
 https://github.com/jellyfin/jellyfin/pull/1802
 
+https://github.com/google/ExoPlayer/issues/2882
+
 https://bitmovin.com/mpeg-dash-hls-segment-length
 
 https://subashbasnet.com.np/hls-understanding-adaptive-bit-rate-streaming/
+
+https://stackoverflow.com/questions/11640072/http-live-streaming-ts-segment-not-start-with-key-frame
+
+https://videoblerg.wordpress.com/2016/08/16/how-to-create-abr-content-with-ffmpeg-in-one-pass/
+
+https://blog.streamroot.io/encode-multi-bitrate-videos-mpeg-dash-mse-based-media-players/
 
 https://malleshamdasari.wordpress.com/2013/07/31/difference-between-i-frame-and-idr-frame/
 
