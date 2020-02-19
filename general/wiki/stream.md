@@ -1,5 +1,7 @@
 http://underpop.online.fr/f/ffmpeg/help/segment_002c-stream_005fsegment_002c-ssegment.htm.gz
 
+https://github.com/jellyfin/jellyfin/pull/1802
+
 https://bitmovin.com/mpeg-dash-hls-segment-length
 
 https://subashbasnet.com.np/hls-understanding-adaptive-bit-rate-streaming/
