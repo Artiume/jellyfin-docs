@@ -6,6 +6,8 @@ https://github.com/google/ExoPlayer/issues/2882
 
 https://bitmovin.com/mpeg-dash-hls-segment-length
 
+https://developer.apple.com/documentation/http_live_streaming/hls_authoring_specification_for_apple_devices
+
 https://subashbasnet.com.np/hls-understanding-adaptive-bit-rate-streaming/
 
 https://stackoverflow.com/questions/11640072/http-live-streaming-ts-segment-not-start-with-key-frame
