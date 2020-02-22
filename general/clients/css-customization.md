@@ -19,7 +19,7 @@ Green: `#5dd000`<br>
 Blue: `#0000d0`<br>
 Red: `#d00000`<br>
 
-#### Played Indicator: 
+#### Played Indicator:
 
 `.playedIndicator { background: #5dd000; }`
 
@@ -55,7 +55,7 @@ Green Mod:
 
 ### CSS Chaining
 
-CSS can be chained together to modify different sections together. 
+CSS can be chained together to modify different sections together.
 
 #### Border Color
 
@@ -71,7 +71,7 @@ CSS can be chained together to modify different sections together.
 
 #### Hotdogs and Catsup:
 
-```
+```css
 .skinHeader, .mainDrawer, .emby-input, .emby-textarea, .emby-select, .navMenuOption-selected, .cardBox, .paperList {
 	background: #ff9475;
 }
@@ -108,6 +108,7 @@ CSS can be chained together to modify different sections together.
 ```
 
 Sample:
+
 ![image](https://user-images.githubusercontent.com/20715731/73948929-a3adf580-48c7-11ea-8bf1-eaaba2873be7.png)
 
 More Community Links:

@@ -4,8 +4,8 @@ title: Codec Support
 ---
 
  # [Codec Tables](https://en.wikipedia.org/wiki/List_of_codecs "Wikipedia's list of all codecs")
- 
-The goal is to Direct Play all media. This means the container, video, audio and subtitles are all compatible with the client. If the media is incompatible for any reason, Jellyfin will use FFmpeg to [convert the media](http://howto-pages.org/ffmpeg/). Direct Stream will occur if the audio, container or subtitles happen to not be supported. If the video codec is unsupported, this will result in video transcoding. Subtitles can be tricky because they can cause Direct Stream (subtitles are remuxed) or video transcoding (burning in subtitles) to occur. This is the most intensive CPU component of transcoding. Decoding is less intensive than encoding. 
+
+The goal is to Direct Play all media. This means the container, video, audio and subtitles are all compatible with the client. If the media is incompatible for any reason, Jellyfin will use FFmpeg to [convert the media](http://howto-pages.org/ffmpeg/). Direct Stream will occur if the audio, container or subtitles happen to not be supported. If the video codec is unsupported, this will result in video transcoding. Subtitles can be tricky because they can cause Direct Stream (subtitles are remuxed) or video transcoding (burning in subtitles) to occur. This is the most intensive CPU component of transcoding. Decoding is less intensive than encoding.
 
 ## [Video Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats "Wikipedia's video codec tables")
 
@@ -46,8 +46,8 @@ If the audio codec is unsupported or incompatible (such as playing a 5.1 channel
 |FLAC|✅|✅|✅|✅||||✅|✅|
 |MP3|🔶<sup>1</sup>|🔶|✅|✅||||✅|✅|
 |AAC|✅|✅|✅|✅||||✅|✅|
-|AC3|✅|❌|✅|✅||||✅|✅|
-|EAC3<sup>2</sup>|✅|✅|✅|✅||||✅|✅|
+|[AC3](https://www.loc.gov/preservation/digital/formats/fdd/fdd000209.shtml)|✅|❌|✅|✅||||✅|✅|
+|[EAC3](https://en.wikipedia.org/wiki/Dolby_Digital_Plus)<sup>2</sup>|✅|✅|✅|✅||||✅|✅|
 |VORBIS<sup>3</sup>|✅|✅|✅|✅||||✅|✅|
 |DTS<sup>4</sup>|❌|❌|❌|✅||||✅|✅|
 
@@ -65,6 +65,8 @@ If the audio codec is unsupported or incompatible (such as playing a 5.1 channel
 <sup>3</sup>OGG containers are not supported and will cause VORBIS to convert.
 
 <sup>4</sup>Only DTS Mono has been tested.
+
+ATSC Standard for [AC-3 and EAC-3](https://www.atsc.org/wp-content/uploads/2015/03/A52-201212-17.pdf).
 
 ## [Subtitle Compatibility](https://en.wikipedia.org/wiki/Comparison_of_video_container_formats#Subtitle/caption_formats_support "Wikipedia's subtitle codec tables")
 
@@ -105,4 +107,4 @@ If the container is unsupported, this will result in remuxing. The video and aud
 
 <sup>3</sup>MKV containers are improperly labeled as WebM in Firefox during playback.
 
-<sup>4</sup>TS is one of the primary containers for streaming for Jellyfin. 
+<sup>4</sup>TS is one of the primary containers for streaming for Jellyfin.

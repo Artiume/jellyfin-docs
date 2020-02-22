@@ -5,13 +5,14 @@ This repository houses all documentation for Jellyfin available at [jellyfin.org
 
 # Layout
 
-This repository is built using [DocFX](https://dotnet.github.io/docfx/) using [DocFX Flavored Markdown](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html), for bit of a tutorial on writing, [see the Content section here](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html).
+Everything is built with [DocFX](https://dotnet.github.io/docfx/) using [DocFX Flavored Markdown](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html). See the content section [here](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html) for a quick tutorial.
 
 ## Plugin API
 
 Describe all available API surfaces and class from plugin development.
 
 ## ApiSpec
+
 `apispec` is used to overwrite specific plugin API page contexts.
 
 ## Docs
@@ -22,7 +23,7 @@ So for example to reference the file `general/administration/installing.md` one 
 
 ### Administration
 
-Should be used for documentation related to advanced server setup including non-default configs for more advanced users.
+Should be used for documentation related to server setup including non-default configs for more advanced users.
 
 ### Contributing
 
@@ -42,4 +43,4 @@ Naming conventions for all supported media types, such as movies or podcasts.
 
 #### Plugin
 
-Any plugins documentation.
+Any plugin documentation.

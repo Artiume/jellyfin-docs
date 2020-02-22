@@ -13,13 +13,11 @@ The Jellyfin project was started in early December 2018 as a result of Emby's de
 
 You can find our main repository on [GitHub](https://github.com/jellyfin/jellyfin) as well as our [organization](https://github.com/jellyfin) page.
 
-## Core Team
+# Core Team
 
-The core team of Jellyfin consists of:
-
-[Andrew Rabert (nvllsvm)](https://github.com/nvllsvm)  
-[Joshua Boniface (joshuaboniface)](https://github.com/joshuaboniface)  
-[Vasily (JustAMan)](https://github.com/JustAMan)  
-[Anthony Lavado (anthonylavado)](https://github.com/anthonylavado)  
-[Bond-009](https://github.com/Bond-009)  
-[dkanada](https://github.com/dkanada)
+[Andrew Rabert (nvllsvm)](https://github.com/nvllsvm)<br/>
+[Joshua Boniface (joshuaboniface)](https://github.com/joshuaboniface)<br/>
+[Vasily (JustAMan)](https://github.com/JustAMan)<br/>
+[Anthony Lavado (anthonylavado)](https://github.com/anthonylavado)<br/>
+[Bond-009](https://github.com/Bond-009)<br/>
+[dkanada](https://github.com/dkanada)<br/>
