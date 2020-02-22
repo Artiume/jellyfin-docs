@@ -4,5 +4,23 @@ https://files.retropie.org.uk/images/weekly/
 
 https://github.com/RetroPie/RetroPie-Setup/wiki/Manual-Installation
 
-
 https://raspberrypi.stackexchange.com/questions/66923/rpi-3-performance-issue-on-ffmpeg-with-mmal-support
+
+https://www.reddit.com/r/jellyfin/comments/f76zdi/jellyfin_player_on_rpi4_with_retropielakkaetc/
+
+http://www.raspberrypi.com/
+
+https://www.cnx-software.com/2019/06/26/raspberry-pi-4-4k-video-playback-libreelec/
+
+https://github.com/popcornmix/omxplayer
+
+https://medium.com/@ghalfacree/benchmarking-the-raspberry-pi-4-73e5afbcd54b
+
+https://hothardware.com/reviews/hot-clocked-pi-raspberry-pi-4-benchmarked-at-214-ghz
+
+https://github.com/raspberrypi/firmware/issues/1168#issuecomment-559531026
+
+https://www.tomshardware.com/news/raspberry-pi-4-game-emulators,40102.html
+raspi-config
+
+http://www.d0wn.com/installing-jellyfin-on-a-rasberry-pi4/
