@@ -47,22 +47,7 @@ https://trac.ffmpeg.org/wiki/Encode/AAC
 
 https://www.reddit.com/r/jellyfin/comments/dh89fu/nvidia_hardware_transcoding/
 
-http://www.raspberrypi.com/
-
-https://www.cnx-software.com/2019/06/26/raspberry-pi-4-4k-video-playback-libreelec/
-
-https://github.com/popcornmix/omxplayer
-
-https://medium.com/@ghalfacree/benchmarking-the-raspberry-pi-4-73e5afbcd54b
-
-https://hothardware.com/reviews/hot-clocked-pi-raspberry-pi-4-benchmarked-at-214-ghz
-
-https://github.com/raspberrypi/firmware/issues/1168#issuecomment-559531026
-
 https://stackoverflow.com/questions/42688491/how-do-you-change-the-docker-container-tz-in-spring#42699704
-
-https://www.tomshardware.com/news/raspberry-pi-4-game-emulators,40102.html
-raspi-config
 
 Here is a note on the Ubuntu page about libmfx (MSDK)
 ```
@@ -90,7 +75,6 @@ Supported video encoders: HEVC, AVC, MPEG-2, JPEG,
 VP9 Supported video decoders: HEVC, AVC, VP8, VP9, MPEG-2, VC1, JPEG 
 Supported video pre-processing filters: Color Conversion, Deinterlace, Denoise, Resize, Rotate, Composition
 ```
-http://www.d0wn.com/installing-jellyfin-on-a-rasberry-pi4/
 
 https://www.elpamsoft.com/?p=Plex-Hardware-Transcoding
 
@@ -143,7 +127,6 @@ MP4 Wrapper
 https://wiki.videolan.org/MPEG-4/
 
 https://www.bhphotovideo.com/explora/video/tips-and-solutions/8-bit-10-bit-what-does-it-all-mean-for-your-videos
-
 
 https://developer.android.com/guide/topics/media/media-formats
 
