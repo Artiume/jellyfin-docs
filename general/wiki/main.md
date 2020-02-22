@@ -1,3 +1,5 @@
+https://medium.com/@chrishantha/linux-performance-observability-tools-19ae2328f87f
+
 For Linux, QSV will use the libmfx library (MFX should be the proper term for QSV, MFX uses a modified VAAPI, see notes below). Normal VAAPI will use the libva library.  The Debian link I added shows a list of supported HW for VA-API, we could incorporate this into the guide. 
 
 grep -rnw '/path/to/somewhere/' -e 'pattern'
