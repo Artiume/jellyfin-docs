@@ -4,11 +4,21 @@ https://files.retropie.org.uk/images/weekly/
 
 https://github.com/RetroPie/RetroPie-Setup/wiki/Manual-Installation
 
+https://retropie.org.uk/docs/Manual-Installation/
+
+https://github.com/RetroPie/RetroPie-Setup/issues/2749
+
 https://raspberrypi.stackexchange.com/questions/66923/rpi-3-performance-issue-on-ffmpeg-with-mmal-support
 
 https://www.reddit.com/r/jellyfin/comments/f76zdi/jellyfin_player_on_rpi4_with_retropielakkaetc/
 
 http://www.raspberrypi.com/
+
+https://www.reddit.com/r/RetroPie/comments/dnimkw/raspberry_pi_4_manual_install_method/
+
+https://www.reddit.com/r/RetroPie/comments/f3rurb/should_install_retropie_dev_builds_or_download/
+
+https://www.electromaker.io/tutorial/blog/how-to-build-the-ultimate-raspberry-pi-retro-gaming-console
 
 https://www.cnx-software.com/2019/06/26/raspberry-pi-4-4k-video-playback-libreelec/
 
