@@ -10,8 +10,13 @@ https://arstechnica.com/civis/viewtopic.php?t=1403375
 Notes on HDR<br>
 https://github.com/jellyfin/jellyfin/issues/2404#issuecomment-586043667
 
-splitting
+
+
+---
+Extra notes:
+
+splitting<br>
 https://www.reddit.com/r/ffmpeg/comments/fadjj6/how_to_split_long_mp4_video_into_smaller_25_min/
 
-recursive looper
+recursive looper<br>
 https://ss64.com/nt/for_r.html
