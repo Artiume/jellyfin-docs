@@ -10,6 +10,7 @@ https://arstechnica.com/civis/viewtopic.php?t=1403375
 Notes on HDR<br>
 https://github.com/jellyfin/jellyfin/issues/2404#issuecomment-586043667
 
+https://web.archive.org/web/20190722004804/https://stevens.li/guides/video/converting-hdr-to-sdr-with-ffmpeg/
 
 
 ---
