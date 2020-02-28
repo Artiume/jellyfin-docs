@@ -358,9 +358,3 @@ Stream #0:1 -> #0:1 (aac (native) -> mp3 (libmp3lame))
 Stream #0:0 used software to decode HEVC and used HWA to encode.
 
 Stream #0:1 had the same results. Decoding is easier than encoding so these are good results overall. HWA decoding is a work in progress.
-
-https://github.com/gagle/raspberrypi-openmax-h264
-
-https://www.khronos.org/registry/OpenMAX-IL/specs/OpenMAX_IL_1_1_2_Specification.pdf
-
-https://wiki.archlinux.org/index.php/Hardware_video_acceleration
