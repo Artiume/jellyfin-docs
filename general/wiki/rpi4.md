@@ -34,3 +34,7 @@ https://www.tomshardware.com/news/raspberry-pi-4-game-emulators,40102.html
 raspi-config
 
 http://www.d0wn.com/installing-jellyfin-on-a-rasberry-pi4/
+
+https://github.com/gagle/raspberrypi-openmax-h264
+
+https://www.khronos.org/registry/OpenMAX-IL/specs/OpenMAX_IL_1_1_2_Specification.pdf
