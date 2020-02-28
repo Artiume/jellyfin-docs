@@ -1,7 +1,7 @@
-How to use ffmpeg
+How to use ffmpeg<br>
 https://www.ostechnix.com/20-ffmpeg-commands-beginners/
 
-The different types of codecs 
+The different types of codecs<br>
 https://write.corbpie.com/ffmpeg-list-all-codecs-encoders-decoders-and-formats/
 
 https://arstechnica.com/civis/viewtopic.php?t=1403375
