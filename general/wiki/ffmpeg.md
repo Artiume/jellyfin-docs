@@ -12,6 +12,7 @@ https://github.com/jellyfin/jellyfin/issues/2404#issuecomment-586043667
 
 https://web.archive.org/web/20190722004804/https://stevens.li/guides/video/converting-hdr-to-sdr-with-ffmpeg/
 
+https://wiki.archlinux.org/index.php/Hardware_video_acceleration
 
 ---
 Extra notes:
