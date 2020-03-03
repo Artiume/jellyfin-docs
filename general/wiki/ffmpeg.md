@@ -1,6 +1,8 @@
 How to use ffmpeg<br>
 https://www.ostechnix.com/20-ffmpeg-commands-beginners/
 
+https://devblogs.nvidia.com/nvidia-ffmpeg-transcoding-guide/
+
 The different types of codecs<br>
 https://write.corbpie.com/ffmpeg-list-all-codecs-encoders-decoders-and-formats/
 
