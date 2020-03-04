@@ -14,6 +14,10 @@ https://www.reddit.com/r/jellyfin/comments/f76zdi/jellyfin_player_on_rpi4_with_r
 
 http://www.raspberrypi.com/
 
+# Performance 
+
+https://www.jeffgeerling.com/blog/2019/a2-class-microsd-cards-offer-no-better-performance-raspberry-pi
+
 https://www.reddit.com/r/RetroPie/comments/dnimkw/raspberry_pi_4_manual_install_method/
 
 https://www.reddit.com/r/RetroPie/comments/f3rurb/should_install_retropie_dev_builds_or_download/
