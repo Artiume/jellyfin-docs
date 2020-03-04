@@ -18,6 +18,8 @@ http://www.raspberrypi.com/
 
 https://www.jeffgeerling.com/blog/2019/a2-class-microsd-cards-offer-no-better-performance-raspberry-pi
 
+---
+
 https://www.reddit.com/r/RetroPie/comments/dnimkw/raspberry_pi_4_manual_install_method/
 
 https://www.reddit.com/r/RetroPie/comments/f3rurb/should_install_retropie_dev_builds_or_download/
