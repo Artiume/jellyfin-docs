@@ -1,10 +1,17 @@
 https://www.martinrowan.co.uk/2019/07/cooling-options-for-the-hot-raspberry-pi-4/
 
+# Installation Guides
+
 https://files.retropie.org.uk/images/weekly/
 
 https://github.com/RetroPie/RetroPie-Setup/wiki/Manual-Installation
 
 https://retropie.org.uk/docs/Manual-Installation/
+
+
+---
+
+# Issues
 
 https://github.com/RetroPie/RetroPie-Setup/issues/2749
 
