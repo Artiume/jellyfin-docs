@@ -11,6 +11,8 @@ https://github.com/Diagonactic/plex-new-transcoder/blob/3cf85fd34bfa94f679ca934e
 SAR and DAR
 https://ffmpeg.org/ffmpeg-filters.html#setdar_002c-setsar
 
+https://stackoverflow.com/questions/45396813/ffmpeg-copyts-makes-t-stop-at-timestamps-not-duration
+
 The different types of codecs<br>
 https://write.corbpie.com/ffmpeg-list-all-codecs-encoders-decoders-and-formats/
 
