@@ -2,6 +2,8 @@ https://developer.mozilla.org/en-US/docs/Web/Media/Formats/codecs_parameter#AV1
 
 https://en.wikipedia.org/wiki/Digital_container_format
 
+https://en.wikipedia.org/wiki/Inter_frame
+
 https://wiki.videolan.org/Container_format/
 
 https://www.velleman.eu/downloads/3/h264_vs_mpeg4_en.pdf
