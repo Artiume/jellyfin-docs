@@ -39,6 +39,9 @@ https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/cros
 
 ### Subtitles
 
+Convert OTA to readable subs
+https://www.smpte.org/sites/default/files/rp2052-10-2012.pdf
+
 https://en.wikibooks.org/wiki/FFMPEG_An_Intermediate_Guide/subtitle_options
 
 https://en.wikipedia.org/wiki/WebVTT
