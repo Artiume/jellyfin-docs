@@ -3,3 +3,5 @@ https://www.acunetix.com/blog/articles/dast-dynamic-application-security-testing
 https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/
 
 https://crookm.com/journal/2018/transcoding-to-dash-and-hls-with-ffmpeg/
+
+https://gist.github.com/drmalex07/3eba8b98d0ac4a1e821e8e721b3e1816
