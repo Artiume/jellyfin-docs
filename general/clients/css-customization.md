@@ -46,32 +46,32 @@ CSS can be chained together to modify different sections together. An example of
 
 To apply any one of these, copy paste the CSS code into the "Custom CSS" field. To use multiple modifications, simply add them one after another into the field. Any applied code will remain in the field. To remove a modification remove the code for it from the field. Changes apply immediately when the settings page is saved, and do not require a restart of the server.
 
-### Played Indicator:
+#### Played Indicator:
 
 This will affect the played/watched indicator. Replace the color hex with any value you like.
 
-#### Without mod
+**Without mod**
 
 ![normal](https://user-images.githubusercontent.com/4365015/76570964-20338580-64bf-11ea-9f59-4c4ffa1ec0d5.png)
 
-#### Green
+**Green**
 
-```
+```css
 .playedIndicator { background: #5dd000; }
 ```
 
 ![green](https://user-images.githubusercontent.com/4365015/76570998-32152880-64bf-11ea-86cb-f10cf07102b7.png)
 
-#### Transparent dark using RGBA hex value
+**Transparent dark using RGBA hex value**
 
-```
+```css
 /*Make watched icon dark and transparent*/
 .playedIndicator {background: #00000058;}
 ```
 
 ![transparent](https://user-images.githubusercontent.com/4365015/76571011-39d4cd00-64bf-11ea-911e-62062a55f6e4.png)
 
-### Make top menu transparent
+#### Make top menu transparent
 
 Self explanatory
 
@@ -81,7 +81,7 @@ Self explanatory
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {background:none; background-color:rgba(0, 0, 0, 0);}
 ```
 
-### Enlarge tab buttons
+#### Enlarge tab buttons
 
 Enlarges the tab buttons, suggested, genres, etc. By default they are really damn tiny, especially on mobile.
 
@@ -92,10 +92,10 @@ Enlarges the tab buttons, suggested, genres, etc. By default they are really dam
 .emby-tab-button {padding: 1.75em 1.7em;}
 ```
 
-#### The enlarged tab buttons and transparent menu look like this:
+**The enlarged tab buttons and transparent menu look like this:**
 ![](https://user-images.githubusercontent.com/4365015/76572252-3858d400-64c2-11ea-9b99-c564d8ee7763.png)
 
-### Minimalistic login page
+#### Minimalistic login page
 
 This looks even better now together with the transparent top menu.
 
@@ -114,7 +114,7 @@ This looks even better now together with the transparent top menu.
 
 ![](https://user-images.githubusercontent.com/4365015/76572504-ed8b8c00-64c2-11ea-8b69-f47ac7386242.png)
 
-### Stylized episode previews
+#### Stylized episode previews
 
 The episode previews in season view are sized based on horizontal resolution, this leads to a lot of wasted space on the episode summary and a high vertical page requiring a lot of scrolling to browse. This code reduces the height of episode entries to reduce the need for vertical scrolling on large screens.
 
@@ -127,7 +127,7 @@ The episode previews in season view are sized based on horizontal resolution, th
 
 ![](https://user-images.githubusercontent.com/4365015/76573431-51fb1b00-64c4-11ea-936e-d96502cb753d.png)
 
-### Stylized and smaller cast info
+#### Stylized and smaller cast info
 
 This will drastically change the style of cast info. Into something very similar to how plex does it. The Purple Haze theme already has rounded cast info, but at the same large size as everything else, this override will lead to somewhat smaller thumbnails, and also works with all other themes.
 
@@ -153,13 +153,13 @@ This will drastically change the style of cast info. Into something very similar
 
 ![](https://user-images.githubusercontent.com/4365015/76574436-f1b8a900-64c4-11ea-8382-1b207f0d872f.png)
 
-### Background Color
+#### Background Color
 
 ```
 .backgroundContainer, .dialog, html { background-color: #0fd0d0; }
 ```
 
-### Darken the background
+#### Darken the background
 
 This darkens the background on blue radiance/purple haze, edit the percentage depending how dark you want it. Lower is darker.
 
@@ -168,7 +168,7 @@ This darkens the background on blue radiance/purple haze, edit the percentage de
 .backgroundContainer {background-color: #000000; filter: brightness(50%);}
 ```
 
-### Right Header
+#### Right Header
 
 ```
 .headerRight { color: yellow; }
@@ -184,7 +184,7 @@ This darkens the background on blue radiance/purple haze, edit the percentage de
 
 ![image](https://user-images.githubusercontent.com/20715731/73963663-c13a8980-48de-11ea-9342-d1e89690e7b1.png)
 
-### General Page
+#### General Page
 
 ```
 .dashboardGeneralForm { color: yellow; }
@@ -193,7 +193,7 @@ This darkens the background on blue radiance/purple haze, edit the percentage de
 ![image](https://user-images.githubusercontent.com/20715731/73964979-49ba2980-48e1-11ea-8ddf-51e1c54e32d4.png)
 
 
-### Border Color
+#### Border Color
 
 This will change the border color for text fields.
 
@@ -203,7 +203,7 @@ This will change the border color for text fields.
 
 ![image](https://user-images.githubusercontent.com/20715731/73950017-39965000-48c9-11ea-9c0e-7687420a282e.png)
 
-### Full Header Mod
+#### Full Header Mod
 
 ```
 .skinHeader, .mainDrawer, .emby-input, .emby-textarea, .emby-select, .navMenuOption-selected, .cardBox, .paperList { 	background: #ff9475; }
@@ -211,7 +211,7 @@ This will change the border color for text fields.
 
 ![image](https://user-images.githubusercontent.com/20715731/73949397-5f6f2500-48c8-11ea-9eca-bc1eb61f1281.png)
 
-### Hotdogs and Catsup:
+#### Hotdogs and Catsup:
 
 An example of a color theme.
 
@@ -251,7 +251,7 @@ An example of a color theme.
 }
 ```
 
-Sample:
+**Sample:**
 
 ![image](https://user-images.githubusercontent.com/20715731/73948929-a3adf580-48c7-11ea-8bf1-eaaba2873be7.png)
 
