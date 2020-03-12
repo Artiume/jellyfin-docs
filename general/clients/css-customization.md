@@ -75,7 +75,7 @@ This will affect the played/watched indicator. Replace the color hex with any va
 
 Self explanatory
 
-```
+```css
 /*Top menu transparency*/
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background:none; background-color:rgba(0, 0, 0, 0);}
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {background:none; background-color:rgba(0, 0, 0, 0);}
@@ -85,7 +85,7 @@ Self explanatory
 
 Enlarges the tab buttons, suggested, genres, etc. By default they are really damn tiny, especially on mobile.
 
-```
+```css
 /*Adjust both "size-adjust" and "size" to modify size*/
 .headerTabs.sectionTabs {text-size-adjust: 110%;  font-size: 110%;}
 .pageTitle {margin-top: auto; margin-bottom: auto;}
@@ -99,7 +99,7 @@ Enlarges the tab buttons, suggested, genres, etc. By default they are really dam
 
 This looks even better now together with the transparent top menu.
 
-```
+```css
 /*Narrow the login form*/
 #loginPage .readOnlyContent, #loginPage form {max-width: 22em;}
 
@@ -118,7 +118,7 @@ This looks even better now together with the transparent top menu.
 
 The episode previews in season view are sized based on horizontal resolution, this leads to a lot of wasted space on the episode summary and a high vertical page requiring a lot of scrolling to browse. This code reduces the height of episode entries to reduce the need for vertical scrolling on large screens.
 
-```
+```css
 /*Size episode preview images in a more compact way*/
 .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}
 .listItem-content {height: 115px;}
@@ -131,7 +131,7 @@ The episode previews in season view are sized based on horizontal resolution, th
 
 This will drastically change the style of cast info. Into something very similar to how plex does it. The Purple Haze theme already has rounded cast info, but at the same large size as everything else, this override will lead to somewhat smaller thumbnails, and also works with all other themes.
 
-```
+```css
 /*Shrink and square (or round) cast thumnails*/
 #castContent .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {width: 4.2cm !important; font-size: 90% !important;}
 #castContent .card.overflowPortraitCard.personCard.card-withuserdata {width: 4.2cm !important; font-size: 90% !important;}
@@ -155,7 +155,7 @@ This will drastically change the style of cast info. Into something very similar
 
 #### Background Color
 
-```
+```css
 .backgroundContainer, .dialog, html { background-color: #0fd0d0; }
 ```
 
@@ -163,14 +163,14 @@ This will drastically change the style of cast info. Into something very similar
 
 This darkens the background on blue radiance/purple haze, edit the percentage depending how dark you want it. Lower is darker.
 
-```
+```css
 /*Darken background, only works with blue radiance*/
 .backgroundContainer {background-color: #000000; filter: brightness(50%);}
 ```
 
 #### Right Header
 
-```
+```css
 .headerRight { color: yellow; }
 ```
 
@@ -178,7 +178,7 @@ This darkens the background on blue radiance/purple haze, edit the percentage de
 
 #### Console Panel
 
-```
+```css
 .mainDrawer-scrollContainer { color: yellow; }
 ```
 
@@ -186,7 +186,7 @@ This darkens the background on blue radiance/purple haze, edit the percentage de
 
 #### General Page
 
-```
+```css
 .dashboardGeneralForm { color: yellow; }
 ```
 
@@ -197,7 +197,7 @@ This darkens the background on blue radiance/purple haze, edit the percentage de
 
 This will change the border color for text fields.
 
-```
+```css
 .emby-input, .emby-textarea, .emby-select { border-color: #fdbe7d; }
 ```
 
@@ -205,7 +205,7 @@ This will change the border color for text fields.
 
 #### Full Header Mod
 
-```
+```css
 .skinHeader, .mainDrawer, .emby-input, .emby-textarea, .emby-select, .navMenuOption-selected, .cardBox, .paperList { 	background: #ff9475; }
 ```
 
