@@ -17,7 +17,7 @@ If you have little or no experience with CSS, various resources and tutorials ca
 
 ## General information about CSS
 
-You can learn more about CSS using sites like [w3school](https://www.w3schools.com/css/default.asp). Below are some very basic details the will let you do rudimentary edits to the ready made modifications below. 
+You can learn more about CSS using sites like [w3school](https://www.w3schools.com/css/default.asp). Below are some very basic details that will let you do rudimentary edits to the ready made modifications below. 
 
 ### Colors Codes:
 
@@ -33,28 +33,34 @@ A section of code or text inbetween `/*` and `*/` indicate a comment, and will b
 
 `/*This might be added above code to tell you what it does*/`
 
+### CSS Chaining
+
+CSS can be chained together to modify different sections together. An example of this is the "Border color" mod. It lists elements to be modified, and then ends with a single edit that gets appliead to them all.
+
 ## List of modifications
 
 To apply any one of these, copy paste the CSS code into the "Custom CSS" field. To use multiple modifications, simply add them one after another into the field. Any applied code will remain in the field. To remove a modification remove the code for it from the field. Changes apply immediately when the settings page is saved, and do not require a restart of the server.
 
-#### Modifying played Indicator:
+#### Played Indicator:
 
 The below code will affect the played indicator. Replace the color hex with any value you like.
 
+Without mod:
+
+![normal](https://user-images.githubusercontent.com/4365015/76570964-20338580-64bf-11ea-9f59-4c4ffa1ec0d5.png)
+
+Green
+
 `.playedIndicator { background: #5dd000; }`
 
-Before:
+![green](https://user-images.githubusercontent.com/4365015/76570998-32152880-64bf-11ea-86cb-f10cf07102b7.png)
 
-![image](https://user-images.githubusercontent.com/20715731/73392328-97aeac00-42a7-11ea-817f-7234b8a78783.png)
-
-Green Mod:
-
-![image](https://user-images.githubusercontent.com/20715731/73392302-86659f80-42a7-11ea-9a9a-222cbbe466c6.png)
-
-A color with RGBA data will also work.
+An RGBA hex will also work.
 
 `/*Make watched icon dark and transparent*/
 .playedIndicator {background: #00000058;}`
+
+![image](https://user-images.githubusercontent.com/4365015/76571011-39d4cd00-64bf-11ea-911e-62062a55f6e4.png)
 
 #### Background Color:
 
@@ -78,9 +84,6 @@ A color with RGBA data will also work.
 
 ![image](https://user-images.githubusercontent.com/20715731/73964979-49ba2980-48e1-11ea-8ddf-51e1c54e32d4.png)
 
-### CSS Chaining
-
-CSS can be chained together to modify different sections together.
 
 #### Border Color
 
