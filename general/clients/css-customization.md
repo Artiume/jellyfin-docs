@@ -62,7 +62,7 @@ This will affect the played/watched indicator. Replace the color hex with any va
 
 ![green](https://user-images.githubusercontent.com/4365015/76570998-32152880-64bf-11ea-86cb-f10cf07102b7.png)
 
-#### RGBA hex will also work.
+#### Transparent dark using RGBA hex value
 
 ```
 /*Make watched icon dark and transparent*/
