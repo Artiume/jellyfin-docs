@@ -46,7 +46,7 @@ CSS can be chained together to modify different sections together. An example of
 
 To apply any one of these, copy paste the CSS code into the "Custom CSS" field. To use multiple modifications, simply add them one after another into the field. Any applied code will remain in the field. To remove a modification remove the code for it from the field. Changes apply immediately when the settings page is saved, and do not require a restart of the server.
 
-#### Played Indicator:
+#### Played Indicator
 
 This will affect the played/watched indicator. Replace the color hex with any value you like.
 
@@ -211,7 +211,7 @@ This will change the border color for text fields.
 
 ![image](https://user-images.githubusercontent.com/20715731/73949397-5f6f2500-48c8-11ea-9eca-bc1eb61f1281.png)
 
-#### Hotdogs and Catsup:
+#### Hotdogs and Catsup
 
 An example of a color theme.
 
