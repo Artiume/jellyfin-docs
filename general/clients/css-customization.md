@@ -52,7 +52,7 @@ This will affect the played/watched indicator. Replace the color hex with any va
 
 **Without mod**
 
-![normal](https://user-images.githubusercontent.com/4365015/76570964-20338580-64bf-11ea-9f59-4c4ffa1ec0d5.png)
+![normal](~/images/custom-css-normalwatched.png)
 
 **Green**
 
@@ -60,7 +60,7 @@ This will affect the played/watched indicator. Replace the color hex with any va
 .playedIndicator { background: #5dd000; }
 ```
 
-![green](https://user-images.githubusercontent.com/4365015/76570998-32152880-64bf-11ea-86cb-f10cf07102b7.png)
+![green](~/images/custom-css-greenwatched.png)
 
 **Transparent dark using RGBA hex value**
 
@@ -69,7 +69,7 @@ This will affect the played/watched indicator. Replace the color hex with any va
 .playedIndicator {background: #00000058;}
 ```
 
-![transparent](https://user-images.githubusercontent.com/4365015/76571011-39d4cd00-64bf-11ea-911e-62062a55f6e4.png)
+![transparent](~/images/custom-css-transparentwatched.png)
 
 #### Make top menu transparent
 
@@ -93,11 +93,11 @@ Enlarges the tab buttons, suggested, genres, etc. By default they are really dam
 ```
 
 **The enlarged tab buttons and transparent menu look like this:**
-![](https://user-images.githubusercontent.com/4365015/76572252-3858d400-64c2-11ea-9b99-c564d8ee7763.png)
+![](~/images/custom-css-transparenttopbarenlargedtabs.png)
 
 #### Minimalistic login page
 
-This looks even better now together with the transparent top menu.
+This looks even better together with the transparent top menu.
 
 ```css
 /*Narrow the login form*/
@@ -112,7 +112,7 @@ This looks even better now together with the transparent top menu.
 #loginPage .raised.cancel.block.btnForgotPassword.emby-button {display: none}
 ```
 
-![](https://user-images.githubusercontent.com/4365015/76572504-ed8b8c00-64c2-11ea-8b69-f47ac7386242.png)
+![](~/images/custom-css-minimallogin.png)
 
 #### Stylized episode previews
 
@@ -125,7 +125,7 @@ The episode previews in season view are sized based on horizontal resolution, th
 .secondary.listItem-overview.listItemBodyText {height: 61px; margin: 0;}
 ```
 
-![](https://user-images.githubusercontent.com/4365015/76573431-51fb1b00-64c4-11ea-936e-d96502cb753d.png)
+![](~/images/custom-css-episodepreview.png)
 
 #### Stylized and smaller cast info
 
@@ -151,7 +151,7 @@ This will drastically change the style of cast info. Into something very similar
 #castContent .cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light {margin:auto;}
 ```
 
-![](https://user-images.githubusercontent.com/4365015/76574436-f1b8a900-64c4-11ea-8382-1b207f0d872f.png)
+![](~/images/custom-css-stylizedcast.png)
 
 #### Background Color
 
@@ -170,6 +170,8 @@ This darkens the background on blue radiance/purple haze, edit the percentage de
 
 #### Right Header
 
+This modifies the colors of the cast, search and user buttons in the top right.
+
 ```css
 .headerRight { color: yellow; }
 ```
@@ -177,6 +179,8 @@ This darkens the background on blue radiance/purple haze, edit the percentage de
 ![image](https://user-images.githubusercontent.com/20715731/73962770-0d84ca00-48dd-11ea-9b50-563f8b4aa33b.png)
 
 #### Console Panel
+
+Modifies the color of the left menu panel.
 
 ```css
 .mainDrawer-scrollContainer { color: yellow; }
