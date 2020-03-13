@@ -10,7 +10,7 @@ In general settings, the "Custom CSS" field can be used to enter any override, t
 
 [Custom CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) provides interface customization such as changing colors, layout, item size and behavior. Below is a list of various modifications that can be applied. The CSS modifications work on both the web client, and the android app. The code will apply in the order that it is written so code can override previously stated custom CSS. To learn more see [CSS Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity). To implement these changes, go to Dashboard > General > Custom CSS. An additional source for specificity is [specifishity](https://specifishity.com/).
 
-![image](https://user-images.githubusercontent.com/20715731/73392971-d1cc7d80-42a8-11ea-8552-3d311655ea37.png)
+![image](~/images/custom-css-customcssfield.png)
 
 If you have little or no experience with CSS, various resources and tutorials can be found online, together with using the below modifications as examples it is quite easy to get started making your own changes to your Jellyfin instance.
 
@@ -52,7 +52,7 @@ This will affect the played/watched indicator. Replace the color hex with any va
 
 **Without mod**
 
-![normal](~/images/custom-css-normalwatched.png)
+![](~/images/custom-css-normalwatched.png)
 
 **Green**
 
@@ -60,7 +60,7 @@ This will affect the played/watched indicator. Replace the color hex with any va
 .playedIndicator { background: #5dd000; }
 ```
 
-![green](~/images/custom-css-greenwatched.png)
+![](~/images/custom-css-greenwatched.png)
 
 **Transparent dark using RGBA hex value**
 
@@ -69,7 +69,7 @@ This will affect the played/watched indicator. Replace the color hex with any va
 .playedIndicator {background: #00000058;}
 ```
 
-![transparent](~/images/custom-css-transparentwatched.png)
+![](~/images/custom-css-transparentwatched.png)
 
 #### Make top menu transparent
 
@@ -176,7 +176,7 @@ This modifies the colors of the cast, search and user buttons in the top right.
 .headerRight { color: yellow; }
 ```
 
-![image](https://user-images.githubusercontent.com/20715731/73962770-0d84ca00-48dd-11ea-9b50-563f8b4aa33b.png)
+![](~/images/custom-css-rightheader.png)
 
 #### Console Panel
 
@@ -186,7 +186,7 @@ Modifies the color of the left menu panel.
 .mainDrawer-scrollContainer { color: yellow; }
 ```
 
-![image](https://user-images.githubusercontent.com/20715731/73963663-c13a8980-48de-11ea-9342-d1e89690e7b1.png)
+![](~/images/custom-css-consolepanel.png)
 
 #### General Page
 
@@ -194,24 +194,24 @@ Modifies the color of the left menu panel.
 .dashboardGeneralForm { color: yellow; }
 ```
 
-![image](https://user-images.githubusercontent.com/20715731/73964979-49ba2980-48e1-11ea-8ddf-51e1c54e32d4.png)
+![](~/images/custom-css-generalcolor.png)
 
 
 #### Border Color
 
-This will change the border color for text fields.
+This will change the border color for text fields and drop down menus.
 
 ```css
 .emby-input, .emby-textarea, .emby-select { border-color: #d00000; }
 ```
 
-Thsi will affect the bordercolor of just highlighet text fields.
+This will affect the border color of highlighet(selected) text fields and drop down menus.
 
 ```css
-.emby-input:focus, .emby-textarea:focus, .emby-select { border-color: #ffffff; !important}
+.emby-input:focus, .emby-textarea:focus, .emby-select-withcolor { border-color: #ffffff !important; }
 ```
 
-![image](https://user-images.githubusercontent.com/20715731/73950017-39965000-48c9-11ea-9c0e-7687420a282e.png)
+![](~/images/custom-css-bordercolor.png)
 
 #### Full Header Mod
 
