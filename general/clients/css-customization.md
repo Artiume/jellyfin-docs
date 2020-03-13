@@ -202,7 +202,13 @@ Modifies the color of the left menu panel.
 This will change the border color for text fields.
 
 ```css
-.emby-input, .emby-textarea, .emby-select { border-color: #fdbe7d; }
+.emby-input, .emby-textarea, .emby-select { border-color: #d00000; }
+```
+
+Thsi will affect the bordercolor of just highlighet text fields.
+
+```css
+.emby-input:focus, .emby-textarea:focus, .emby-select { border-color: #ffffff; !important}
 ```
 
 ![image](https://user-images.githubusercontent.com/20715731/73950017-39965000-48c9-11ea-9c0e-7687420a282e.png)
