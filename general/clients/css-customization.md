@@ -6,14 +6,13 @@ title: CSS Customization
 
 # CSS Customization
 
-In general settings, the "Custom CSS" field can be used to enter any override, that will then apply to the CSS stylesheet of Jellyfin.
+In "Dashboard>General", the "Custom CSS" field can be used to enter any override, that will then apply to the CSS stylesheet of Jellyfin.
 
 [Custom CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) provides interface customization such as changing colors, layout, item size and behavior. Below is a list of various modifications that can be applied. The CSS modifications work on both the web client, and the android app. The code will apply in the order that it is written so code can override previously stated custom CSS. To learn more see [CSS Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity). To implement these changes, go to Dashboard > General > Custom CSS. An additional source for specificity is [specifishity](https://specifishity.com/).
 
-![](~/images/custom-css-customcssfield.png)
-
 If you have little or no experience with CSS, various resources and tutorials can be found online, together with using the below modifications as examples it is quite easy to get started making your own changes to your Jellyfin instance.
 
+![](~/images/custom-css-customcssfield.png)
 
 ## General information about CSS
 
@@ -40,7 +39,7 @@ A section of code or text inbetween `/*` and `*/` indicate a comment, and will b
 
 ### CSS Chaining
 
-CSS can be chained together to modify different sections together. An example of this is the "Border color" mod. It lists elements to be modified, and then ends with a single edit that gets applied to them all.
+CSS can be chained together to modify different sections together. An example of this is the "Border color" mod. It lists elements to be modified, and then ends with a change that gets applied to them all.
 
 ## Modifications list
 
