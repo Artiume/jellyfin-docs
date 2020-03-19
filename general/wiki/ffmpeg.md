@@ -8,6 +8,8 @@ https://github.com/Diagonactic/plex-new-transcoder/blob/3cf85fd34bfa94f679ca934e
 
 https://github.com/Diagonactic/plex-new-transcoder/blob/3cf85fd34bfa94f679ca934ebf9e2a31ff0bb0eb/plex-ffmpeg-source/NewPlexTranscoder/fftools/ffmpeg.c#L4649-L4653
 
+https://manpages.debian.org/experimental/ffmpeg/ffmpeg.1.en.html
+
 SAR and DAR
 https://ffmpeg.org/ffmpeg-filters.html#setdar_002c-setsar
 
