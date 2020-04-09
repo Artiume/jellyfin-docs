@@ -48,3 +48,6 @@ https://www.reddit.com/r/ffmpeg/comments/fadjj6/how_to_split_long_mp4_video_into
 
 recursive looper<br>
 https://ss64.com/nt/for_r.html
+
+
+[the guide on H.265/HEVC encoding](http://trac.ffmpeg.org/wiki/Encode/H.265
