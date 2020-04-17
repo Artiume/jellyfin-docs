@@ -49,5 +49,8 @@ https://www.reddit.com/r/ffmpeg/comments/fadjj6/how_to_split_long_mp4_video_into
 recursive looper<br>
 https://ss64.com/nt/for_r.html
 
+https://superuser.com/questions/939357/how-to-position-drawtext-text
+
+https://ffmpeg.org/ffmpeg-filters.html#drawtext
 
 [the guide on H.265/HEVC encoding](http://trac.ffmpeg.org/wiki/Encode/H.265
