@@ -53,4 +53,17 @@ https://superuser.com/questions/939357/how-to-position-drawtext-text
 
 https://ffmpeg.org/ffmpeg-filters.html#drawtext
 
+https://stackoverflow.com/questions/3169916/can-ffmpeg-burn-in-time-code
+
+https://stackoverflow.com/questions/22710099/ffmpeg-create-blank-screen-with-text-video#22719247
+
 [the guide on H.265/HEVC encoding](http://trac.ffmpeg.org/wiki/Encode/H.265
+
+ffmpeg -f lavfi -i color=c=172138:s=480x320:d=30 -vf "\
+drawtext=fontfile=/path/to/font.ttf:fontsize=20: \
+fontcolor=white:boxcolor=black:x=(w-text_w)/2:y=10:text='%{pts\:hms}', \
+drawtext=fontfile=/path/to/font.ttf:fontsize=30: \
+fontcolor=white:x=(w-text_w)/2:y=(h-text_h-text_h)/2:text='Jellyfin Sample', \
+drawtext=fontfile=/path/to/font.ttf:fontsize=30: \
+fontcolor=white:x=(w-text_w)/2:y=(h+text_h)/2:text='H264 8-bit' \
+" -c:v libx264 output3.mp4
