@@ -55,6 +55,8 @@ https://ffmpeg.org/ffmpeg-filters.html#drawtext
 
 https://stackoverflow.com/questions/3169916/can-ffmpeg-burn-in-time-code
 
+https://stackoverflow.com/questions/24961127/how-to-create-a-video-from-images-with-ffmpeg
+
 https://stackoverflow.com/questions/22710099/ffmpeg-create-blank-screen-with-text-video#22719247
 
 [the guide on H.265/HEVC encoding](http://trac.ffmpeg.org/wiki/Encode/H.265
