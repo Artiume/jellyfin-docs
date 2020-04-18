@@ -59,6 +59,8 @@ https://stackoverflow.com/questions/24961127/how-to-create-a-video-from-images-w
 
 https://stackoverflow.com/questions/22710099/ffmpeg-create-blank-screen-with-text-video#22719247
 
+https://github.com/dyne/frei0r
+
 https://stackoverflow.com/questions/42980663/ffmpeg-high-quality-animated-gif
 
 https://stackoverflow.com/questions/24961127/how-to-create-a-video-from-images-with-ffmpeg
