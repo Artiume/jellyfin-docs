@@ -61,6 +61,8 @@ https://stackoverflow.com/questions/22710099/ffmpeg-create-blank-screen-with-tex
 
 https://stackoverflow.com/questions/42980663/ffmpeg-high-quality-animated-gif
 
+https://stackoverflow.com/questions/24961127/how-to-create-a-video-from-images-with-ffmpeg
+
 [the guide on H.265/HEVC encoding](http://trac.ffmpeg.org/wiki/Encode/H.265
 
 ffmpeg -f lavfi -i color=c=172138:s=480x320:d=30 -vf "\
