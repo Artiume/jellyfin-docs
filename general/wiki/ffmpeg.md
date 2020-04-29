@@ -81,3 +81,5 @@ https://www.reddit.com/r/ffmpeg/comments/g6omt1/create_new_audio_stream_from_cur
 https://el-tramo.be/blog/ken-burns-ffmpeg/
 
 https://www.reddit.com/r/ffmpeg/comments/g3b7nl/audio_goes_out_of_sync_when_merging_two_audio/
+
+http://dranger.com/ffmpeg/tutorial01.html
