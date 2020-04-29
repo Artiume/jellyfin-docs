@@ -75,3 +75,5 @@ fontcolor=white:x=(w-text_w)/2:y=(h-text_h-text_h)/2:text='Jellyfin Sample', \
 drawtext=fontfile=/path/to/font.ttf:fontsize=30: \
 fontcolor=white:x=(w-text_w)/2:y=(h+text_h)/2:text='H264 8-bit' \
 " -c:v libx264 output3.mp4
+
+https://www.reddit.com/r/ffmpeg/comments/g6omt1/create_new_audio_stream_from_current_within_same/fobhyvo
