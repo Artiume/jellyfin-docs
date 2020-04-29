@@ -79,3 +79,5 @@ fontcolor=white:x=(w-text_w)/2:y=(h+text_h)/2:text='H264 8-bit' \
 https://www.reddit.com/r/ffmpeg/comments/g6omt1/create_new_audio_stream_from_current_within_same/fobhyvo
 
 https://el-tramo.be/blog/ken-burns-ffmpeg/
+
+https://www.reddit.com/r/ffmpeg/comments/g3b7nl/audio_goes_out_of_sync_when_merging_two_audio/
