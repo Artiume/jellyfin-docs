@@ -5,3 +5,5 @@ https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-downloa
 https://crookm.com/journal/2018/transcoding-to-dash-and-hls-with-ffmpeg/
 
 https://gist.github.com/drmalex07/3eba8b98d0ac4a1e821e8e721b3e1816
+
+https://www.reddit.com/r/HowToHack/comments/gaq86j/web_vulnerability_scanners/
