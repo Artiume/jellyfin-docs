@@ -83,3 +83,6 @@ https://el-tramo.be/blog/ken-burns-ffmpeg/
 https://www.reddit.com/r/ffmpeg/comments/g3b7nl/audio_goes_out_of_sync_when_merging_two_audio/
 
 http://dranger.com/ffmpeg/tutorial01.html
+
+https://www.reddit.com/r/ffmpeg/comments/gbow93/is_it_possible_to_inject_a_new_vf_during_a_stream/
+
