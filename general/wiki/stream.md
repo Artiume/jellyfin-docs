@@ -75,3 +75,5 @@ https://community.ui.com/questions/DLNA-between-two-sites-connected-via-VPN/cfe1
 
 
 https://stackoverflow.com/questions/50508833/sending-udp-broadcast-from-a-docker-container
+
+https://pacoup.com/2011/06/12/list-of-true-169-resolutions/
