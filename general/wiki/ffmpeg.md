@@ -87,3 +87,5 @@ http://dranger.com/ffmpeg/tutorial01.html
 https://www.reddit.com/r/ffmpeg/comments/gbow93/is_it_possible_to_inject_a_new_vf_during_a_stream/
 
 https://www.reddit.com/r/ffmpeg/comments/gbo4l4/delete_older_part_of_recording_while_still/fp7r633
+
+https://blog.project-insanity.org/2019/04/10/hacking-replay-gain-audio-normalization-into-jellyfin/
