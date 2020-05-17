@@ -1,5 +1,7 @@
 http://underpop.online.fr/f/ffmpeg/help/segment_002c-stream_005fsegment_002c-ssegment.htm.gz
 
+https://superuser.com/questions/908280/what-is-the-correct-way-to-fix-keyframes-in-ffmpeg-for-dash
+
 https://github.com/jellyfin/jellyfin/pull/1802
 
 https://github.com/google/ExoPlayer/issues/2882
