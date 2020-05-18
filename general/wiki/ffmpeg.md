@@ -89,3 +89,5 @@ https://www.reddit.com/r/ffmpeg/comments/gbow93/is_it_possible_to_inject_a_new_v
 https://www.reddit.com/r/ffmpeg/comments/gbo4l4/delete_older_part_of_recording_while_still/fp7r633
 
 https://blog.project-insanity.org/2019/04/10/hacking-replay-gain-audio-normalization-into-jellyfin/
+
+https://www.reddit.com/r/ffmpeg/comments/glpdil/difference_between_lavc5854100_and_h264/
