@@ -1,6 +1,6 @@
 ---
 uid: contrib-release-procedure
-title: Release Procedure
+title: Releases
 ---
 
 # Release Procedure
@@ -11,18 +11,18 @@ This document is a guide for the core team, provided publicly to ensure transpar
 
 Jellyfin uses [semantic versioning](https://semver.org). All releases will have versions in the `X.Y.Z` format, starting from `10.0.0`. Note however that the `10.Y.Z` release chain represents the "cleanup" of the codebase, so it should be accepted that `10.Y.Z` breaks all compatibility, at some point, with previous Emby-compatible interfaces, and may also break compatibility with previous `10.Y` releases if required for later cleanup work. Our versioning will typically follow the patterns below:
 
-#### `X` - Major Versions
+### `X` - Major Versions
 
-* Breaks compatibility with the HTTP and/or plugin APIs.
+* Breaks compatibility with the HTTP or plugin APIs
 
-#### `Y` - Minor Versions
+### `Y` - Minor Versions
 
-* Introduces new features.
-* Makes minor backwards-compatible API changes.
+* Introduces new features
+* Makes minor backwards-compatible API changes
 
-#### `Z` - Hotfix Versions
+### `Z` - Hotfix Versions
 
-* Introduces critical bugfixes or otherwise changes `master` branch code since the last release.
+* Critical bug fixes or minor changes
 
 ## General Release Philosophy
 
@@ -34,7 +34,7 @@ Releases will generally be performed on Sundays "when ready". For Major/Minor re
 
 1. Testing is ongoing via `master` nightly builds, so `master` should be generally unbroken before proceeding. The version of `master` should already reflect the upcoming major release version (i.e. `X.Y.0`).
 
-1. Once `master` is in a generally stable state after extensive work, announce a "golden nightly" is incoming via the [jellyfin-dev](https://matrix.to/#/#jellyfin-dev:matrix.org) Matrix/Riot channel and/or Reddit.
+1. Once `master` is in a generally stable state after extensive work, announce a "golden nightly" is incoming via the [jellyfin-dev](https://matrix.to/#/#jellyfin-dev:matrix.org) Matrix/Riot channel and Reddit.
 
 1. Collect testing information and repeat as needed.
 
@@ -44,23 +44,23 @@ Releases will generally be performed on Sundays "when ready". For Major/Minor re
 
 1. Once all testing is complete and the release remains stable, proceed.
 
-#### Web Client
+#### Release Web Client
 
 1. Create a release branch on the [jellyfin-web](https://github.com/jellyfin/jellyfin-web) repository via CLI from `master`, named `release-X.Y.z`, where `X` and `Y` are the new version number, and `z` is a literal `z`. Push the new branch to GitHub.
 
-1. Create a GitHub release for the new version, based on the newly-created `release-X.Y.z` branch. The tag should be named `vX.Y.Z` (i.e. `vX.Y.0`) and the release named "Release X.Y.Z". The release body should contain the following link only, replacing the version as required:
+2. Create a GitHub release for the new version, based on the newly-created `release-X.Y.z` branch. The tag should be named `vX.Y.Z` (i.e. `vX.Y.0`) and the release named "Release X.Y.Z". The release body should contain the following link only, replacing the version as required:
 
-```
-[Please see the release announcement on the main repository.](https://github.com/jellyfin/jellyfin/releases/tag/vX.Y.Z)
-```
+    ```md
+    [Please see the release announcement on the main repository.](https://github.com/jellyfin/jellyfin/releases/tag/vX.Y.Z)
+    ```
 
-1. Publish the release.
+3. Publish the release.
 
-#### Server
+#### Release Server
 
 1. Create a release branch on the [jellyfin](https://github.com/jellyfin/jellyfin) repository via CLI from `master`, named `release-X.Y.z`, where `X` and `Y` are the new version number, and `z` is a literal `z`. Push the new branch to GitHub.
 
-1. Create a GitHub release for the new version, based on the newly-created `release-X.Y.z` branch. The tag should be named `vX.Y.Z` (i.e. `vX.Y.0`) and the release named "Release X.Y.Z". The release body should contain the following components:
+2. Create a GitHub release for the new version, based on the newly-created `release-X.Y.z` branch. The tag should be named `vX.Y.Z` (i.e. `vX.Y.0`) and the release named "Release X.Y.Z". The release body should contain the following components:
 
    a. A quick top blurb under a `# Jellyfin X.Y.Z` header.
 
@@ -72,11 +72,11 @@ Releases will generally be performed on Sundays "when ready". For Major/Minor re
 
    a. A full changelog, split by repository with `### [repo](https://github.com/jellyfin/repo)` subheaders, under a `## Changelog` header. Each element should be a PR number and the PR title.
 
-1. Publish the release.
+3. Publish the release.
 
-1. Wait for builds to complete.
+4. Wait for builds to complete.
 
-1. Announce the new release in the [jellyfin-announce](https://matrix.to/#/#jellyfin-announce:matrix.org) Matrix/Riot channel and anywhere else required (e.g. Reddit, etc.).
+5. Announce the new release in the [jellyfin-announce](https://matrix.to/#/#jellyfin-announce:matrix.org) Matrix/Riot channel and anywhere else required (e.g. Reddit, etc.).
 
 ### Hotfix Release Procedure
 
@@ -99,16 +99,16 @@ Releases will generally be performed on Sundays "when ready". For Major/Minor re
    1. For the main [jellyfin](https://github.com/jellyfin/jellyfin) repository, bump the version of the repository to the new hotfix version with the `bump_version` script and commit the result with the message "Bump version for X.Y.Z".
 
    1. Push the updated release branch to GitHub.
-   
+
 #### Web Client
 
 1. Create a GitHub release for the new version, based on the relevant `release-X.Y.z` branch. The tag should be named `vX.Y.Z` and the release named "Release X.Y.Z". The release body should contain the following link only, replacing the version as required:
 
-```
-[Please see the release announcement on the main repository.](https://github.com/jellyfin/jellyfin/releases/tag/vX.Y.Z)
-```
+    ```md
+    [Please see the release announcement on the main repository.](https://github.com/jellyfin/jellyfin/releases/tag/vX.Y.Z)
+    ```
 
-1. Publish the release.
+2. Publish the release on GitHub and the archive repository.
 
 #### Server
 

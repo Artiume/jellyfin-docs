@@ -1,15 +1,18 @@
 ---
 uid: network-reverse-proxy-nginx
-title: Nginx Reverse Proxy
+title: Nginx
 ---
 
 ## Nginx
 
 "[Nginx](https://www.nginx.com/) (pronounced "engine X") is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache. The software was created by Igor Sysoev and first publicly released in 2004.[9] A company of the same name was founded in 2011 to provide support and Nginx plus paid software." - [Wikipedia](https://en.wikipedia.org/wiki/Nginx)
 
-Create the file `/etc/nginx/conf.d/jellyfin.conf`.
+Create the file `/etc/nginx/conf.d/jellyfin.conf` which will forward requests to Jellyfin.
 
-```
+> [!WARNING]
+> This is just an example! Please read up on networking and port forwarding before you expose anything past your router.
+
+```conf
 server {
     listen 80;
     server_name DOMAIN_NAME;
@@ -39,8 +42,8 @@ server {
 #    # Content Security Policy
 #    # See: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
 #    # Enforces https content and restricts JS/CSS to origin
-#    # External Javascript (such as cast_sender.js for Chromecast) must be whitelisted.
-#    add_header Content-Security-Policy "default-src https: data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js; worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'";
+#    # External Javascript (such as cast_sender.js for Chromecast or YouTube embed JS for external trailers) must be whitelisted.
+#    add_header Content-Security-Policy "default-src https: data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://www.youtube.com/iframe_api https://s.ytimg.com; worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'";
 #
 #    location / {
 #        # Proxy main Jellyfin traffic
@@ -75,9 +78,9 @@ server {
 
 When connecting to server from a client application, enter `http(s)://DOMAIN_NAME/jellyfin` in the address field.
 
-Set the base URL field in the Jellyfin server.  This can be done by navigating to the Admin Dashboard -> Networking -> Base URL in the Jellyfin Web UI.  Fill in this box with `/jellyfin` and click Save.  The server will need to be restarted before this change takes effect.
+Set the base URL field in the Jellyfin server.  This can be done by navigating to the Admin Dashboard -> Networking -> Base URL in the web client.  Fill in this box with `/jellyfin` and click Save.  The server will need to be restarted before this change takes effect.
 
-```
+```conf
 # Jellyfin hosted on http(s)://DOMAIN_NAME/jellyfin
 
 server {
