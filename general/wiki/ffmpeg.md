@@ -3,6 +3,10 @@ https://www.ostechnix.com/20-ffmpeg-commands-beginners/
 
 https://devblogs.nvidia.com/nvidia-ffmpeg-transcoding-guide/
 
+https://cdm.link/2019/10/free-ffmpeg-audio-video-conversion/
+
+https://amiaopensource.github.io/ffmprovisr/
+
 https://stackoverflow.com/questions/16521216/transcode-hls-segments-individually-using-ffmpeg
 
 https://github.com/Diagonactic/plex-new-transcoder/blob/3cf85fd34bfa94f679ca934ebf9e2a31ff0bb0eb/plex-ffmpeg-source/NewPlexTranscoder/fftools/ffmpeg.c#L1788-L1866
