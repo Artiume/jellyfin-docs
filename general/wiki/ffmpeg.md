@@ -15,6 +15,9 @@ https://github.com/Diagonactic/plex-new-transcoder/blob/3cf85fd34bfa94f679ca934e
 
 https://manpages.debian.org/experimental/ffmpeg/ffmpeg.1.en.html
 
+DASH stuff
+https://stackoverflow.com/questions/60429301/ffmpeg-dash-with-tiles-of-thumbnail-images
+
 SAR and DAR
 https://ffmpeg.org/ffmpeg-filters.html#setdar_002c-setsar
 
