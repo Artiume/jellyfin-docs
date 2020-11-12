@@ -18,6 +18,12 @@ https://manpages.debian.org/experimental/ffmpeg/ffmpeg.1.en.html
 DASH stuff
 https://stackoverflow.com/questions/60429301/ffmpeg-dash-with-tiles-of-thumbnail-images
 
+https://mpeg.chiariglione.org/standards/mpeg-dash/implementation-guidelines/text-isoiec-dtr-23009-3-2nd-edition-dash
+
+https://blog.infireal.com/2018/04/mpeg-dash-with-only-ffmpeg/
+
+http://underpop.online.fr/f/ffmpeg/help/segment_002c-stream_005fsegment_002c-ssegment.htm.gz
+
 https://blog.zazu.berlin/internet-programmierung/mpeg-dash-and-hls-adaptive-bitrate-streaming-with-ffmpeg.html
 
 SAR and DAR
