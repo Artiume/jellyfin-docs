@@ -18,6 +18,8 @@ https://manpages.debian.org/experimental/ffmpeg/ffmpeg.1.en.html
 DASH stuff
 https://stackoverflow.com/questions/60429301/ffmpeg-dash-with-tiles-of-thumbnail-images
 
+https://blog.zazu.berlin/internet-programmierung/mpeg-dash-and-hls-adaptive-bitrate-streaming-with-ffmpeg.html
+
 SAR and DAR
 https://ffmpeg.org/ffmpeg-filters.html#setdar_002c-setsar
 
